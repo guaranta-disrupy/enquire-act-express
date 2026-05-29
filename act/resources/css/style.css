@@ -1,0 +1,132 @@
+.form-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border-color: #d2d6dc;
+    border-width: 1px;
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.icon-x {
+    font-size: 26px !important;
+    position: absolute;
+    margin-top: 32px;
+    margin-left: -15px;
+    cursor: pointer;
+}
+
+.icon-x:hover {
+    color: red;
+    opacity: 0.5;
+}
+
+input[type="text"]:disabled {
+    background: #dddddd;
+}
+
+.blue {
+    color: #00519e;
+}
+
+.background-blue {
+    background-color: #00519e;
+}
+
+/* required class */
+.my-editor {
+    /* we dont use `language-` classes anymore so thats why we need to add background and text color manually */
+    background: #2d2d2d;
+    color: #ccc;
+
+    /* you must provide font-family font-size line-height. Example: */
+    font-family: Fira code, Fira Mono, Consolas, Menlo, Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.editor-height {
+    height: 10rem !important;
+}
+
+/* optional class for removing the outline */
+.prism-editor__textarea:focus {
+    outline: none;
+}
+
+.header img {
+    width: 10% !important;
+}
+
+.floating-button {
+    position: fixed;
+    z-index: 99;
+    bottom: 16px;
+    right: 16px;
+    height: 56px;
+    box-shadow: 0 4px 12px #00000080;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.h40 {
+    height: 40px;
+}
+
+.prism-editor-wrapper {
+    border-radius: 5px;
+}
+
+/* ::-webkit-scrollbar {
+    width: 0.3em;
+    height: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 170, 0);
+    border-radius: 0.5em;
+} */
+
+/* Custom Scrollbar Styles */
+.scrollbar-thin {
+    /* Base property for Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #15919a #f1f5f9;
+}
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+.scrollbar-thin::-webkit-scrollbar {
+    width: 1px !important; /* Adjust thickness here */
+    height: 2px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color);
+    border-radius: 2px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color);
+    border-radius: 2px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover-color);
+}
+
+html,
+body {
+    overflow: hidden !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+}
+
+strong {
+    font-weight: bold !important;
+}

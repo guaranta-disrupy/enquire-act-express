@@ -1,0 +1,58 @@
+name: Database Migration
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        required: true
+        type: choice
+        options:
+          - staging
+          - production
+        default: 'staging'
+      action:
+        description: 'Migration action'
+        required: true
+        type: choice
+        options:
+          - migrate
+          - rollback
+        default: 'migrate'
+
+jobs:
+  migrate:
+    name: ${{ inputs.action }} on ${{ inputs.environment }}
+    runs-on: ${{ inputs.environment }}
+    steps:
+      - name: Log in to Docker Registry
+        uses: docker/login-action@v2
+        with:
+          registry: hub.connoisseur-suite.co.uk
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+
+      - name: Pull the image
+        run: |
+          docker pull hub.connoisseur-suite.co.uk/${{ inputs.environment }}/act:latest
+
+      - name: Set image and network
+        id: vars
+        run: |
+          if [ "${{ inputs.environment }}" == "production" ]; then
+            echo "image=hub.connoisseur-suite.co.uk/production/act:latest" >> $GITHUB_OUTPUT
+            echo "network=web2" >> $GITHUB_OUTPUT
+          else
+            echo "image=hub.connoisseur-suite.co.uk/staging/act:latest" >> $GITHUB_OUTPUT
+            echo "network=web" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run php artisan ${{ inputs.action }}
+        run: |
+          IMAGE="${{ steps.vars.outputs.image }}"
+          NETWORK="${{ steps.vars.outputs.network }}"
+          if [ "${{ inputs.action }}" == "migrate" ]; then
+            docker run --rm --network "$NETWORK" --entrypoint php "$IMAGE" artisan migrate --force
+          else
+            docker run --rm --network "$NETWORK" --entrypoint php "$IMAGE" artisan migrate:rollback --force
+          fi

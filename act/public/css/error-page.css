@@ -1,0 +1,181 @@
+/* Tailwind CSS for error pages */
+/* Base styles */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+}
+
+/* Layout */
+.min-h-screen {
+    min-height: 100vh;
+}
+.flex {
+    display: flex;
+}
+.items-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.fixed {
+    position: fixed;
+}
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.z-50 {
+    z-index: 50;
+}
+.p-4 {
+    padding: 1rem;
+}
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Sizing */
+.w-full {
+    width: 100%;
+}
+.max-w-md {
+    max-width: 28rem;
+}
+.h-4 {
+    height: 1rem;
+}
+.w-4 {
+    width: 1rem;
+}
+.-ml-1 {
+    margin-left: -0.25rem;
+}
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+/* Typography */
+.text-lg {
+    font-size: 1.125rem;
+}
+.text-sm {
+    font-size: 0.875rem;
+}
+.font-semibold {
+    font-weight: 600;
+}
+.font-medium {
+    font-weight: 500;
+}
+.leading-relaxed {
+    line-height: 1.625;
+}
+.text-red-600 {
+    color: rgb(220, 38, 38);
+}
+.text-gray-700 {
+    color: rgb(55, 65, 81);
+}
+.text-blue-700 {
+    color: rgb(29, 78, 216);
+}
+
+/* Backgrounds */
+.bg-gray-50 {
+    background-color: rgb(249, 250, 251);
+}
+.bg-gray-600 {
+    background-color: rgb(75, 85, 99);
+}
+.bg-white {
+    background-color: rgb(255, 255, 255);
+}
+.bg-opacity-50 {
+    --tw-bg-opacity: 0.5;
+}
+
+/* Borders */
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+.border-b {
+    border-bottom-width: 1px;
+}
+.border-t {
+    border-top-width: 1px;
+}
+.border-gray-200 {
+    border-color: rgb(229, 231, 235);
+}
+
+/* Effects */
+.shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.transition-colors {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+.duration-200 {
+    transition-duration: 200ms;
+}
+
+/* Interactions */
+.hover\:text-blue-400:hover {
+    color: rgb(96, 165, 250);
+}
+.disabled\:opacity-50:disabled {
+    opacity: 0.5;
+}
+.disabled\:cursor-not-allowed:disabled {
+    cursor: not-allowed;
+}
+
+/* Animation */
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Utilities */
+.inline {
+    display: inline;
+}
+.opacity-25 {
+    opacity: 0.25;
+}
+.opacity-75 {
+    opacity: 0.75;
+}

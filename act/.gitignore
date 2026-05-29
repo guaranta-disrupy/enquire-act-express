@@ -1,0 +1,30 @@
+# ACT (Laravel API) — repo enquire-act-express
+# No servidor: composer install && npm install && npm run build
+
+/node_modules
+/public/hot
+/public/storage
+/public/build
+# Swagger gerado (regenerar no servidor)
+/storage/api-docs
+/storage/*.key
+/vendor
+.env.backup
+.phpunit.result.cache
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+/.fleet
+.env
+.env.*
+!.env.example
+**/caddy
+frankenphp
+frankenphp-worker.php
+.DS_Store
+**/.DS_Store
+*:Zone.Identifier

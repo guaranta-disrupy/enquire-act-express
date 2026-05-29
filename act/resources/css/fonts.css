@@ -1,0 +1,193 @@
+/* [Verified] Self-hosted variable fonts for Engine and app */
+
+/* Nunito */
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito-VariableFont.woff2") format("woff2"),
+        url("../fonts/Nunito-VariableFont.woff") format("woff");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito-Italic-VariableFont.woff2") format("woff2"),
+        url("../fonts/Nunito-Italic-VariableFont.woff") format("woff");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Roboto */
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-VariableFont.woff2") format("woff2"),
+        url("../fonts/Roboto-VariableFont.woff") format("woff");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Italic-VariableFont.woff2") format("woff2"),
+        url("../fonts/Roboto-Italic-VariableFont.woff") format("woff");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Inter */
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont.woff2") format("woff2"),
+        url("../fonts/Inter-VariableFont.woff") format("woff");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Italic-VariableFont.woff2") format("woff2"),
+        url("../fonts/Inter-Italic-VariableFont.woff") format("woff");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Open Sans */
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-VariableFont.woff2") format("woff2"),
+        url("../fonts/OpenSans-VariableFont.woff") format("woff");
+    font-weight: 300 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Italic-VariableFont.woff2") format("woff2"),
+        url("../fonts/OpenSans-Italic-VariableFont.woff") format("woff");
+    font-weight: 300 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Montserrat */
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-VariableFont.woff2") format("woff2"),
+        url("../fonts/Montserrat-VariableFont.woff") format("woff");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Italic-VariableFont.woff2") format("woff2"),
+        url("../fonts/Montserrat-Italic-VariableFont.woff") format("woff");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Noto Sans */
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../fonts/NotoSans-VariableFont.woff2") format("woff2"),
+        url("../fonts/NotoSans-VariableFont.woff") format("woff");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../fonts/NotoSans-Italic-VariableFont.woff2") format("woff2"),
+        url("../fonts/NotoSans-Italic-VariableFont.woff") format("woff");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Merriweather */
+@font-face {
+    font-family: "Merriweather";
+    src: url("../fonts/Merriweather-VariableFont.woff2") format("woff2"),
+        url("../fonts/Merriweather-VariableFont.woff") format("woff");
+    font-weight: 300 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url("../fonts/Merriweather-Italic-VariableFont.woff2") format("woff2"),
+        url("../fonts/Merriweather-Italic-VariableFont.woff") format("woff");
+    font-weight: 300 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Source Serif 4 */
+@font-face {
+    font-family: "Source Serif 4";
+    src: url("../fonts/SourceSerif4-VariableFont.woff2") format("woff2"),
+        url("../fonts/SourceSerif4-VariableFont.woff") format("woff");
+    font-weight: 200 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Source Serif 4";
+    src: url("../fonts/SourceSerif4-Italic-VariableFont.woff2") format("woff2"),
+        url("../fonts/SourceSerif4-Italic-VariableFont.woff") format("woff");
+    font-weight: 200 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Mulish */
+@font-face {
+    font-family: "Mulish";
+    src: url("../fonts/Mulish-VariableFont.woff2") format("woff2"),
+        url("../fonts/Mulish-VariableFont.woff") format("woff");
+    font-weight: 200 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Mulish";
+    src: url("../fonts/Mulish-Italic-VariableFont.woff2") format("woff2"),
+        url("../fonts/Mulish-Italic-VariableFont.woff") format("woff");
+    font-weight: 200 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Cormorant Garamond */
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("../fonts/CormorantGaramond-VariableFont.woff2") format("woff2"),
+        url("../fonts/CormorantGaramond-VariableFont.woff") format("woff");
+    font-weight: 300 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("../fonts/CormorantGaramond-Italic-VariableFont.woff2")
+            format("woff2"),
+        url("../fonts/CormorantGaramond-Italic-VariableFont.woff")
+            format("woff");
+    font-weight: 300 900;
+    font-style: italic;
+    font-display: swap;
+}

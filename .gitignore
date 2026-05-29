@@ -1,0 +1,24 @@
+# act_express — repo enquire-act-express (act/ + express/)
+# Cada app tem o seu .gitignore Laravel próprio em act/.gitignore e express/.gitignore
+# Aqui vão padrões cross-app comuns aos dois.
+
+**/node_modules/
+**/vendor/
+**/public/build/
+**/public/hot/
+**/public/storage/
+**/storage/*.key
+**/storage/api-docs/
+**/.env
+**/.env.*
+!**/.env.example
+.env
+.env.*
+!.env.example
+
+# IDE / SO
+.idea/
+.vscode/
+.DS_Store
+**/.DS_Store
+*:Zone.Identifier

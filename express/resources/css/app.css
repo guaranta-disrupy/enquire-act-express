@@ -1,0 +1,300 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@import url('https://rsms.me/inter/inter.css');
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif !important;
+    }
+}
+
+:root{
+    /* --mcolor : #fcca26;
+    --mcolor2 : #ffbf00; */
+    --mcolor : #ee920c;
+    --mcolor2 : #d1810b;
+    --bgcolor : #f7f6f4;
+    --bgcolor2 : #f5f6fa;
+    --txtcolor: #1e1e1c;
+    --txtcolor2 : #b7b7b7;
+    --description : #414b9f;
+    --multipleChoice: #f16995;
+    --textBox : #9471b2;
+    --charts : #64c5b6;
+    --rating : #f47820;
+    --matrix : #81c349;
+    --pairwise : #c49065;
+    --bestworst : #65b2e3;
+    --secondary : #323232;
+}
+
+
+html,
+body {
+    font-family: 'Inter', sans-serif !important;
+    background-color:var(--bgcolor);
+}
+#app{
+    background-color:var(--bgcolor);
+}
+.main-h {
+    height: calc(100vh - 13.6rem);
+}
+
+.main-content-h {
+    height: calc(100vh - 18rem);
+}
+
+.w-300p {
+    width: 300px !important;
+}
+
+.w-45p {
+    width: 45px;
+}
+
+.min-h-36 {
+    min-height: 9rem;
+}
+
+.min-h-2input {
+    min-height: 7.3rem;
+}
+
+.min-h-input {
+    min-height: 2.78rem;
+}
+
+.max-h-36 {
+    max-height: 9rem;
+}
+
+.min-h-36px {
+    min-height: 36px;
+}
+
+.max-h-40v {
+    max-height: 40vh;
+}
+
+.max-w-40v {
+    max-width: 40vh;
+}
+
+/* required class */
+.my-editor {
+    /* we dont use `language-` classes anymore so thats why we need to add background and text color manually */
+    color: #ccc;
+
+    /* you must provide font-family font-size line-height. Example: */
+    /* font-family: Fira code, Fira Mono, Consolas, Menlo, Courier, monospace; */
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 5px;
+    border-radius: 0.4rem !important;
+    padding-top: 0.7rem !important;
+    padding-bottom: 0.7rem !important;
+    background-color: #02284D !important;
+}
+
+/* optional class for removing the outline */
+.prism-editor__textarea:focus {
+    outline: none;
+}
+
+/* Scroll bar stylings */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* background: var(--lightestgrey); */
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /* background: #e2f0fb; */
+    background: var(--mcolor);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    /* background: #6d9bbf; */
+    background: var(--mcolor2);
+}
+
+
+body > .draggable-list{
+    z-index:9999;
+    background:white;
+    pointer-events: none;
+}
+
+
+       .icon-card {
+            transition: all 0.2s ease;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .icon-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Multiple Choice - Yellow */
+        .multiple-choice .icon-card:hover {
+            border-color: #eab308;
+        }
+        .multiple-choice.question-type-icon {
+            background-color: #fef3c7;
+            color: #eab308;
+        }
+        .multiple-choice .category-header {
+            color: #eab308;
+            border-bottom: 2px solid #eab308;
+        }
+        
+        /* Description - Blue */
+        .description .icon-card:hover {
+            border-color: #3b82f6;
+        }
+        .description.question-type-icon {
+            background-color: #dbeafe;
+            color: #3b82f6;
+        }
+        .description .category-header {
+            color: #3b82f6;
+            border-bottom: 2px solid #3b82f6;
+        }
+        
+        /* Textbox - Green */
+        .textbox .icon-card:hover {
+            border-color: #10b981;
+        }
+        .textbox.question-type-icon {
+            background-color: #d1fae5;
+            color: #10b981;
+        }
+        .textbox .category-header {
+            color: #10b981;
+            border-bottom: 2px solid #10b981;
+        }
+        
+        /* Charts - Purple */
+        .charts .icon-card:hover {
+            border-color: #8b5cf6;
+        }
+        .charts.question-type-icon {
+            background-color: #ede9fe;
+            color: #8b5cf6;
+        }
+        .charts .category-header {
+            color: #8b5cf6;
+            border-bottom: 2px solid #8b5cf6;
+        }
+        
+        /* Rating - Red */
+        .rating .icon-card:hover {
+            border-color: #ef4444;
+        }
+        .rating.question-type-icon {
+            background-color: #fee2e2;
+            color: #ef4444;
+        }
+        .rating .category-header {
+            color: #ef4444;
+            border-bottom: 2px solid #ef4444;
+        }
+        
+        /* Matrix - Orange */
+        .matrix .icon-card:hover {
+            border-color: #f97316;
+        }
+        .matrix.question-type-icon {
+            background-color: #ffedd5;
+            color: #f97316;
+        }
+        .matrix .category-header {
+            color: #f97316;
+            border-bottom: 2px solid #f97316;
+        }
+        
+        /* Pairwise - Teal */
+        .pairwise .icon-card:hover {
+            border-color: #14b8a6;
+        }
+        .pairwise.question-type-icon {
+            background-color: #ccfbf1;
+            color: #14b8a6;
+        }
+        .pairwise .category-header {
+            color: #14b8a6;
+            border-bottom: 2px solid #14b8a6;
+        }
+        
+        /* Best Worst - Pink */
+        .best-worst .icon-card:hover {
+            border-color: #ec4899;
+        }
+        .best-worst.question-type-icon {
+            background-color: #fce7f3;
+            color: #ec4899;
+        }
+        .best-worst .category-header {
+            color: #ec4899;
+            border-bottom: 2px solid #ec4899;
+        }
+
+         .enhanced-icon {
+            /* background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); */
+            background-color: #f8e2c0;
+            color: #D97706;
+            /* box-shadow: 0 4px 6px -1px rgba(217, 119, 6, 0.1), 0 2px 4px -1px rgba(217, 119, 6, 0.06); */
+            /* transition: all 0.3s ease; */
+            border-radius: 8px;
+        }
+        
+    
+        
+        /* Update icon - now also yellow but slightly different shade */
+        .update-icon {
+            /* background: linear-gradient(135deg, #FEF3C7 0%, #FCD34D 100%); */
+            background-color: #f8e2c0;
+            color: #B45309;
+            border-radius: 8px;
+        }
+        
+
+
+        .ql-align-center{
+            text-align: center;
+        }
+                
+        .ql-align-right{
+            text-align: right;
+        }
+        
+        .ql-align-left{
+            text-align: left;
+        }
+        
+        .ql-align-justify{
+            text-align: justify;
+        }
+
+
+        img.ssr-import-image {
+            width: var(--imgwidth,150px);
+            float: var(--imgfloat,none);
+            max-width: 150px;
+            height: auto;
+            object-fit: contain;
+            display: inline-block;
+        }

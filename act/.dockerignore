@@ -1,0 +1,13 @@
+# .dockerignore
+**/node_modules/
+.DS_Store
+.git
+bootstrap/cache/*
+.gitignore
+Makefile
+docker-compose.yml
+Dockerfile
+vendor
+storage/*
+public/build/*
+merger/node_modules

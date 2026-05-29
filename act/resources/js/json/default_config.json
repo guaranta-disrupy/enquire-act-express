@@ -1,0 +1,56 @@
+{
+    "id": null,
+    "survey_id": null,
+    "user_id": null,
+    "part": null,
+    "targets": [
+        {
+            "target": "<p>Sample Target</p>",
+            "equivalent": "Target",
+            "index": 1,
+            "can_unselect": false,
+            "colors": {
+                "normal": null,
+                "hover": null,
+                "active": null
+            },
+            "value": 1,
+            "selected": false
+        }
+        
+    
+    ],
+    "primes": [
+        {
+            "prime": "<p>Sample Primes</p>",
+            "equivalent": "Primes",
+            "index": 1,
+            "config": {
+                "conditions": []
+            },
+            "selected": false,
+            "showButtons": false
+        }
+    ],
+    "config": {
+        "title": null,
+        "main_trial": true,
+        "random": true,
+        "prime_header": null,
+        "main_header": null,
+        "empty_selection": "Please select at least 1 item",
+        "main_header_timeout": 3000,
+        "type": "trial",
+        "single_select": false,
+        "limit": 0,
+        "auto_next": false,
+        "display_by": 1,
+        "random_prime": false,
+        "random_prime_subsets": false,
+        "prime_as_next": true,
+        "bottom_text": "<em>Press the text in the centre to proceed to the next trial</em>",
+        "conditions": [],
+        "macros": []
+    }
+  
+}

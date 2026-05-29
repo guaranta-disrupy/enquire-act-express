@@ -1,0 +1,34 @@
+# Express (Laravel API) — repo enquire-act-express
+# No servidor: composer install && npm install && npm run build
+
+/node_modules
+/public/hot
+/public/storage
+/public/gallery
+/public/build
+# Resíduos legados do Laravel Mix (build agora é Vite → /public/build/)
+/public/js
+/public/css
+/public/mix-manifest.json
+# Swagger gerado (regenerar no servidor)
+/storage/api-docs
+/storage/*.key
+/vendor
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+.env
+.env.*
+!.env.example
+
+**/caddy
+frankenphp
+frankenphp-worker.php
+.DS_Store
+**/.DS_Store
+*:Zone.Identifier

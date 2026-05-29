@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Record extends Model
+{
+    use HasFactory;
+
+    protected $connection = 'mysql';
+
+    protected $guarded = [];
+
+    protected $casts = [
+        'info' => 'array',
+        'responses' => 'array',
+        'started_at' => 'datetime',
+        'ended_at' => 'datetime'
+    ];
+}

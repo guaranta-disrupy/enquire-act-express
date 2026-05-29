@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 252">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #64c5b6;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <circle class="cls-1" cx="126" cy="126" r="126"/>
+    <rect class="cls-2" x="143.87" y="100.86" width="78.91" height="19.14" rx="9" ry="9"/>
+    <rect class="cls-2" x="143.87" y="129.74" width="78.91" height="19.14" rx="9" ry="9"/>
+    <g id="Page-1">
+      <g id="Icon-Set-Filled">
+        <path id="pie-chart" class="cls-3" d="M77.98,76.89v54.9l50.61,15.18c1.97-4.89,3.34-10.78,3.34-17.49,0-29.04-27.12-52.59-53.95-52.59h0ZM71.64,86.41c-22.12,2.31-41.25,22.3-41.25,46.01,0,25.41,20.6,46.01,46.01,46.01,18.71,0,34.79-11.19,41.98-27.23l-46.74-14.02v-50.77h0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

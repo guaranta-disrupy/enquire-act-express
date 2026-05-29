@@ -1,0 +1,744 @@
+.bubble-speech {
+  position: relative;
+  font-family: 'Arial', sans-serif;
+  margin: 16px 0 48px 0;
+  line-height: 22px;
+  letter-spacing: 1px;
+  display: flex;
+  padding: 0;
+}
+
+.bubble-speech.bubble-left {
+  justify-content: flex-start;
+}
+
+.bubble-speech.bubble-right {
+  justify-content: flex-end;
+}
+
+.bubble-speech .chat-bubble {
+  position: relative;
+  --bubble-bg: #e6eaeb;
+  background-color: var(--bubble-bg);
+  padding: 12px 16px;
+  border-radius: 12px;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 75%;
+}
+
+.bubble-speech .user-bubble {
+  --bubble-bg: #15919A;
+  color: #fff;
+}
+.bubble-speech .user-bubble * { color: #fff !important; }
+
+.bubble-speech .prose {
+  word-break: break-word;
+  white-space: normal;
+}
+
+.bubble-speech.bubble-left .chat-bubble:after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  border-top: 3px var(--bubble-bg) solid;
+  border-bottom: 12px transparent solid;
+  border-left: 20px var(--bubble-bg) solid;
+}
+
+.bubble-speech.bubble-center:after {
+  z-index: 100;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -18px;
+  border-right: 20px transparent solid;
+  border-top: 12px #efefef solid;
+  border-left: 20px transparent solid;
+}
+
+.bubble-speech.bubble-right .chat-bubble:after {
+  z-index: 100;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  border-top: 3px var(--bubble-bg) solid;
+  border-bottom: 12px transparent solid;
+  border-right: 20px var(--bubble-bg) solid;
+}
+
+.typing-bubble {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+}
+
+.typing-bubble .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: var(--mcolor, #15919A);
+  opacity: .6;
+  animation: chat-typing 1.2s infinite ease-in-out;
+}
+
+.typing-bubble .dot:nth-child(2) { animation-delay: .15s; }
+.typing-bubble .dot:nth-child(3) { animation-delay: .3s; }
+
+@keyframes chat-typing {
+  0%, 80%, 100% { transform: translateY(0); opacity: .4; }
+  40% { transform: translateY(-3px); opacity: 1; }
+}
+
+.radial {
+  --value: 0; 
+  --size: 44px;   
+  --thickness: 4px;  
+  --bar: #3b82f6;
+  --track: #e5e7eb; 
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  border-radius: 9999px;
+  background:
+    conic-gradient(var(--bar) calc(var(--value) * 1%), var(--track) 0);
+  display: grid;
+  place-items: center;
+}
+
+.radial::before {
+  content: "";
+  position: absolute;
+  inset: var(--thickness);
+  background: #fff;
+  border-radius: 9999px;
+}
+
+.radial .radial-inner {
+  position: relative;
+  font-size: 12px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.tooltip-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-wrap .tooltip-bubble {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% + 8px);
+  background: rgba(17, 24, 39, 0.95);
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .15s ease, visibility .15s ease, transform .15s ease;
+}
+
+.tooltip-wrap .tooltip-bubble:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(17,24,39,0.95) transparent transparent transparent;
+}
+
+.tooltip-wrap:hover .tooltip-bubble,
+.tooltip-wrap:focus-within .tooltip-bubble {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-2px);
+}
+
+.like-dislike-buttons {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.like-btn, .dislike-btn {
+  background: none;
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.like-btn:hover, .dislike-btn:hover {
+  opacity: 1;
+  background-color: rgba(21, 145, 154, 0.1);
+}
+
+.like-btn.active, .dislike-btn.active {
+  opacity: 1;
+  background-color: rgba(21, 145, 154, 0.2);
+}
+
+.like-btn.disabled, .dislike-btn.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.like-btn.disabled:hover, .dislike-btn.disabled:hover {
+  background-color: transparent;
+}
+
+/* Textarea styling for multi-line input */
+.textarea {
+  min-height: 40px;
+  max-height: 120px;
+  overflow-y: auto;
+  line-height: 1.4;
+  border: 1px solid #15919A;
+  transition: border-color 0.2s ease;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--mcolor, #15919A);
+  box-shadow: 0 0 0 3px rgba(21, 145, 154, 0.1);
+}
+
+.textarea:disabled {
+  background-color: #15919A;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Fade in animation for feedback thank you message */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Confirmation Dialog Styles */
+.action-confirmation {
+  margin: 16px 0;
+}
+
+.confirmation-content {
+  max-width: 500px;
+}
+
+.question-preview {
+  font-size: 14px;
+}
+
+/* Line clamp utility for truncating text */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.slider-preview .flex {
+  align-items: center;
+}
+
+.matrix-preview,
+.choices-preview {
+  font-size: 13px;
+}
+
+.choices-preview .flex-wrap span {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Radio button styling for preview */
+input[type="radio"] {
+  appearance: none;
+  background-color: white;
+  border: 2px solid #d1d5db;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: relative;
+}
+
+input[type="radio"]:checked::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--mcolor, #15919A);
+}
+
+/* Checkbox styling for preview */
+input[type="checkbox"] {
+  appearance: none;
+  background-color: white;
+  border: 2px solid #d1d5db;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  position: relative;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--mcolor, #15919A);
+  border-color: var(--mcolor, #15919A);
+}
+
+input[type="checkbox"]:checked::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Truncate utility */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Scrollbar styling for preview lists */
+.max-h-32::-webkit-scrollbar {
+  width: 4px;
+}
+
+.max-h-32::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.max-h-32::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.max-h-32::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Confirmation buttons */
+button[class*="flex-1"] {
+  outline: none;
+  cursor: pointer;
+}
+
+button[class*="flex-1"]:focus {
+  outline: 2px solid var(--mcolor, #15919A);
+  outline-offset: 2px;
+}
+
+button[class*="flex-1"]:active {
+  transform: scale(0.98);
+}
+
+/* Floating Confirmation Buttons - Slim Ghost Style */
+.floating-confirmation-buttons {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  animation: fade-in-float 0.4s ease-out;
+  pointer-events: auto;
+}
+
+.floating-button-container {
+  display: inline-flex;
+  padding: 0.375rem 0.5rem;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.12));
+}
+
+.floating-button-container:hover {
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Slim Ghost Button Base */
+.confirmation-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.confirmation-btn:hover {
+  transform: scale(1.02);
+}
+
+/* Ghost Success Button (Yes) */
+.confirmation-btn-success {
+  color: #646b6b;
+  
+}
+
+.confirmation-btn-success:hover,
+.confirmation-btn-success:focus-visible {
+  background-color: #15919A;
+  color: #fff;
+  box-shadow: 0 10px 25px -12px rgba(21, 145, 154, 0.65);
+}
+
+/* Ghost Error Button (No) */
+.confirmation-btn-error {
+  color: #646b6b;
+}
+
+.confirmation-btn-error:hover,
+.confirmation-btn-error:focus-visible {
+  background-color: #dc2626;
+  color: #fff;
+  box-shadow: 0 10px 25px -12px rgba(220, 38, 38, 0.6);
+}
+
+/* Slim Divider */
+.confirmation-divider {
+  width: 1px;
+  background-color: #e5e7eb;
+  margin: 0.25rem 0.5rem;
+  align-self: stretch;
+}
+
+/* Floating animation */
+@keyframes fade-in-float {
+  from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(15px) scale(0.95);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0) scale(1);
+  }
+}
+
+/* Add bottom margin to bubble-speech when actionData is present */
+.bubble-speech.relative {
+  margin-bottom: 70px;
+}
+
+.chat-layout {
+  display: grid;
+  grid-template-columns: 0px 1fr; /* collapsed */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  transition: grid-template-columns 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chat-layout.is-sidebar-open {
+  grid-template-columns: 176px 1fr; /* 11rem */
+}
+
+.chat-sidebar {
+  min-width: 0;
+  height: 100%;
+}
+
+.chat-main {
+  min-width: 0; /* critical: prevents overflow / snap */
+  height: 100%;
+}
+
+/* Optional: make sidebar content slide in/out WITHOUT affecting layout */
+.chat-sidebar-inner {
+  height: 100%;
+  transform: translateX(-8px);
+  opacity: 0;
+  transition: transform 200ms cubic-bezier(0.4,0,0.2,1), opacity 200ms cubic-bezier(0.4,0,0.2,1);
+  will-change: transform, opacity;
+}
+
+.chat-layout.is-sidebar-open .chat-sidebar-inner {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Hide the dark overlay backdrop from Modal component - SCOPED TO CHATBOT ONLY */
+/* Target the backdrop element inside the modal container */
+.chatbot-modal-wrapper .fixed.inset-0.transform.transition-all {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* Ensure the modal container allows clicks */
+.chatbot-modal-wrapper {
+  pointer-events: auto !important;
+}
+
+/* Ensure all modal content is clickable */
+.chatbot-modal-wrapper * {
+  pointer-events: auto !important;
+}
+
+/* But allow pointer-events-none on specific elements that need it */
+.chatbot-modal-wrapper .pointer-events-none {
+  pointer-events: none !important;
+}
+
+/* Ensure chatbot modal wrapper allows clicks and doesn't interfere with positioning */
+.chatbot-modal-wrapper {
+  pointer-events: auto !important;
+  position: fixed !important;
+  /* Ensure modal floats independently of parent flex containers */
+  display: block !important;
+}
+
+/* Override footer padding for ChatBot modal only */
+.chatbot-modal-wrapper .flex.flex-row.justify-end.bg-gray-100 {
+  padding: 0 !important;
+}
+
+/* Modern Water-like Token Indicator Styles */
+.token-indicator {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.token-indicator:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+/* Custom tooltip styles */
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.8);
+}
+
+.token-indicator:hover .tooltip-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Water fill container */
+.water-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc(var(--fill-percentage) * 1%);
+  transition: height 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* Water wave animations */
+.water-wave {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.3) 50%, transparent 70%);
+  animation: wave-move 3s ease-in-out infinite;
+  transform-origin: center center;
+  top: 0;
+  left: -50%;
+}
+
+.wave-1 {
+  animation-delay: 0s;
+  opacity: 0.6;
+}
+
+.wave-2 {
+  animation-delay: 1s;
+  opacity: 0.4;
+  animation-duration: 4s;
+}
+
+.wave-3 {
+  animation-delay: 2s;
+  opacity: 0.2;
+  animation-duration: 5s;
+}
+
+/* Wave movement animation */
+@keyframes wave-move {
+  0% {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  50% {
+      transform: translateX(-50%) translateY(-50%) rotate(180deg);
+  }
+  100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+/* Color variations for different usage levels */
+.fill-success {
+  background: linear-gradient(135deg, #10b981, #059669, #047857);
+}
+
+.fill-warning {
+  background: linear-gradient(135deg, #15919A, #0d9488, #0f766e);
+}
+
+.fill-error {
+  background: linear-gradient(135deg, #ef4444, #dc2626, #b91c1c);
+}
+
+/* Floating particles for high usage */
+.particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: float 3s ease-in-out infinite;
+}
+
+.particle-1 {
+  top: 20%;
+  left: 30%;
+  animation-delay: 0s;
+}
+
+.particle-2 {
+  top: 60%;
+  right: 25%;
+  animation-delay: 1s;
+}
+
+.particle-3 {
+  bottom: 30%;
+  left: 60%;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0px) scale(1);
+      opacity: 0.8;
+  }
+  50% {
+      transform: translateY(-10px) scale(1.2);
+      opacity: 1;
+  }
+}
+
+/* Enhanced glow effects */
+.token-indicator:hover .water-fill {
+  filter: brightness(1.2) saturate(1.3);
+}
+
+.token-indicator:hover .water-wave {
+  animation-duration: 2s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .token-indicator {
+      transform: scale(0.9);
+  }
+}
+
+/* Tooltip styles */
+.tooltip-bubble {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  padding: 8px 12px;
+  background-color: rgba(31, 41, 55, 0.95);
+  color: white;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip-bubble::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: rgba(31, 41, 55, 0.95);
+}
+
+.token-indicator:hover .tooltip-bubble {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-12px);
+}
