@@ -136,8 +136,8 @@ class ConversationController extends Controller
             $firstName = $this->getFirstName($request);
             $aiName = config('ai_chat.default_ai_name', 'Flins');
             $greeting = $firstName
-                ? "Hello {$firstName}! I'm {$aiName}, your assistant for Connoisseur Suite. How can I help you today?"
-                : "Hello! I'm {$aiName}, your assistant for Connoisseur Suite. How can I help you today?";
+                ? "Hello {$firstName}! I'm {$aiName}, your assistant for nextsensus. How can I help you today?"
+                : "Hello! I'm {$aiName}, your assistant for nextsensus. How can I help you today?";
 
             // Use tokenless method for greeting (no token charges)
             $this->conversationStorage->addAssistantMessageTokenless(

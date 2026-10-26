@@ -11,8 +11,8 @@ use OpenApi\Annotations as OA;
 /**
  * @OA\Info(
  *     version="1.0",
- *     title="Connoisseur Suite API Documentation",
- *     description="API documentation for Connoisseur Suite"
+ *     title="nextsensus API Documentation",
+ *     description="API documentation for nextsensus"
  * )
  * @OA\Server(
  *     url=L5_SWAGGER_CONST_HOST,

@@ -758,7 +758,7 @@ const showKebabMenu = ref(false);
 const kebabMenuRef = ref(null);
 
 // Temporary for chatbot related kay tiring ang individual delete question
-const showDeleteAllQuestionDebug = computed(() => usePage().props?.auth?.user?.email === 'mark.yaba@splitsecondresearch.com');
+const showDeleteAllQuestionDebug = computed(() => false);
 
 const toggleSidebar = () => {
     showSidebar.value = !showSidebar.value;

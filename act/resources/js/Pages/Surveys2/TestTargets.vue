@@ -1978,7 +1978,7 @@ const closeVariablesModal = () => {
                 <JetLabel value="Image URLs (one per line)" />
                 <textarea
                     v-model="imageUrlsText"
-                    placeholder="https://express.connoisseur-suite.com/gallery/UNAbU9NR0CJ7U6gUlG0Y3nBezz0gjWao.png"
+                    placeholder="https://exemplo.com/imagem.png"
                     class="mt-1 w-full min-h-[140px] text-sm border border-gray-300 rounded-md focus:ring-[#15919A] focus:border-[#15919A]"
                 ></textarea>
                 <p class="text-xs text-gray-500">Each non-empty line will be inserted as an image on its own line.</p>

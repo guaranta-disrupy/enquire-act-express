@@ -85,7 +85,7 @@ class SurveyController extends Controller
             'keypress_instructions' => "Press <strong>F</strong> if you disagree or <strong>J</strong> if otherwise.",
             'keypress_click' => false,
             'fullscreen_text' => "For the best experience, please enter fullscreen.",
-            'engine_bg_image' => "https://express.connoisseur-suite.com/image?path=https://express.connoisseur-suite.com/gallery/HaqJukhu8H7qtS2NQpQhrRQi74CdGiuW.png",
+            'engine_bg_image' => null,
             'fullscreen_button' => "Enter Fullscreen",
             // 'dummy_trial' => false,
             'redirect' => $request->survey['complete_link'],
