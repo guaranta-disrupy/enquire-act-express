@@ -1,4 +1,5 @@
 <script setup>
+import { BASE_PATH } from "@/utils/basePath";
 import Layout from "@/Layouts/Layout.vue";
 import SmallButton from "../../Components/SmallButton.vue";
 import ProjectDropdown from "@/Extra/ProjectDropdown.vue";
@@ -514,7 +515,7 @@ const insertImagesFromModal = () => {
             try {
                 const u = new URL(url, window.location.origin);
                 if (u.origin !== window.location.origin) {
-                    finalUrl = `/gallery-proxy?u=${encodeURIComponent(u.href)}`;
+                    finalUrl = `${BASE_PATH}/gallery-proxy?u=${encodeURIComponent(u.href)}`;
                 }
             } catch (_) {}
 

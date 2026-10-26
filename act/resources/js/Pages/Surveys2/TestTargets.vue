@@ -1,4 +1,5 @@
 <script setup>
+import { BASE_PATH } from "@/utils/basePath";
 import { QuillEditor } from "@vueup/vue-quill";
 import "quill/dist/quill.snow.css";
 import { useTestsStore } from "@/stores/tests";
@@ -52,7 +53,7 @@ function proxiedHtml(html) {
                 if (u.origin !== window.location.origin) {
                     img.setAttribute(
                         "src",
-                        `/gallery-proxy?u=${encodeURIComponent(u.href)}`
+                        `${BASE_PATH}/gallery-proxy?u=${encodeURIComponent(u.href)}`
                     );
                 }
             } catch (_) {}
@@ -960,7 +961,7 @@ const insertImageByUrlTarget = (instance = null) => {
     try {
         const u = new URL(url, window.location.origin);
         if (u.origin !== window.location.origin) {
-            finalUrl = `/gallery-proxy?u=${encodeURIComponent(u.href)}`;
+            finalUrl = `${BASE_PATH}/gallery-proxy?u=${encodeURIComponent(u.href)}`;
         }
     } catch (e) {
         // If URL parsing fails, just use the original URL

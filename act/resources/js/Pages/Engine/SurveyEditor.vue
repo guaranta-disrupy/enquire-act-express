@@ -70,6 +70,7 @@
 </template>
 
 <script setup>
+import { BASE_PATH } from "@/utils/basePath";
 import { Head } from "@inertiajs/vue3";
 import { computed, onMounted, onUnmounted, ref, watch, nextTick } from "vue";
 import { editorStore } from "./editor/editorStore";
@@ -146,7 +147,7 @@ const trialIndexRef = ref(props.survey.editor_start_trial_index);
 const isPreviewLoading = ref(true);
 
 const previewUrl = computed(() => {
-    return `/surveys/${props.survey.id}/preview?brc=${brcRef.value}&test=${testIndexRef.value}&trial=${trialIndexRef.value}`;
+    return `${BASE_PATH}/surveys/${props.survey.id}/preview?brc=${brcRef.value}&test=${testIndexRef.value}&trial=${trialIndexRef.value}`;
 });
 
 const reloadPreviewFrame = (testIndex = 0, trialIndex = 0) => {

@@ -1,4 +1,5 @@
 <script setup>
+import { withBase } from '@/utils/basePath';
 import JetLabel from "@/Jetstream/Label.vue";
 import S4Input from "@/S4/Input.vue";
 import S4InputSlider2 from "@/S4/InputSlider2.vue";
@@ -107,10 +108,10 @@ watch(layoutImgHeight, (newValue) => {
 });
 
 const layout = [
-    { value: 1, text: "Layout 1", image: "/images/layout1.png" },
-    { value: 2, text: "Layout 2", image: "/images/layout2.png" },
-    { value: 3, text: "Layout 3", image: "/images/layout3.png" },
-    { value: 4, text: "Layout 4", image: "/images/layout4.png" },
+    { value: 1, text: "Layout 1", image: withBase("/images/layout1.png") },
+    { value: 2, text: "Layout 2", image: withBase("/images/layout2.png") },
+    { value: 3, text: "Layout 3", image: withBase("/images/layout3.png") },
+    { value: 4, text: "Layout 4", image: withBase("/images/layout4.png") },
 ];
 
 onBeforeMount(() => {
