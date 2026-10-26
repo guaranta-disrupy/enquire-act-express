@@ -169,9 +169,9 @@ class UtilityPromptController extends Controller
         $aiName = config('ai_chat.default_ai_name', 'Flins');
         
         if ($firstName) {
-            return "Hello {$firstName}! I'm {$aiName}, your assistant for Connoisseur Suite. How can I help you today?";
+            return "Hello {$firstName}! I'm {$aiName}, your assistant for nextsensus. How can I help you today?";
         }
         
-        return "Hello! I'm {$aiName}, your assistant for Connoisseur Suite. How can I help you today?";
+        return "Hello! I'm {$aiName}, your assistant for nextsensus. How can I help you today?";
     }
 }

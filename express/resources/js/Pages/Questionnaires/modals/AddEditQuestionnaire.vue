@@ -86,21 +86,21 @@ const form = useForm(
                 // not found in ide
                 complete: {
                     content: "Preparing the next part...",
-                    url: "https://www.splitsecondresearch.com/?status=1",
+                    url: window.location.origin + '/engine/display/complete',
                     duration: 0,
                     passExternalVars: 1,
                     passInternalVars: 1,
                 },
                 screenout: {
                     content: "Prease wait while we load the next step.",
-                    url: "https://www.splitsecondresearch.com/?status=2",
+                    url: window.location.origin + '/engine/display/screenOut',
                     duration: 0,
                     passExternalVars: 1,
                     passInternalVars: 1,
                 },
                 qualityControl: {
                     content: "Prease wait while we load the next step.",
-                    url: "https://www.splitsecondresearch.com/?status=3",
+                    url: window.location.origin + '/engine/display/quotaFull',
                     duration: 0,
                     passExternalVars: 1,
                     passInternalVars: 1,

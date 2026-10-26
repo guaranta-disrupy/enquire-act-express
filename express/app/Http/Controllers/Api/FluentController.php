@@ -72,7 +72,7 @@ class FluentController extends ExportController
               'cal-lbl-color' => '#2c3e50',
               'isb-txt-color' => '#2c3e50',
               'tbl-lbl-color' => '#2c3e50',
-              'background-img' => 'https://express.splitsecondsurveys.co.uk/ide/gallery/yjNqj0sNfhu5atP3JVI2Sn5pEYsqYRqDQmAAcH9E.png',
+              'background-img' => '',
               'checkbox-color' => '#ededed',
               'sb-hover-color' => '#ededed',
               'tb-error-color' => '#faddd5',
@@ -176,7 +176,7 @@ class FluentController extends ExportController
               'complete' => 
               array (
                 'content' => 'Preparing the next part...',
-                'url' => 'https://www.splitsecondresearch.com/?status=1',
+                'url' => env('APP_FLUENT_URL', '').'/engine/display/complete',
                 'duration' => 0,
                 'passExternalVars' => 1,
                 'passInternalVars' => 1,
@@ -184,7 +184,7 @@ class FluentController extends ExportController
               'screenout' => 
               array (
                 'content' => 'Please wait while we load the next step.',
-                'url' => 'https://www.splitsecondresearch.com/?status=2',
+                'url' => env('APP_FLUENT_URL', '').'/engine/display/screenOut',
                 'duration' => 0,
                 'passExternalVars' => 1,
                 'passInternalVars' => 1,
@@ -192,7 +192,7 @@ class FluentController extends ExportController
               'qualityControl' => 
               array (
                 'content' => 'Please wait while we load the next step.',
-                'url' => 'https://www.splitsecondresearch.com/?status=3',
+                'url' => env('APP_FLUENT_URL', '').'/engine/display/quotaFull',
                 'duration' => 0,
                 'passExternalVars' => 1,
                 'passInternalVars' => 1,

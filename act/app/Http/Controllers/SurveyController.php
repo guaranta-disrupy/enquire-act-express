@@ -45,7 +45,7 @@ class SurveyController extends Controller
             'keypress_click' => false,
             'fullscreen_text' => "For the best experience, please enter fullscreen.",
             'fullscreen_button' => "Enter Fullscreen",
-            'engine_bg_image' => "https://express.connoisseur-suite.com/image?path=https://express.connoisseur-suite.com/gallery/HaqJukhu8H7qtS2NQpQhrRQi74CdGiuW.png",
+            'engine_bg_image' => null,
             // 'dummy_trial' => false,
 
         ];

@@ -37,7 +37,7 @@ class ProjectController extends Controller
         $config = [
             'development' => true,
             'redirects' => [
-                'complete' => 'https://splitsecondresearch.com?complete=true',
+                'complete' => env('APP_FLUENT_URL', config('app.url')),
                 'quality_control' => '',
                 'pass_variable' => false,
             ],

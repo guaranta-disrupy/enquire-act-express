@@ -100,11 +100,6 @@ const tableList = computed(() => {
 const imageSelection = computed(() => {
     return {
         'emoticons': [
-            'https://express.splitsecondsurveys.co.uk/ide/gallery/7BFs0JNodAMTfemZbFMOTIHsrn935u8Bed9rPJhz.png',
-            'https://express.splitsecondsurveys.co.uk/ide/gallery/FQjV8n9kyLWuoKGHWM4zBSc0KKZm9fcPqdt64buw.png',
-            'https://express.splitsecondsurveys.co.uk/ide/gallery/d2lsZDX86uaKCzkWBpYlcecM2wDuqJWjG49BJ2Tm.png',
-            'https://express.splitsecondsurveys.co.uk/ide/gallery/r9zoamdOAx4NHdcmMw101GeHecw0otpuNsDEzERm.png',
-            'https://express.splitsecondsurveys.co.uk/ide/gallery/bMiid9MabX035uwhVLc2q0VaIzZLiySyc5vF801U.png'
         ],
         'labels': [
             'Very easy to complete',

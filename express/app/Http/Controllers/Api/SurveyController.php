@@ -55,7 +55,7 @@ class SurveyController extends Controller
                 'cal-lbl-color' => '#2c3e50',
                 'isb-txt-color' => '#2c3e50',
                 'tbl-lbl-color' => '#2c3e50',
-                'background-img' => 'https://express.splitsecondsurveys.co.uk/ide/gallery/yjNqj0sNfhu5atP3JVI2Sn5pEYsqYRqDQmAAcH9E.png',
+                'background-img' => '',
                 'checkbox-color' => '#ededed',
                 'sb-hover-color' => '#ededed',
                 'tb-error-color' => '#faddd5',

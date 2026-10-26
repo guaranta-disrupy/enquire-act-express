@@ -124,7 +124,7 @@ class LoginController extends Controller
                     return redirect()->route('projects.index');
                 }
             } else {
-                return redirect('https://splitsecondresearch.co.uk');
+                return redirect(env('APP_FLUENT_URL', '/'));
             }
         }
     }

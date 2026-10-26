@@ -578,25 +578,15 @@ const getGreeting = () => {
     console.log('detectMethod: ', detectMethod);
     console.log('userName: ', userName);
     
-    const developerEmails = [
-        'dexter.orate@splitsecondresearch.com',
-        'chrisjunsabanpan.ssr@gmail.com',
-        'chrisjun.sabanpan@splitsecondresearch.com',
-        'ivantfredondoy.ssr@gmail.com',
-        'ivant@splitsecondresearch.com',
-        'fred@splitsecondresearch.com'
-    ];
+    const developerEmails = [];
     
-    const qaEmails = [
-        'lorelieamay.ssr@gmail.com',
-        'lorelie.amay@splitsecondresearch.com'
-    ];
+    const qaEmails = [];
     
     // Developer names (for name-based detection)
-    const developerNames = ['Chrisjun', 'Dexter', 'Don', 'CJ', 'Ivant Fred', 'Ivant', 'Fred'];
+    const developerNames = [];
     
     // QA names (for name-based detection)
-    const qaNames = ['Lorelie', 'Lors'];
+    const qaNames = [];
     
     let isDeveloper = false;
     let isQA = false;
