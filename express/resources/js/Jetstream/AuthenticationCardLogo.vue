@@ -1,9 +1,10 @@
 <script setup>
 import { Link } from "@inertiajs/vue3";
+import { withBase } from "@/utils/basePath";
 </script>
 
 <template>
     <Link :href="'/'"> 
-        <img src="https://express.splitsecondsurveys.co.uk/engine/img/logo_poweredby.63072c36.gif" />
+        <img :src="withBase('/img/nextsensus/nextsensus-escuta.svg')" alt="nextsensus" />
     </Link>
 </template>

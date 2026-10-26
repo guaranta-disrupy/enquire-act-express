@@ -1,15 +1,16 @@
 <template>
     <div class="flex flex-col items-center justify-center w-full h-full">
         <div class="flex flex-col items-center justify-center gap-4">
-            <span
+            <img
                 v-if="surveyTestState.testState !== 'editor_survey_end'"
-                class="loading loading-infinity w-[20vmin] h-[20vmin] -m-[4vmin] landscape:w-[15vmin] landscape:h-[15vmin]"
+                :src="nextsensusLoading"
+                alt="Carregando"
+                class="w-[34vmin] h-auto landscape:w-[24vmin]"
                 :class="{
-                    'w-[18vmin] h-[18vmin]':
+                    'w-[28vmin]':
                         deviceType === 'ipad' || deviceType === 'tablet',
                 }"
-                :style="{ background: 'var(--loading-infinity-color)' }"
-            ></span>
+            />
             <h1
                 v-if="type !== 'opening'"
                 class="text-[5vmin] landscape:text-[3vmin] text-center"
@@ -32,6 +33,7 @@
 </template>
 
 <script setup>
+import nextsensusLoading from "../../editor/assets/nextsensus/nextsensus-carregando.svg";
 import { surveyTestState } from "../../utils/surveyTestStore";
 import { computed, ref } from "vue";
 import {
