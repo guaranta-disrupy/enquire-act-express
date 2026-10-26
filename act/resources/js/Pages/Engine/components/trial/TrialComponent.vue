@@ -449,7 +449,7 @@ import TrialNextButton from "./TrialNextButton.vue";
 import TrialError from "./TrialError.vue";
 import TrialFullscreenModal from "./TrialFullscreenModal.vue";
 import TrialTimer from "./TrialTimer.vue";
-import ssrGifLogo from "../../editor/assets/ssr-gif.gif";
+import ssrGifLogo from "../../editor/assets/nextsensus/nextsensus-powered-by.svg";
 import {
     isAndroid,
     isIOS,
