@@ -5,6 +5,16 @@
  */
 
 import axios from 'axios';
+import { withBase } from './utils/basePath';
+
+/**
+ * When the app is served under a sub-path (see utils/basePath.js), make
+ * root-relative fetch() calls such as fetch("/api/...") hit this app instead
+ * of the domain root.
+ */
+const nativeFetch = window.fetch.bind(window);
+window.fetch = (input, init) =>
+    nativeFetch(typeof input === 'string' ? withBase(input) : input, init);
 import _ from 'lodash';
 window.axios = axios;
 window._ = _;

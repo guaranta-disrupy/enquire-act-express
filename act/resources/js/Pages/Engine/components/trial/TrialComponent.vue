@@ -440,6 +440,7 @@
 </template>
 
 <script setup>
+import { BASE_PATH } from "@/utils/basePath";
 import { ref, computed, onMounted, onUnmounted, watch, nextTick } from "vue";
 import { useTrialLogic } from "../../utils/trialLogic";
 import { surveyTestState } from "../../utils/surveyTestStore";
@@ -523,16 +524,16 @@ function getProxiedHtml(html) {
                     if (u.origin !== window.location.origin) {
                         img.setAttribute(
                             "src",
-                            `/gallery-proxy?u=${encodeURIComponent(u.href)}`
+                            `${BASE_PATH}/gallery-proxy?u=${encodeURIComponent(u.href)}`
                         );
                     }
                 } catch (_) {}
             } else {
                 // NOT in editor mode, so remove any proxying
-                if (src.startsWith("/gallery-proxy?u=")) {
+                if (src.startsWith(`${BASE_PATH}/gallery-proxy?u=`)) {
                     try {
                         const decodedUrl = decodeURIComponent(
-                            src.substring("/gallery-proxy?u=".length)
+                            src.substring(`${BASE_PATH}/gallery-proxy?u=`.length)
                         );
                         img.setAttribute("src", decodedUrl);
                     } catch (_) {}
@@ -1312,7 +1313,7 @@ const applyPrimeImageStyles = () => {
                 try {
                     const u = new URL(img.src, window.location.origin);
                     if (u.origin !== window.location.origin) {
-                        img.src = `/gallery-proxy?u=${encodeURIComponent(
+                        img.src = `${BASE_PATH}/gallery-proxy?u=${encodeURIComponent(
                             u.href
                         )}`;
                     }
@@ -1368,7 +1369,7 @@ const applyTargetImageStyles = () => {
                     try {
                         const u = new URL(img.src, window.location.origin);
                         if (u.origin !== window.location.origin) {
-                            img.src = `/gallery-proxy?u=${encodeURIComponent(
+                            img.src = `${BASE_PATH}/gallery-proxy?u=${encodeURIComponent(
                                 u.href
                             )}`;
                         }

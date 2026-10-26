@@ -1,4 +1,5 @@
 <script setup>
+import { BASE_PATH, appBase } from "@/utils/basePath";
 import { useTemplateVariablesStore } from "@/stores/template_variables";
 import JetButton from "@/Componentsv2/Button.vue";
 import JetLabel from "@/Jetstream/Label.vue";
@@ -35,7 +36,7 @@ function proxiedHtml(html) {
                 if (u.origin !== window.location.origin) {
                     img.setAttribute(
                         "src",
-                        `/gallery-proxy?u=${encodeURIComponent(u.href)}`
+                        `${BASE_PATH}/gallery-proxy?u=${encodeURIComponent(u.href)}`
                     );
                 }
             } catch (_) {}
@@ -321,7 +322,7 @@ const matchedVariables = computed(() => {
 // const app_url = ref(import.meta.env.VITE_APP_URL);
 
 const engine_url = ref(
-    window.location.origin + "/survey-test?preview=1" + "&survey_id="
+    appBase() + "/survey-test?preview=1" + "&survey_id="
 );
 
 const deleteTrial = () => {

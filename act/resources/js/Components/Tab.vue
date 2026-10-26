@@ -1,4 +1,5 @@
 <script setup>
+import { appBase } from "@/utils/basePath";
 import { ref, onMounted, onUnmounted, watch } from "vue";
 import filter from "lodash/filter";
 
@@ -147,7 +148,7 @@ watch(
                                             :href="
                                                 tab.href
                                                     ? tab.href
-                                                    : window.location.origin +
+                                                    : appBase() +
                                                       '/survey-test?preview=1&survey_id=' +
                                                       tab.surveyId +
                                                       '&id=test'

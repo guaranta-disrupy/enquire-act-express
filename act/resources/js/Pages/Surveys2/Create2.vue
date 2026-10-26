@@ -1,4 +1,5 @@
 <script setup>
+import { appBase } from "@/utils/basePath";
 import { useTestsStore } from "@/stores/tests";
 
 import Tab from "@/Components/Tab.vue";
@@ -386,7 +387,7 @@ const tab_data = computed(() => [
         disabled: false, // Always enabled
         target: "_blank",
         href:
-            window.location.origin +
+            appBase() +
             "/survey-test?preview=1&survey_id=" +
             dataStore.surveyID +
             "&id=test",

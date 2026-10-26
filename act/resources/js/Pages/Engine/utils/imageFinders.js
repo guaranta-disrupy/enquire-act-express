@@ -1,3 +1,4 @@
+import { BASE_PATH } from "@/utils/basePath";
 export function findImageUrls(obj, isEditorMode = false) {
     let imageUrls = new Set(); // Using a Set to store unique URLs
 
@@ -18,7 +19,7 @@ export function findImageUrls(obj, isEditorMode = false) {
         try {
             const u = new URL(url, window.location.origin);
             if (u.origin !== window.location.origin) {
-                return `/gallery-proxy?u=${encodeURIComponent(u.href)}`;
+                return `${BASE_PATH}/gallery-proxy?u=${encodeURIComponent(u.href)}`;
             }
             return u.href;
         } catch (_) {

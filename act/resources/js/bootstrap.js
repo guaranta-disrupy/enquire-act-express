@@ -6,6 +6,16 @@
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 import axios from "axios";
+import { withBase } from "./utils/basePath";
+
+/**
+ * When the app is served under a sub-path (see utils/basePath.js), make
+ * root-relative fetch() calls such as fetch("/api/...") hit this app instead
+ * of the domain root.
+ */
+const nativeFetch = window.fetch.bind(window);
+window.fetch = (input, init) =>
+    nativeFetch(typeof input === "string" ? withBase(input) : input, init);
 window.axios = axios;
 
 window.axios.defaults.headers.common["X-Requested-with"] = "XMLHttpRequest";

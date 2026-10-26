@@ -1,3 +1,4 @@
+import { BASE_PATH } from "./basePath";
 // Rewrite cross-origin <img src> to same-origin proxy for caching in editor
 export function setProxiedHtml(html) {
     try {
@@ -14,7 +15,7 @@ export function setProxiedHtml(html) {
                 if (u.origin !== window.location.origin) {
                     img.setAttribute(
                         "src",
-                        `/gallery-proxy?u=${encodeURIComponent(u.href)}`
+                        `${BASE_PATH}/gallery-proxy?u=${encodeURIComponent(u.href)}`
                     );
                 }
             } catch (_) {}

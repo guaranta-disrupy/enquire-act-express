@@ -1,4 +1,5 @@
 <script setup>
+import { BASE_PATH } from "@/utils/basePath";
 // Import Native Quill
 import Quill from "quill";
 import { QuillEditor } from "@vueup/vue-quill";
@@ -73,7 +74,7 @@ function proxiedHtml(html) {
                 if (u.origin !== window.location.origin) {
                     img.setAttribute(
                         "src",
-                        `/gallery-proxy?u=${encodeURIComponent(u.href)}`
+                        `${BASE_PATH}/gallery-proxy?u=${encodeURIComponent(u.href)}`
                     );
                 }
             } catch (_) {}
@@ -793,7 +794,7 @@ const insertImagesFromModal = () => {
             try {
                 const u = new URL(url, window.location.origin);
                 if (u.origin !== window.location.origin) {
-                    finalUrl = `/gallery-proxy?u=${encodeURIComponent(u.href)}`;
+                    finalUrl = `${BASE_PATH}/gallery-proxy?u=${encodeURIComponent(u.href)}`;
                 }
             } catch (e) {
                 // If URL parsing fails, just use the original URL

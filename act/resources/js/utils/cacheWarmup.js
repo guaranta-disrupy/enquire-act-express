@@ -1,3 +1,4 @@
+import { BASE_PATH } from "./basePath";
 // Cache warm-up utilities
 // - Extract image URLs from HTML
 // - Build manifest from tests and survey
@@ -175,7 +176,7 @@ function toProxyIfCrossOrigin(url) {
     try {
         const u = new URL(url, window.location.origin);
         if (u.origin !== window.location.origin) {
-            return `/gallery-proxy?u=${encodeURIComponent(u.href)}`;
+            return `${BASE_PATH}/gallery-proxy?u=${encodeURIComponent(u.href)}`;
         }
         return u.href;
     } catch (_) {

@@ -1,4 +1,5 @@
 <script setup>
+import { BASE_PATH } from "@/utils/basePath";
 // Import CK Editor Components
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { component as CKEditor } from "@ckeditor/ckeditor5-vue";
@@ -58,7 +59,7 @@ function proxiedHtml(html) {
                 if (u.origin !== window.location.origin) {
                     img.setAttribute(
                         "src",
-                        `/gallery-proxy?u=${encodeURIComponent(u.href)}`
+                        `${BASE_PATH}/gallery-proxy?u=${encodeURIComponent(u.href)}`
                     );
                 }
             } catch (_) {}

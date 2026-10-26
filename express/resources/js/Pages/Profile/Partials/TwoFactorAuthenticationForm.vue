@@ -1,4 +1,5 @@
 <script setup>
+import { withBase } from '@/utils/basePath';
 import { ref, computed, watch } from 'vue';
 import { useForm, usePage, router } from "@inertiajs/vue3";
 import JetActionSection from '@/Jetstream/ActionSection.vue';
@@ -39,7 +40,7 @@ watch(twoFactorEnabled, () => {
 const enableTwoFactorAuthentication = () => {
     enabling.value = true;
 
-    router.post('/user/two-factor-authentication', {}, {
+    router.post(withBase('/user/two-factor-authentication'), {}, {
         preserveScroll: true,
         onSuccess: () => Promise.all([
             showQrCode(),
@@ -72,7 +73,7 @@ const showRecoveryCodes = () => {
 };
 
 const confirmTwoFactorAuthentication = () => {
-    confirmationForm.post('/user/confirmed-two-factor-authentication', {
+    confirmationForm.post(withBase('/user/confirmed-two-factor-authentication'), {
         errorBag: "confirmTwoFactorAuthentication",
         preserveScroll: true,
         preserveState: true,
@@ -93,7 +94,7 @@ const regenerateRecoveryCodes = () => {
 const disableTwoFactorAuthentication = () => {
     disabling.value = true;
 
-    router.delete('/user/two-factor-authentication', {
+    router.delete(withBase('/user/two-factor-authentication'), {
         preserveScroll: true,
         onSuccess: () => {
             disabling.value = false;

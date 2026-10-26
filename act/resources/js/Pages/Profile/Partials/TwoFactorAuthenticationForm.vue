@@ -87,6 +87,7 @@
 </template>
 
 <script>
+import { withBase } from "@/utils/basePath";
     import { defineComponent } from 'vue'
     import JetActionSection from '@/Jetstream/ActionSection.vue'
     import JetButton from '@/Jetstream/Button.vue'
@@ -117,7 +118,7 @@
             enableTwoFactorAuthentication() {
                 this.enabling = true
 
-                this.$inertia.post('/user/two-factor-authentication', {}, {
+                this.$inertia.post(withBase('/user/two-factor-authentication'), {}, {
                     preserveScroll: true,
                     onSuccess: () => Promise.all([
                         this.showQrCode(),
@@ -151,7 +152,7 @@
             disableTwoFactorAuthentication() {
                 this.disabling = true
 
-                this.$inertia.delete('/user/two-factor-authentication', {
+                this.$inertia.delete(withBase('/user/two-factor-authentication'), {
                     preserveScroll: true,
                     onSuccess: () => (this.disabling = false),
                 })
