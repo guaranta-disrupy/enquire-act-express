@@ -1,5 +1,20 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors')
+
+// Escala verde NextSensus no lugar do laranja da marca antiga (ação = 600).
+const nsGreen = {
+    50: '#eef6f2',
+    100: '#d6eadf',
+    200: '#aed5c0',
+    300: '#7fbb9c',
+    400: '#4f9c78',
+    500: '#2f8562',
+    600: '#257556',
+    700: '#1d5e45',
+    800: '#174a37',
+    900: '#123a2c',
+    950: '#0a2219',
+};
 const svgToDataUri = require('mini-svg-data-uri')
 
 module.exports = {
@@ -29,17 +44,17 @@ module.exports = {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                orange: colors.orange,
+                orange: nsGreen,
                 ssr: {
                     blue1: '#00519e',
                     blue2: '#1e71b8',
                     blue3: '#759fd1',
                     blue4: '#ceeaff',
                     bluehover: '#1e71b890',
-                    orange1: '#e94f1d',
-                    orange2: '#e28733',
-                    orange3: '#fdeac6',
-                    orangehover: '#e17127',
+                    orange1: '#1d5e45',
+                    orange2: '#257556',
+                    orange3: '#e3f0e9',
+                    orangehover: '#1d5e45',
                     yellow1: '#ebc246',
                     red1: '#c13128',
                     red2: '#c33b27',

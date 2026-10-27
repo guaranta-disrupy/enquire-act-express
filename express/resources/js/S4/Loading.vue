@@ -132,7 +132,7 @@ const colors = computed(()=>{
 
 .loader {
 	border-top-color: #c33b27;
-	border-left-color: #e28733;
+	border-left-color: #257556;
 	border-right-color: #759fd1;
 	border-bottom-color: #00519e;
 	-webkit-animation: spinner 1.5s linear infinite;

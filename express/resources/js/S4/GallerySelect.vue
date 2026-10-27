@@ -36,7 +36,7 @@ const input = ref(null);
             class="h-5 w-5 group-hover:scale-125 hover:ease-in duration-300 hover:scale-125 cursor-pointer"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="#e28733"
+            stroke="#257556"
             stroke-width="2"
         >
             <path

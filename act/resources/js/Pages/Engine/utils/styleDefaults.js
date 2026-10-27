@@ -94,7 +94,7 @@ export const getDefaultStyles = (
         // "--layout-grid-rows-landscape-iphone": "8% 68% 5%",
         // Button
         "--button-font-color": "#ffffff",
-        "--button-bg-color": "#e28733",
+        "--button-bg-color": "#257556",
         "--button-flex-direction": "row",
         "--button-arrow-display": "block",
         "--button-arrow-transform-x": "1",

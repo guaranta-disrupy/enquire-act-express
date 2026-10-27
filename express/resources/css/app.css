@@ -215,15 +215,15 @@ body > .draggable-list{
         
         /* Matrix - Orange */
         .matrix .icon-card:hover {
-            border-color: #f97316;
+            border-color: #257556;
         }
         .matrix.question-type-icon {
             background-color: #ffedd5;
-            color: #f97316;
+            color: #257556;
         }
         .matrix .category-header {
-            color: #f97316;
-            border-bottom: 2px solid #f97316;
+            color: #257556;
+            border-bottom: 2px solid #257556;
         }
         
         /* Pairwise - Teal */

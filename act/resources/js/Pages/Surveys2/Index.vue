@@ -1659,9 +1659,9 @@ const trialAction = (type = "trial") => {
                                             test.config.conditions &&
                                             test.config.conditions.length > 0
                                         "
-                                        class="items-center bg-[#e94f1d20] px-2 py-1 flex justify-center rounded-lg mr-4 mb-0.5"
+                                        class="items-center bg-[#25755620] px-2 py-1 flex justify-center rounded-lg mr-4 mb-0.5"
                                     >
-                                        <span class="text-sm text-[#e94f1d]">
+                                        <span class="text-sm text-[#257556]">
                                             {{ test.config.conditions[0].var }}
                                             {{
                                                 test.config.conditions[0]

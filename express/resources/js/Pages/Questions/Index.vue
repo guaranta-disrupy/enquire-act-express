@@ -2303,7 +2303,7 @@ const deleteQuestion = () => {
 }
 
 .badge {
-    background: #e94f1d;
+    background: #257556;
     color: white;
     border: none;
     right: 11rem;
