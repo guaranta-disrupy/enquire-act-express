@@ -7,7 +7,7 @@
         @touchstart=""
         @touchend=""
         @click="showButton ? $emit('click') : null"
-        class="trial-next-button bg-[#e28733] active:scale-110 hover:shadow-xl landscape:text-[2.3vmin] text-[5vmin] px-[5vmin] py-[2vmin] landscape:px-[3vmin] landscape:py-[1vmin] portrait:mt-[10vmin] active:bg-#e28733 gap-2 flex items-center justify-center"
+        class="trial-next-button bg-[#257556] active:scale-110 hover:shadow-xl landscape:text-[2.3vmin] text-[5vmin] px-[5vmin] py-[2vmin] landscape:px-[3vmin] landscape:py-[1vmin] portrait:mt-[10vmin] active:bg-#e28733 gap-2 flex items-center justify-center"
         :style="trialNextButtonStyle"
     >
         <span v-html="buttonText"></span>

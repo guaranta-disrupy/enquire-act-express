@@ -98,7 +98,7 @@
                             type="button"
                             @click="goToNext()"
                             :disabled="isAtLastStep"
-                            class="px-3 py-1.5 rounded-lg text-sm font-medium bg-[#e28733] hover:bg-[#CB792D] disabled:opacity-50 disabled:cursor-not-allowed w-full active:scale-95 transition-all duration-200 uppercase"
+                            class="px-3 py-1.5 rounded-lg text-sm font-medium bg-[#257556] hover:bg-[#1d5e45] disabled:opacity-50 disabled:cursor-not-allowed w-full active:scale-95 transition-all duration-200 uppercase"
                             title="Next"
                         >
                             Next

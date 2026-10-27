@@ -57,11 +57,11 @@ defineProps({
                 variant == 'pink',
             'bg-rose-500 hover:bg-rose-600 text-white focus:ring-rose-500 ':
                 variant == 'rose',
-            'bg-[#e94f1d] hover:bg-[#e94f1d] text-white focus:ring-[#e94f1d]':
+            'bg-[#257556] hover:bg-[#257556] text-white focus:ring-[#257556]':
                 variant == 'orange',
-            'bg-[#e94f1d20] hover:bg-[#e94f1d40] text-[#e94f1d] focus:ring-[#e94f1d]':
+            'bg-[#25755620] hover:bg-[#25755640] text-[#257556] focus:ring-[#257556]':
                 variant == 'orange-light',
-            'bg-[#e28733] hover:bg-[#e28733] text-white focus:ring-[#e94f1d]':
+            'bg-[#257556] hover:bg-[#257556] text-white focus:ring-[#257556]':
                 variant == 'orange-2',
             'bg-emerald-500 hover:bg-emerald-600 text-white focus:ring-emerald-500':
                 variant == 'emerald',

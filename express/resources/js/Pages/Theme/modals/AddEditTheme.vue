@@ -143,7 +143,7 @@ const form = useForm({
             'question-margin-right': '8vmin',
 
             /* BUTTONS */
-            'button-color': '#e38733',
+            'button-color': '#257556',
             'button-hover-color': '#e17126',
             'button-txt-color': '#ffffff',
 

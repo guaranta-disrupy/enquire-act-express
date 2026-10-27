@@ -120,7 +120,7 @@ const total = ()=>{
     width: 14px;
     height: 14px;
     border-radius: 999px;
-    background: #f97316; /* orange knob */
+    background: #257556; /* orange knob */
     cursor: pointer;
 }
 
@@ -134,7 +134,7 @@ const total = ()=>{
     width: 14px;
     height: 14px;
     border-radius: 999px;
-    background: #f97316;
+    background: #257556;
     border: none;
     cursor: pointer;
 }

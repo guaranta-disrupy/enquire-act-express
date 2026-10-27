@@ -93,7 +93,7 @@ const size = computed(() => {
     </svg>
     <svg v-if="props.icon === ICONS.EN_WRITE" width="26" height="26" viewBox="0 0 26 26" fill="none"
         xmlns="http://www.w3.org/2000/svg">
-        <rect width="26" height="26" rx="13" fill="#E28733" />
+        <rect width="26" height="26" rx="13" fill="#257556" />
         <path
             d="M20 4H6C4.89543 4 4 4.89543 4 6V20C4 21.1046 4.89543 22 6 22H20C21.1046 22 22 21.1046 22 20V6C22 4.89543 21.1046 4 20 4Z"
             stroke="white" />
