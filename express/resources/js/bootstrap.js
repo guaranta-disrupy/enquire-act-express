@@ -35,19 +35,26 @@ import Echo from 'laravel-echo';
 import Pusher from 'pusher-js';
 window.Pusher = Pusher;
 
+// Sem servidor de WebSocket (o Pusher antigo saiu): Echo "mudo" com a mesma
+// API, para as telas que assinam canais seguirem funcionando sem tempo real.
+const silentChannel = new Proxy({}, { get: (_, prop) => (prop === 'then' ? undefined : () => silentChannel) });
+const silentEcho = new Proxy({}, { get: (_, prop) => (prop === 'then' ? undefined : () => silentChannel) });
+
 // Only initialize Echo if Pusher credentials are available
-window.Echo = new Echo({
-    broadcaster: "pusher",
-    wsHost: import.meta.env.VITE_PUSHER_HOST,
-    wsPort: import.meta.env.VITE_PUSHER_PORT,
-    wssPort: import.meta.env.VITE_PUSHER_PORT,
-    key: import.meta.env.VITE_PUSHER_APP_KEY,
-    cluster: import.meta.env.VITE_PUSHER_APP_CLUSTER ?? 'mt1',
-    forceTLS: false,
-    encrypted: true,
-    enableStats: false,
-    enabledTransports: ['wss', 'ws'],
-});
+window.Echo = import.meta.env.VITE_PUSHER_APP_KEY
+    ? new Echo({
+          broadcaster: "pusher",
+          wsHost: import.meta.env.VITE_PUSHER_HOST,
+          wsPort: import.meta.env.VITE_PUSHER_PORT,
+          wssPort: import.meta.env.VITE_PUSHER_PORT,
+          key: import.meta.env.VITE_PUSHER_APP_KEY,
+          cluster: import.meta.env.VITE_PUSHER_APP_CLUSTER ?? 'mt1',
+          forceTLS: false,
+          encrypted: true,
+          enableStats: false,
+          enabledTransports: ['wss', 'ws'],
+      })
+    : silentEcho;
 
 // if (import.meta.env.VITE_PUSHER_APP_KEY) {
 //     try {

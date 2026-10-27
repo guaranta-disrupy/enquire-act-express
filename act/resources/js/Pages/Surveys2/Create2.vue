@@ -37,6 +37,9 @@ import {
 
 // const primes = pagedata.tests[0].primes;
 // const targets = pagedata.tests[0].targets;
+// Helpbot escondido até ter backend próprio; VITE_HELPBOT_ENABLED=true religa.
+const helpbotEnabled = import.meta.env.VITE_HELPBOT_ENABLED === 'true';
+
 const userPermissions = usePage().props;
 console.log("userPermissions", userPermissions);
 
@@ -1005,7 +1008,7 @@ onBeforeUnmount(() => {
                     </Tab>
 
                     <!-- Chatbot Start -->
-                    <teleport to="body">
+                    <teleport to="body" v-if="helpbotEnabled">
                         <div
                             class="z-[1000]"
                             :style="{

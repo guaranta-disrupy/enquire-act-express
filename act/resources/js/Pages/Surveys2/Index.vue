@@ -47,6 +47,9 @@ function proxiedHtml(html) {
     }
 }
 
+// Helpbot escondido até ter backend próprio; VITE_HELPBOT_ENABLED=true religa.
+const helpbotEnabled = import.meta.env.VITE_HELPBOT_ENABLED === 'true';
+
 const hasRenderableContent = (html) => {
     if (!html || typeof html !== "string") return false;
     const normalized = html.replace(/&nbsp;/gi, " ").trim();
@@ -1361,7 +1364,7 @@ const trialAction = (type = "trial") => {
 
                     <!-- Content Start -->
                      <!-- Chatbot Start -->
-                    <teleport to="body">
+                    <teleport to="body" v-if="helpbotEnabled">
                         <div
                             class="z-[1000]"
                             :style="{
