@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Project;
 use App\Models\Questionnaire;
+use App\Models\Theme;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
@@ -194,6 +195,8 @@ class SurveyController extends Controller
             ),
             'survey_id' => $request->survey['uuid']
         );
+            // O design vem do tema cadastrado (Settings > Themes); o array acima é só reserva.
+            $setup['design'] = Theme::find($setup['design_id'])?->setup['design'] ?? $setup['design'];
             $setup['variable'] = $request->input('variable') ?? chr(ord('a') + $count);
             $questionnaire = $project->questionnaires()->create([
                 'name' => $request->input('name'),
