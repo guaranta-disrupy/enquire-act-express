@@ -8,6 +8,7 @@ use App\Models\Activity_Log;
 use App\Models\Project;
 use App\Models\Question;
 use App\Models\Questionnaire;
+use App\Models\Theme;
 use App\Models\Record;
 use App\Models\Team;
 use App\Models\User;
@@ -199,6 +200,8 @@ class FluentController extends ExportController
               ),
             ),
           );
+        // O design vem do tema cadastrado (Settings > Themes); o array acima é só reserva.
+        $setup['design'] = Theme::find($setup['design_id'])?->setup['design'] ?? $setup['design'];
         $setup['variable'] = chr(ord('a') + $count);
         $project->questionnaires()->create([
             'name' => $request->label,
