@@ -822,7 +822,7 @@ watch(() => conversations.value.length, (length) => {
             title="New conversation"
           >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-          <g fill="none" stroke="#15919A" stroke-linecap="round" stroke-width="1.5">
+          <g fill="none" stroke="#257556" stroke-linecap="round" stroke-width="1.5">
                   <path stroke-linejoin="round" d="M21.25 12a9.23 9.23 0 0 1-2.705 6.54A9.25 9.25 0 0 1 12 21.25a9.2 9.2 0 0 1-3.795-.81l-3.867.572a1.195 1.195 0 0 1-1.361-1.43l.537-3.923A8.9 8.9 0 0 1 2.75 12a9.23 9.23 0 0 1 2.705-6.54A9.25 9.25 0 0 1 12 2.75a9.26 9.26 0 0 1 6.545 2.71A9.24 9.24 0 0 1 21.25 12" />
                   <path stroke-miterlimit="10" d="M11.693 7.816v7.795M7.8 11.722h7.804" />
           </g>
@@ -841,7 +841,7 @@ watch(() => conversations.value.length, (length) => {
             class="group relative flex items-start p-3 cursor-pointer transition-colors border rounded-lg mb-2
                     bg-gray-50 hover:bg-gray-100 border-gray-100"
             :style="selectedConversationId === conversation.id
-                ? { backgroundColor: '#d6f1f3', borderColor: '#15919A' }
+                ? { backgroundColor: '#d6f1f3', borderColor: '#257556' }
                 : {}"
             >
           <!-- Left content (reserve space for top-right button) -->
@@ -855,7 +855,7 @@ watch(() => conversations.value.length, (length) => {
                 class="absolute -top-[20px] left-[160px] rounded-full pin-indicator z-10 pointer-events-none bg-white p-0.5 shadow-sm"
                 title="Pinned"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="pin-icon w-4 h-4 text-[#15919A]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="pin-icon w-4 h-4 text-[#257556]">
                   <path d="m3 21l4.63-4.631m.005-.005l-2.78-2.78c-.954-.953.006-2.996 1.31-3.078c1.178-.075 3.905.352 4.812-.555l2.49-2.49c.617-.618.225-2 .185-2.762c-.058-1.016 1.558-2.271 2.415-1.414l4.647 4.648c.86.858-.4 2.469-1.413 2.415c-.762-.04-2.145-.432-2.763.185l-2.49 2.49c-.906.907-.48 3.633-.554 4.811c-.082 1.305-2.125 2.265-3.08 1.31z"/>
                 </svg>
               </div>
@@ -863,7 +863,7 @@ watch(() => conversations.value.length, (length) => {
 
             <!-- Conversation Info -->
             <div class="min-w-0 flex-1">
-              <p v-if="editingConversationId !== (conversation.id || conversation.conversation_id)" class="text-xs font-semibold text-[#15919A] mb-1.5">
+              <p v-if="editingConversationId !== (conversation.id || conversation.conversation_id)" class="text-xs font-semibold text-[#257556] mb-1.5">
                 {{ conversation.title || 'ACT AI' }}
               </p>
               <input
@@ -872,7 +872,7 @@ watch(() => conversations.value.length, (length) => {
                 v-model="editingTitle"
                 @keyup.enter="saveRename(conversation)"
                 @keyup.esc="cancelRename"
-                class="text-xs font-semibold text-[#15919A] mb-1.5 w-full px-1 border border-[#15919A] rounded focus:outline-none focus:ring-1 focus:ring-[#15919A]"
+                class="text-xs font-semibold text-[#257556] mb-1.5 w-full px-1 border border-[#257556] rounded focus:outline-none focus:ring-1 focus:ring-[#257556]"
                 placeholder="Enter title..."
               />
 
@@ -1035,7 +1035,7 @@ watch(() => conversations.value.length, (length) => {
             @click="selectConversation(conversation.id)"
             class="group relative flex items-start gap-3 p-3 cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors border-b border-gray-100"
             :style="selectedConversationId === conversation.id
-                ? { backgroundColor: '#b6f5f9', borderColor: '#15919A' }
+                ? { backgroundColor: '#b6f5f9', borderColor: '#257556' }
                 : {}"
             >
           <!-- Platform Avatar -->
@@ -1056,7 +1056,7 @@ watch(() => conversations.value.length, (length) => {
               class="absolute -top-1 -right-1 rounded-full pin-indicator z-10 pointer-events-none bg-white p-0.5 shadow-sm"
               title="Pinned"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="pin-icon w-4 h-4 text-[#15919A]">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="pin-icon w-4 h-4 text-[#257556]">
                 <path d="m3 21l4.63-4.631m.005-.005l-2.78-2.78c-.954-.953.006-2.996 1.31-3.078c1.178-.075 3.905.352 4.812-.555l2.49-2.49c.617-.618.225-2 .185-2.762c-.058-1.016 1.558-2.271 2.415-1.414l4.647 4.648c.86.858-.4 2.469-1.413 2.415c-.762-.04-2.145-.432-2.763.185l-2.49 2.49c-.906.907-.48 3.633-.554 4.811c-.082 1.305-2.125 2.265-3.08 1.31z"/>
               </svg>
             </div>
@@ -1160,12 +1160,12 @@ watch(() => conversations.value.length, (length) => {
         <!-- Modal Content -->
         <div class="relative transform overflow-hidden rounded-xl bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
           <!-- Decorative Header -->
-          <div class="bg-gradient-to-r from-#15919A to-#15919A px-6 py-5 border-b border-blue-100">
+          <div class="bg-gradient-to-r from-#257556 to-#257556 px-6 py-5 border-b border-blue-100">
             <div class="flex items-center justify-between">
               <div class="flex items-center space-x-3">
                 <div class="flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" style="color: #15919A" viewBox="0 0 24 24">
-                    <path fill="#15919A" d="m9.94 12.646l-2.248-.749c-2.353-.784-3.53-1.176-3.53-1.897c0-.72 1.177-1.113 3.53-1.897l8.513-2.838c1.656-.552 2.484-.828 2.921-.391s.161 1.265-.39 2.92l-2.839 8.514c-.784 2.353-1.176 3.53-1.897 3.53c-.72 0-1.113-1.177-1.897-3.53l-.75-2.247l4.354-4.354a1 1 0 0 0-1.414-1.414z" />
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" style="color: #257556" viewBox="0 0 24 24">
+                    <path fill="#257556" d="m9.94 12.646l-2.248-.749c-2.353-.784-3.53-1.176-3.53-1.897c0-.72 1.177-1.113 3.53-1.897l8.513-2.838c1.656-.552 2.484-.828 2.921-.391s.161 1.265-.39 2.92l-2.839 8.514c-.784 2.353-1.176 3.53-1.897 3.53c-.72 0-1.113-1.177-1.897-3.53l-.75-2.247l4.354-4.354a1 1 0 0 0-1.414-1.414z" />
                   </svg>
                 </div>
                 <div>
@@ -1223,7 +1223,7 @@ watch(() => conversations.value.length, (length) => {
               <textarea
                 v-model="conversationRatingComment"
                 rows="3"
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#15919A] focus:border-transparent resize-none text-sm"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#257556] focus:border-transparent resize-none text-sm"
                 placeholder="What did you like or what could we improve?"
               ></textarea>
               <p class="mt-2 text-xs text-gray-500">Your feedback helps us improve ACT AI</p>
@@ -1251,8 +1251,8 @@ watch(() => conversations.value.length, (length) => {
                 @click="submitConversationRating"
                 :disabled="conversationRating === 0"
                 class="inline-flex justify-center items-center px-6 py-2.5 text-sm font-semibold text-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all"
-                :class="conversationRating > 0 ? 'focus:ring-[#15919A] hover:opacity-90' : 'bg-gray-300 cursor-not-allowed'"
-                :style="conversationRating > 0 ? 'background: linear-gradient(to right, #15919A, #2a7d84);' : ''"
+                :class="conversationRating > 0 ? 'focus:ring-[#257556] hover:opacity-90' : 'bg-gray-300 cursor-not-allowed'"
+                :style="conversationRating > 0 ? 'background: linear-gradient(to right, #257556, #2a7d84);' : ''"
               >
                 <svg v-if="conversationRating > 0" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />

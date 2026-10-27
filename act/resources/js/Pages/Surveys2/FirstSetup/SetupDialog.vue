@@ -142,12 +142,12 @@ function prevStep() {
 <style scoped>
 .steps .step-primary::before,
 .steps .step-primary .step-inner {
-    background-color: #15919a !important;
+    background-color: #257556 !important;
     color: white;
 }
 .steps .step-primary:after {
-    background-color: #15919a !important;
-    border-color: #15919a !important;
+    background-color: #257556 !important;
+    border-color: #257556 !important;
 }
 .steps .disable-step.step {
     color: #9ca3af !important;

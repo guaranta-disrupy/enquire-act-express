@@ -646,7 +646,7 @@ const closeMenu = () => {
                 <div class="flex justify-end gap-2">
                     <button 
                         class="btn btn-sm text-white hover:opacity-90 transition-opacity px-2 py-1 rounded-lg text-sm" 
-                        style="background-color: #15919A;"
+                        style="background-color: #257556;"
                         @click="closeConversationInfoModal"
                     >
                         Close
@@ -690,12 +690,12 @@ const closeMenu = () => {
                 <!-- Modal Content -->
                 <div class="relative transform overflow-hidden rounded-xl bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                     <!-- Decorative Header -->
-                    <div class="bg-gradient-to-r from-#15919A to-#15919A px-6 py-5 border-b border-#15919A">
+                    <div class="bg-gradient-to-r from-#257556 to-#257556 px-6 py-5 border-b border-#257556">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center space-x-3">
                                 <div class="flex-shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" style="color: #15919A" viewBox="0 0 24 24">
-                                        <path fill="#15919A" d="m9.94 12.646l-2.248-.749c-2.353-.784-3.53-1.176-3.53-1.897c0-.72 1.177-1.113 3.53-1.897l8.513-2.838c1.656-.552 2.484-.828 2.921-.391s.161 1.265-.39 2.92l-2.839 8.514c-.784 2.353-1.176 3.53-1.897 3.53c-.72 0-1.113-1.177-1.897-3.53l-.75-2.247l4.354-4.354a1 1 0 0 0-1.414-1.414z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" style="color: #257556" viewBox="0 0 24 24">
+                                        <path fill="#257556" d="m9.94 12.646l-2.248-.749c-2.353-.784-3.53-1.176-3.53-1.897c0-.72 1.177-1.113 3.53-1.897l8.513-2.838c1.656-.552 2.484-.828 2.921-.391s.161 1.265-.39 2.92l-2.839 8.514c-.784 2.353-1.176 3.53-1.897 3.53c-.72 0-1.113-1.177-1.897-3.53l-.75-2.247l4.354-4.354a1 1 0 0 0-1.414-1.414z" />
                                     </svg>
                                 </div>
                                 <div>
@@ -754,7 +754,7 @@ const closeMenu = () => {
                             <textarea 
                                 v-model="conversationRatingComment"
                                 rows="3"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#15919A] focus:border-transparent resize-none text-sm"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#257556] focus:border-transparent resize-none text-sm"
                                 placeholder="What did you like or what could we improve?"
                             ></textarea>
                             <p class="mt-2 text-xs text-gray-500">Your feedback helps us improve ACT AI</p>
@@ -780,8 +780,8 @@ const closeMenu = () => {
                                 @click="submitConversationRating"
                                 :disabled="conversationRating === 0"
                                 class="inline-flex justify-center items-center px-6 py-2.5 text-sm font-semibold text-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all"
-                                :class="conversationRating > 0 ? 'focus:ring-#15919A hover:opacity-90' : 'bg-gray-300 cursor-not-allowed'"
-                                :style="conversationRating > 0 ? 'background: linear-gradient(to right, #15919A, #15919A);' : ''"
+                                :class="conversationRating > 0 ? 'focus:ring-#257556 hover:opacity-90' : 'bg-gray-300 cursor-not-allowed'"
+                                :style="conversationRating > 0 ? 'background: linear-gradient(to right, #257556, #257556);' : ''"
                             >
                                 <svg v-if="conversationRating > 0" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />

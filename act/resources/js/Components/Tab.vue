@@ -22,8 +22,8 @@ const tab_class = (tab) => {
 
     return `${base} ${
         isActive
-            ? "bg-[#15919A] text-white"
-            : "bg-white text-[#323232] hover:bg-[#15919A] hover:text-white"
+            ? "bg-[#257556] text-white"
+            : "bg-white text-[#323232] hover:bg-[#257556] hover:text-white"
     }`;
 };
 

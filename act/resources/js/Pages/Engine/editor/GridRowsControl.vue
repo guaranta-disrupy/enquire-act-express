@@ -12,7 +12,7 @@
                     type="number"
                     v-model="header"
                     @input="updateValue"
-                    class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm"
+                    class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm"
                     placeholder="Header"
                 />
             </div>
@@ -24,7 +24,7 @@
                     type="number"
                     v-model="primeTarget"
                     @input="updateValue"
-                    class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm"
+                    class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm"
                     placeholder="Prime/Target"
                 />
             </div>
@@ -36,7 +36,7 @@
                     type="number"
                     v-model="footer"
                     @input="updateValue"
-                    class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm"
+                    class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm"
                     placeholder="Footer"
                 />
             </div>

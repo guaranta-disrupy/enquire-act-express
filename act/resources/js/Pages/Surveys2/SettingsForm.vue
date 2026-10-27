@@ -7,13 +7,13 @@
         type="button"
         @click="handleTabChange('displayLayout')"
         class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-xl transition-all duration-200 whitespace-nowrap"
-        :class="activeTab === 'displayLayout' ? 'bg-[#15919A] text-white shadow-md' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
+        :class="activeTab === 'displayLayout' ? 'bg-[#257556] text-white shadow-md' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
       >
         <svg width="16" height="16" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_621_14998)">
-          <path d="M41.1415 0H8.8584C3.96572 0 0 3.96582 0 8.85772V15.625H50V8.85772C50 3.96582 46.0342 0 41.1415 0Z" :fill="activeTab === 'displayLayout' ? 'white' : '#15919A'"/>
-          <path d="M0 41.1423C0 46.0342 3.96572 50 8.8584 50H28.9062V21.0938H0V41.1423Z" :fill="activeTab === 'displayLayout' ? 'white' : '#15919A'"/>
-          <path d="M34.375 50H41.1415C46.0342 50 50 46.0342 50 41.1423V21.0938H34.375V50Z" :fill="activeTab === 'displayLayout' ? 'white' : '#15919A'"/>
+          <path d="M41.1415 0H8.8584C3.96572 0 0 3.96582 0 8.85772V15.625H50V8.85772C50 3.96582 46.0342 0 41.1415 0Z" :fill="activeTab === 'displayLayout' ? 'white' : '#257556'"/>
+          <path d="M0 41.1423C0 46.0342 3.96572 50 8.8584 50H28.9062V21.0938H0V41.1423Z" :fill="activeTab === 'displayLayout' ? 'white' : '#257556'"/>
+          <path d="M34.375 50H41.1415C46.0342 50 50 46.0342 50 41.1423V21.0938H34.375V50Z" :fill="activeTab === 'displayLayout' ? 'white' : '#257556'"/>
           </g>
           <defs>
           <clipPath id="clip0_621_14998">
@@ -28,12 +28,12 @@
         type="button"
         @click="handleTabChange('responseForwarding')"
         class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-xl transition-all duration-200 whitespace-nowrap"
-        :class="activeTab === 'responseForwarding' ? 'bg-[#15919A] text-white shadow-md' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
+        :class="activeTab === 'responseForwarding' ? 'bg-[#257556] text-white shadow-md' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2L2 7L12 12L22 7L12 2Z" :stroke="activeTab === 'responseForwarding' ? 'white' : '#15919A'" stroke-width="2" stroke-linejoin="round"/>
-          <path d="M2 17L12 22L22 17" :stroke="activeTab === 'responseForwarding' ? 'white' : '#15919A'" stroke-width="2" stroke-linejoin="round"/>
-          <path d="M2 12L12 17L22 12" :stroke="activeTab === 'responseForwarding' ? 'white' : '#15919A'" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" :stroke="activeTab === 'responseForwarding' ? 'white' : '#257556'" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M2 17L12 22L22 17" :stroke="activeTab === 'responseForwarding' ? 'white' : '#257556'" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M2 12L12 17L22 12" :stroke="activeTab === 'responseForwarding' ? 'white' : '#257556'" stroke-width="2" stroke-linejoin="round"/>
         </svg>
         <span>Response Forwarding</span>
       </button>
@@ -43,11 +43,11 @@
         type="button"
         @click="handleTabChange('progressSettings')"
         class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-xl transition-all duration-200 whitespace-nowrap"
-        :class="activeTab === 'progressSettings' ? 'bg-[#15919A] text-white shadow-md' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
+        :class="activeTab === 'progressSettings' ? 'bg-[#257556] text-white shadow-md' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9 12L11 14L15 10" :stroke="activeTab === 'progressSettings' ? 'white' : '#15919A'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="12" cy="12" r="10" :stroke="activeTab === 'progressSettings' ? 'white' : '#15919A'" stroke-width="2"/>
+          <path d="M9 12L11 14L15 10" :stroke="activeTab === 'progressSettings' ? 'white' : '#257556'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="12" cy="12" r="10" :stroke="activeTab === 'progressSettings' ? 'white' : '#257556'" stroke-width="2"/>
         </svg>
         <span>Progress Settings</span>
       </button>
@@ -57,11 +57,11 @@
         type="button"
         @click="handleTabChange('buttonSettings')"
         class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-xl transition-all duration-200 whitespace-nowrap"
-        :class="activeTab === 'buttonSettings' ? 'bg-[#15919A] text-white shadow-md' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
+        :class="activeTab === 'buttonSettings' ? 'bg-[#257556] text-white shadow-md' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="3" y="3" width="18" height="18" rx="2" :stroke="activeTab === 'buttonSettings' ? 'white' : '#15919A'" stroke-width="2"/>
-          <path d="M9 9H15V15H9V9Z" :stroke="activeTab === 'buttonSettings' ? 'white' : '#15919A'" stroke-width="2"/>
+          <rect x="3" y="3" width="18" height="18" rx="2" :stroke="activeTab === 'buttonSettings' ? 'white' : '#257556'" stroke-width="2"/>
+          <path d="M9 9H15V15H9V9Z" :stroke="activeTab === 'buttonSettings' ? 'white' : '#257556'" stroke-width="2"/>
         </svg>
         <span>Button Settings</span>
       </button>
@@ -71,10 +71,10 @@
         type="button"
         @click="handleTabChange('fullscreenSettings')"
         class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-xl transition-all duration-200 whitespace-nowrap"
-        :class="activeTab === 'fullscreenSettings' ? 'bg-[#15919A] text-white shadow-md' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
+        :class="activeTab === 'fullscreenSettings' ? 'bg-[#257556] text-white shadow-md' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 3H5C3.89543 3 3 3.89543 3 5V8M21 3H18M21 8V5C21 3.89543 20.1046 3 19 3M3 16V19C3 20.1046 3.89543 21 5 21H8M16 21H19C20.1046 21 21 20.1046 21 19V16" :stroke="activeTab === 'fullscreenSettings' ? 'white' : '#15919A'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 3H5C3.89543 3 3 3.89543 3 5V8M21 3H18M21 8V5C21 3.89543 20.1046 3 19 3M3 16V19C3 20.1046 3.89543 21 5 21H8M16 21H19C20.1046 21 21 20.1046 21 19V16" :stroke="activeTab === 'fullscreenSettings' ? 'white' : '#257556'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <span>Full Screen Settings</span>
       </button>
@@ -84,12 +84,12 @@
         type="button"
         @click="handleTabChange('backgroundSettings')"
         class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-xl transition-all duration-200 whitespace-nowrap"
-        :class="activeTab === 'backgroundSettings' ? 'bg-[#15919A] text-white shadow-md' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
+        :class="activeTab === 'backgroundSettings' ? 'bg-[#257556] text-white shadow-md' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'"
       >
         <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.25 3.125H3.75C2.71447 3.125 1.875 3.96447 1.875 5V15C1.875 16.0355 2.71447 16.875 3.75 16.875H16.25C17.2855 16.875 18.125 16.0355 18.125 15V5C18.125 3.96447 17.2855 3.125 16.25 3.125Z" :stroke="activeTab === 'backgroundSettings' ? 'white' : '#15919A'" stroke-width="1.5" stroke-linejoin="round"/>
-          <path d="M13.125 8.125C13.8154 8.125 14.375 7.56536 14.375 6.875C14.375 6.18464 13.8154 5.625 13.125 5.625C12.4346 5.625 11.875 6.18464 11.875 6.875C11.875 7.56536 12.4346 8.125 13.125 8.125Z" :stroke="activeTab === 'backgroundSettings' ? 'white' : '#15919A'" stroke-width="1.5" stroke-miterlimit="10"/>
-          <path d="M11.875 13.1166L8.33359 9.58184C8.10824 9.35654 7.80535 9.22581 7.48684 9.21637C7.16832 9.20693 6.85822 9.3195 6.61992 9.53106L1.875 13.7498M8.75 16.8748L13.568 12.0568C13.7883 11.8361 14.0832 11.7056 14.3948 11.6912C14.7064 11.6767 15.0121 11.7793 15.252 11.9787L18.125 14.3748" :stroke="activeTab === 'backgroundSettings' ? 'white' : '#15919A'" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16.25 3.125H3.75C2.71447 3.125 1.875 3.96447 1.875 5V15C1.875 16.0355 2.71447 16.875 3.75 16.875H16.25C17.2855 16.875 18.125 16.0355 18.125 15V5C18.125 3.96447 17.2855 3.125 16.25 3.125Z" :stroke="activeTab === 'backgroundSettings' ? 'white' : '#257556'" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M13.125 8.125C13.8154 8.125 14.375 7.56536 14.375 6.875C14.375 6.18464 13.8154 5.625 13.125 5.625C12.4346 5.625 11.875 6.18464 11.875 6.875C11.875 7.56536 12.4346 8.125 13.125 8.125Z" :stroke="activeTab === 'backgroundSettings' ? 'white' : '#257556'" stroke-width="1.5" stroke-miterlimit="10"/>
+          <path d="M11.875 13.1166L8.33359 9.58184C8.10824 9.35654 7.80535 9.22581 7.48684 9.21637C7.16832 9.20693 6.85822 9.3195 6.61992 9.53106L1.875 13.7498M8.75 16.8748L13.568 12.0568C13.7883 11.8361 14.0832 11.7056 14.3948 11.6912C14.7064 11.6767 15.0121 11.7793 15.252 11.9787L18.125 14.3748" :stroke="activeTab === 'backgroundSettings' ? 'white' : '#257556'" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <span>Background Image</span>
       </button>
@@ -119,13 +119,13 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div class="group relative">
                 <div class="w-full px-6 py-6 border-2 cursor-pointer text-center justify-center items-center shadow-md flex transition-all duration-300 rounded-2xl hover:shadow-lg hover:scale-[1.02]"
-                     :class="selectedDisplayStyle === 'rounded' ? 'border-[#15919A] bg-gradient-to-br from-[#15919A]/10 to-[#15919A]/5 shadow-[#15919A]/20' : 'border-gray-200 hover:border-[#15919A]/50 bg-white'"
+                     :class="selectedDisplayStyle === 'rounded' ? 'border-[#257556] bg-gradient-to-br from-[#257556]/10 to-[#257556]/5 shadow-[#257556]/20' : 'border-gray-200 hover:border-[#257556]/50 bg-white'"
                      @click="selectDisplayStyle('rounded')">
                   <div class="flex flex-col items-center justify-center gap-4 font-bold text-center">
-                    <div class="text-gray-800 group-hover:text-[#15919A] transition-colors duration-300">
+                    <div class="text-gray-800 group-hover:text-[#257556] transition-colors duration-300">
                       Attribute Choice Rounded Targets
                     </div>
-                    <div class="p-2 bg-gray-50 rounded-xl group-hover:bg-[#15919A]/5 transition-colors duration-300">
+                    <div class="p-2 bg-gray-50 rounded-xl group-hover:bg-[#257556]/5 transition-colors duration-300">
                       <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect x="9.9082" y="11.9766" width="58.1836" height="58.1836" rx="29.0918" fill="#D9D9D9" stroke="#ADADAD" stroke-width="5"/>
                       <rect x="30.9688" y="2.5" width="16.0599" height="16.0599" rx="8.02996" fill="#D9D9D9" stroke="#ADADAD" stroke-width="5"/>
@@ -142,13 +142,13 @@
 
               <div class="group relative">
                 <div class="w-full px-6 py-6 border-2 cursor-pointer text-center justify-center items-center shadow-md flex transition-all duration-300 rounded-2xl hover:shadow-lg hover:scale-[1.02]"
-                     :class="selectedDisplayStyle === 'box' ? 'border-[#15919A] bg-gradient-to-br from-[#15919A]/10 to-[#15919A]/5 shadow-[#15919A]/20' : 'border-gray-200 hover:border-[#15919A]/50 bg-white'"
+                     :class="selectedDisplayStyle === 'box' ? 'border-[#257556] bg-gradient-to-br from-[#257556]/10 to-[#257556]/5 shadow-[#257556]/20' : 'border-gray-200 hover:border-[#257556]/50 bg-white'"
                      @click="selectDisplayStyle('box')">
                   <div class="flex flex-col items-center justify-center gap-4 font-bold text-center">
-                    <div class="text-gray-800 group-hover:text-[#15919A] transition-colors duration-300">
+                    <div class="text-gray-800 group-hover:text-[#257556] transition-colors duration-300">
                      Attributes Choice Box Targets
                     </div>
-                    <div class="p-2 bg-gray-50 rounded-xl group-hover:bg-[#15919A]/5 transition-colors duration-300">
+                    <div class="p-2 bg-gray-50 rounded-xl group-hover:bg-[#257556]/5 transition-colors duration-300">
                       <svg width="144" height="80" viewBox="0 0 144 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect x="38.25" y="4.25" width="69.5" height="8.5" rx="4.25" fill="#D9D9D9" stroke="#ADADAD" stroke-width="8.5"/>
                       <rect x="1.5" y="26" width="43" height="24" rx="2" fill="#D9D9D9" stroke="#ADADAD" stroke-width="2"/>
@@ -195,7 +195,7 @@
               <div class="relative group">
                 <Tooltip text="Variable name where responses will be stored for forwarding." />
                 <div
-                  class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                  class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                   role="tooltip"
                   style="right: -90px;"
                 >
@@ -234,7 +234,7 @@
               <div class="relative group">
                 <Tooltip text="Where to send users after completing the flow." />
                 <div
-                  class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                  class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                   role="tooltip"
                   style="right: -75px;"
                 >
@@ -257,7 +257,7 @@
               <div class="relative group">
                 <Tooltip text="Optional identifier for backend tracking or analytics." />
                 <div
-                  class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                  class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                   role="tooltip"
                   style="right: -85px;"
                 >

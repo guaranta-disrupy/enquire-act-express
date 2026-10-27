@@ -1,9 +1,9 @@
 <template>
     <div
-        class="w-full p-5 border-2 border-[#15919A70] rounded-lg relative animate-fade-up"
+        class="w-full p-5 border-2 border-[#25755670] rounded-lg relative animate-fade-up"
     >
         <div
-            class="flex bg-[#15919A] text-white rounded-full inline-flex items-center justify-center w-8 h-8 cursor-pointer hover:bg-[#33A7B0] transition-opacity duration-100 active:scale-95 absolute -top-3 -right-3"
+            class="flex bg-[#257556] text-white rounded-full inline-flex items-center justify-center w-8 h-8 cursor-pointer hover:bg-[#33A7B0] transition-opacity duration-100 active:scale-95 absolute -top-3 -right-3"
         >
             <CloseIcon @click="emit('close-guide')" />
         </div>
@@ -35,7 +35,7 @@
 
             <p class="text-gray-700 leading-relaxed">
                 Example: "Rate
-                <code class="bg-[#15919A] text-white p-1 px-2 rounded text-sm">
+                <code class="bg-[#257556] text-white p-1 px-2 rounded text-sm">
                     brand_name</code
                 >" might appear as "<strong>Rate Nike</strong>" for young participants
                 and "<strong>Rate Adidas</strong>" for older participants, depending on your variable criteria.
@@ -57,7 +57,7 @@
             <JetButton variant="slate" @click="$emit('proceed')" size="xs">
                 Proceed to Create Variable
             </JetButton>
-            <div class="text-[#15919A] text-sm">
+            <div class="text-[#257556] text-sm">
                 you can add variables later or reuse existing variables.
             </div>
         </div>

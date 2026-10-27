@@ -493,7 +493,7 @@ onUnmounted(() => {
 .preview-banner {
     position: fixed;
     z-index: 99999;
-    background-color: #15919a;
+    background-color: #257556;
     color: #fff;
     padding-left: 56px;
     padding-right: 56px;

@@ -4,7 +4,7 @@
       type="button"
       @click="modelValue = !modelValue"
       :class="[
-        modelValue ? 'bg-[#15919a]' : 'bg-gray-300',
+        modelValue ? 'bg-[#257556]' : 'bg-gray-300',
         'relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none'
       ]"
     >

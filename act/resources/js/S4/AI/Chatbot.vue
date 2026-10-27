@@ -2362,7 +2362,7 @@ watch(
                         </div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 24 24">
-                            <path fill="none" stroke="#15919A" stroke-linejoin="round" stroke-width="2" d="M15 19c1.2-3.678 2.526-5.005 6-6c-3.474-.995-4.8-2.322-6-6c-1.2 3.678-2.526 5.005-6 6c3.474.995 4.8 2.322 6 6Zm-8-9c.6-1.84 1.263-2.503 3-3c-1.737-.497-2.4-1.16-3-3c-.6 1.84-1.263 2.503-3 3c1.737.497 2.4 1.16 3 3Zm1.5 10c.3-.92.631-1.251 1.5-1.5c-.869-.249-1.2-.58-1.5-1.5c-.3.92-.631 1.251-1.5 1.5c.869.249 1.2.58 1.5 1.5Z" />
+                            <path fill="none" stroke="#257556" stroke-linejoin="round" stroke-width="2" d="M15 19c1.2-3.678 2.526-5.005 6-6c-3.474-.995-4.8-2.322-6-6c-1.2 3.678-2.526 5.005-6 6c3.474.995 4.8 2.322 6 6Zm-8-9c.6-1.84 1.263-2.503 3-3c-1.737-.497-2.4-1.16-3-3c-.6 1.84-1.263 2.503-3 3c1.737.497 2.4 1.16 3 3Zm1.5 10c.3-.92.631-1.251 1.5-1.5c-.869-.249-1.2-.58-1.5-1.5c-.3.92-.631 1.251-1.5 1.5c.869.249 1.2.58 1.5 1.5Z" />
                         </svg>
                     <h3 class="text-md -ml-2">{{ platform === 'act' ? 'ACT AI' : 'AI Assistant' }}</h3>
                 </div>
@@ -2462,7 +2462,7 @@ watch(
 				<div class="avatar">
 					<div class="w-8 h-8 rounded-full flex items-center justify-center">
 						<svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 24 24">
-                            <path fill="none" stroke="#15919A" stroke-linejoin="round" stroke-width="2" d="M15 19c1.2-3.678 2.526-5.005 6-6c-3.474-.995-4.8-2.322-6-6c-1.2 3.678-2.526 5.005-6 6c3.474.995 4.8 2.322 6 6Zm-8-9c.6-1.84 1.263-2.503 3-3c-1.737-.497-2.4-1.16-3-3c-.6 1.84-1.263 2.503-3 3c1.737.497 2.4 1.16 3 3Zm1.5 10c.3-.92.631-1.251 1.5-1.5c-.869-.249-1.2-.58-1.5-1.5c-.3.92-.631 1.251-1.5 1.5c.869.249 1.2.58 1.5 1.5Z" />
+                            <path fill="none" stroke="#257556" stroke-linejoin="round" stroke-width="2" d="M15 19c1.2-3.678 2.526-5.005 6-6c-3.474-.995-4.8-2.322-6-6c-1.2 3.678-2.526 5.005-6 6c3.474.995 4.8 2.322 6 6Zm-8-9c.6-1.84 1.263-2.503 3-3c-1.737-.497-2.4-1.16-3-3c-.6 1.84-1.263 2.503-3 3c1.737.497 2.4 1.16 3 3Zm1.5 10c.3-.92.631-1.251 1.5-1.5c-.869-.249-1.2-.58-1.5-1.5c-.3.92-.631 1.251-1.5 1.5c.869.249 1.2.58 1.5 1.5Z" />
                         </svg>
 					</div>
 				</div>
@@ -2498,7 +2498,7 @@ watch(
                             <img class="inline-block w-[45vmin] sm:w-[60vmin] max-w-[300px] max-h-[300px] h-auto mx-1 align-middle rounded" :src="aiLogo" alt="AI" />
                             <div class="flex flex-col items-center w-full justify-center text-center absolute top-[220px] sm:top-[250px] max-h-[35vmin]">
                                 <h1 class="text-xl sm:text-3xl font-bold">
-                                    Hello there, <span class="text-[#15919A] font-bold text-xl sm:text-3xl">{{ userFirstName }}!</span>
+                                    Hello there, <span class="text-[#257556] font-bold text-xl sm:text-3xl">{{ userFirstName }}!</span>
                                 </h1>
                                 <p class="text-sm sm:text-lg text-gray-500 text-center font-semibold mt-2">
                                     How can I help you today?
@@ -2531,7 +2531,7 @@ watch(
 								>
 									<!-- Filled dislike icon when active -->
 									<svg v-if="message.liked" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-										<path fill="#15919A" fill-rule="evenodd" d="M11.277 4.781A4 4 0 0 1 14.606 3h.213a2 2 0 0 1 1.973 2.329L16.18 9h2.38a3 3 0 0 1 2.942 3.588l-1.2 6A3 3 0 0 1 17.36 21H6a3 3 0 0 1-3-3v-8a1 1 0 0 1 1-1h3.93a1 1 0 0 0 .832-.445zM7 11H5v7a1 1 0 0 0 1 1h1z" clip-rule="evenodd" />
+										<path fill="#257556" fill-rule="evenodd" d="M11.277 4.781A4 4 0 0 1 14.606 3h.213a2 2 0 0 1 1.973 2.329L16.18 9h2.38a3 3 0 0 1 2.942 3.588l-1.2 6A3 3 0 0 1 17.36 21H6a3 3 0 0 1-3-3v-8a1 1 0 0 1 1-1h3.93a1 1 0 0 0 .832-.445zM7 11H5v7a1 1 0 0 0 1 1h1z" clip-rule="evenodd" />
 									</svg>
 									<!-- Outline dislike icon when inactive -->
 									<svg v-else xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
@@ -2550,7 +2550,7 @@ watch(
 								>
 									<!-- Filled like icon when active -->
                                     <svg v-if="message.disliked" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-										<path fill="#15919A" fill-rule="evenodd" d="M11.277 19.219A4 4 0 0 0 14.606 21h.213a2 2 0 0 0 1.973-2.329L16.18 15h2.38a3 3 0 0 0 2.942-3.588l-1.2-6A3 3 0 0 0 17.36 3H6a3 3 0 0 0-3 3v8a1 1 0 0 0 1 1h3.93a1 1 0 0 1 .832.445zM7 5v8H5V6a1 1 0 0 1 1-1z" clip-rule="evenodd" />
+										<path fill="#257556" fill-rule="evenodd" d="M11.277 19.219A4 4 0 0 0 14.606 21h.213a2 2 0 0 0 1.973-2.329L16.18 15h2.38a3 3 0 0 0 2.942-3.588l-1.2-6A3 3 0 0 0 17.36 3H6a3 3 0 0 0-3 3v8a1 1 0 0 0 1 1h3.93a1 1 0 0 1 .832.445zM7 5v8H5V6a1 1 0 0 1 1-1z" clip-rule="evenodd" />
 									</svg>
 									
 									<!-- Outline like icon when inactive -->
@@ -2638,7 +2638,7 @@ watch(
 											<div v-for="(choice, index) in actionData.preview_data.choices.slice(0, 6)" 
 												 :key="index"
 												 class="flex items-center gap-2 text-sm">
-												<input type="radio" class="focus:ring-[#15919A]" style="color: #15919A;" checked disabled>
+												<input type="radio" class="focus:ring-[#257556]" style="color: #257556;" checked disabled>
 												<span class="text-gray-700 truncate">{{ truncateText(choice.text || choice.value || choice.name || choice, 70) }}</span>
 											</div>
 											<div v-if="actionData.preview_data.choices.length > 6" 
@@ -2653,7 +2653,7 @@ watch(
 											<div v-for="(item, index) in actionData.preview_data.items.slice(0, 6)" 
 												 :key="index"
 												 class="flex items-center gap-2 text-sm">
-												<input type="checkbox" class="focus:ring-[#15919A]" style="color: #15919A;" checked disabled>
+												<input type="checkbox" class="focus:ring-[#257556]" style="color: #257556;" checked disabled>
 												<span class="text-gray-700 truncate">{{ truncateText(item.text || item.name || item, 70) }}</span>
 											</div>
 											<div v-if="actionData.preview_data.items.length > 6" 
@@ -2668,7 +2668,7 @@ watch(
 											<div v-for="(value, index) in actionData.preview_data.values.slice(0, 6)" 
 												 :key="index"
 												 class="flex items-center gap-2 text-sm">
-												<input type="checkbox" class="focus:ring-[#15919A]" style="color: #15919A;" checked disabled>
+												<input type="checkbox" class="focus:ring-[#257556]" style="color: #257556;" checked disabled>
 												<span class="text-gray-700 truncate">{{ truncateText(value.text || value.value || value.name || value, 70) }}</span>
 											</div>
 											<div v-if="actionData.preview_data.values.length > 6" 
@@ -2719,8 +2719,8 @@ watch(
 											type="checkbox" 
 											:value="'Harmful'"
 											@change="toggleFeedbackReason('Harmful')"
-											class="rounded border-gray-300 focus:ring-[#15919A]"
-											style="color: #15919A;"
+											class="rounded border-gray-300 focus:ring-[#257556]"
+											style="color: #257556;"
 										>
 										<span class="ml-2 text-sm text-gray-700">Harmful</span>
 									</label>
@@ -2729,8 +2729,8 @@ watch(
 											type="checkbox" 
 											:value="'Not accurate'"
 											@change="toggleFeedbackReason('Not accurate')"
-											class="rounded border-gray-300 focus:ring-[#15919A]"
-											style="color: #15919A;"
+											class="rounded border-gray-300 focus:ring-[#257556]"
+											style="color: #257556;"
 										>
 										<span class="ml-2 text-sm text-gray-700">Not accurate</span>
 									</label>
@@ -2739,8 +2739,8 @@ watch(
 											type="checkbox" 
 											:value="'Not useful or incomplete'"
 											@change="toggleFeedbackReason('Not useful or incomplete')"
-											class="rounded border-gray-300 focus:ring-[#15919A]"
-											style="color: #15919A;"
+											class="rounded border-gray-300 focus:ring-[#257556]"
+											style="color: #257556;"
 										>
 										<span class="ml-2 text-sm text-gray-700">Not useful or incomplete</span>
 									</label>
@@ -2749,8 +2749,8 @@ watch(
 											type="checkbox" 
 											:value="'Something else'"
 											@change="toggleFeedbackReason('Something else')"
-											class="rounded border-gray-300 focus:ring-[#15919A]"
-											style="color: #15919A;"
+											class="rounded border-gray-300 focus:ring-[#257556]"
+											style="color: #257556;"
 										>
 										<span class="ml-2 text-sm text-gray-700">Something else</span>
 									</label>
@@ -2763,7 +2763,7 @@ watch(
 									<textarea 
 										v-model="feedbackText"
 										rows="4"
-										class="w-full px-3 py-2 border text-sm border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#15919A] focus:border-[#15919A] resize-none"
+										class="w-full px-3 py-2 border text-sm border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#257556] focus:border-[#257556] resize-none"
 										placeholder="Enter your feedback here..."
 									></textarea>
 									<p class="mt-1 text-xs text-gray-500">Do not enter personal, confidential, or sensitive information.</p>
@@ -2779,9 +2779,9 @@ watch(
 							<button 
 								@click="submitFeedback"
 								:disabled="!isFeedbackValid"
-								class="px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#15919A]"
+								class="px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#257556]"
 								:class="isFeedbackValid ? 'hover:opacity-90' : 'cursor-not-allowed'"
-								:style="isFeedbackValid ? 'background-color: #15919A;' : 'background-color: #9ca3af;'"
+								:style="isFeedbackValid ? 'background-color: #257556;' : 'background-color: #9ca3af;'"
 							>
 								Submit
 							</button>
@@ -2804,7 +2804,7 @@ watch(
                     <div class="relative">
                         <button
                             @click="scrollToBottom(true)"
-                            class="w-8 h-8 rounded-full bg-[#15919A] cursor-pointer text-white shadow-lg hover:shadow-xl hover:scale-110 active:scale-95 transition-all duration-200 flex items-center justify-center"
+                            class="w-8 h-8 rounded-full bg-[#257556] cursor-pointer text-white shadow-lg hover:shadow-xl hover:scale-110 active:scale-95 transition-all duration-200 flex items-center justify-center"
                             title="Scroll to bottom"
                             type="button"
                         >
@@ -2907,7 +2907,7 @@ watch(
                                     <template #svg>
                                         <div class="relative group cursor-pointer token-indicator">
 										<!-- Outer glow ring -->
-										<div class="absolute inset-0 rounded-full opacity-20 animate-pulse" style="background-color: #15919A;"></div>
+										<div class="absolute inset-0 rounded-full opacity-20 animate-pulse" style="background-color: #257556;"></div>
 										
 										<!-- Main progress circle -->
 										<div class="relative w-10 h-10 rounded-full border-2 border-gray overflow-hidden bg-white shadow-sm">
@@ -2943,8 +2943,8 @@ watch(
                                     <template #svg>
                                         <button 
                                         @click="toggleExpertMode"
-                                        class="flex items-center gap-1 px-2 py-2 rounded-full transition-all duration-200 text-sm whitespace-nowrap h-8 border border-[#15919A]"
-                                        :class="expertMode ? 'border-[#15919A] bg-[#15919A] text-white shadow-lg' : 'text-[#15919A] bg-white hover:bg-[#15919A]/10'"
+                                        class="flex items-center gap-1 px-2 py-2 rounded-full transition-all duration-200 text-sm whitespace-nowrap h-8 border border-[#257556]"
+                                        :class="expertMode ? 'border-[#257556] bg-[#257556] text-white shadow-lg' : 'text-[#257556] bg-white hover:bg-[#257556]/10'"
 									:disabled="loading"
                                     >
                                         <svg v-if="expertMode" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
@@ -2953,7 +2953,7 @@ watch(
                                         <svg v-else xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
                                             <path fill="currentColor" d="M12.339 2.009L12 4a6 6 0 0 0-4.686 9.748c.086.107.806.853.917.974c.997 1.084 1.61 2.076 1.742 3.278h4.054c.132-1.201.745-2.193 1.74-3.277c.113-.122.83-.866.917-.973A5.97 5.97 0 0 0 18 10l1.99-.34q.009.17.01.34a7.97 7.97 0 0 1-1.756 5.001C17.624 15.774 16 17 16 18.5V21a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2.5c0-1.5-1.625-2.727-2.246-3.501a8 8 0 0 1 6.585-12.99M10 21h4v-1h-4zM17.53.328a.507.507 0 0 1 .94 0l.254.612a4.37 4.37 0 0 0 2.25 2.326l.718.32a.53.53 0 0 1 0 .962l-.76.338a4.36 4.36 0 0 0-2.218 2.251l-.247.565a.506.506 0 0 1-.934 0l-.246-.565a4.36 4.36 0 0 0-2.22-2.251l-.76-.338a.53.53 0 0 1 0-.963l.718-.32A4.37 4.37 0 0 0 17.276.94z" />
 											</svg>
-                                        <span :class="expertMode ? 'text-white' : 'text-[#15919A]'" class="text-xs">Research Mode</span>
+                                        <span :class="expertMode ? 'text-white' : 'text-[#257556]'" class="text-xs">Research Mode</span>
 										</button>
 								  </template>
                                 </TooltipChat>
@@ -2987,7 +2987,7 @@ watch(
 								<!-- Send button -->
 								<button 
 									type="submit" 
-									class="p-2 rounded-lg bg-[#15919A] text-white hover:bg-[#0C7C84] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+									class="p-2 rounded-lg bg-[#257556] text-white hover:bg-[#1d5e45] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
 									:disabled="loading || newMessage.trim() === ''"
 								>
 										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" v-if="!loading" fill="currentColor">
@@ -2999,7 +2999,7 @@ watch(
 							</div>
 						</form>
 					</div>
-					<p class="text-xs py-1 text-gray-500 py-2 text-center">By using this you agree to our <button @click="openTermsModal" class="text-[#15919A] hover:underline">terms and conditions</button>.</p>
+					<p class="text-xs py-1 text-gray-500 py-2 text-center">By using this you agree to our <button @click="openTermsModal" class="text-[#257556] hover:underline">terms and conditions</button>.</p>
 				</div>
 			</div>
 
@@ -3020,7 +3020,7 @@ watch(
 					>
 						<!-- Header -->
 						<div class="px-6 py-4 border-b border-gray-200">
-							<h3 class="text-lg font-semibold text-[#15919A]">Chatbot Terms and Conditions</h3>
+							<h3 class="text-lg font-semibold text-[#257556]">Chatbot Terms and Conditions</h3>
 						</div>
 						
 						<!-- Content -->
@@ -3051,7 +3051,7 @@ watch(
 						<div class="px-6 py-4 bg-gray-50 border-t border-gray-200 flex justify-end rounded-b-2xl">
 							<button 
 								@click="acknowledgeTerms"
-								class="px-4 py-2 text-sm font-medium rounded-lg bg-[#15919A] hover:bg-[#0C7C84] text-white transition-colors"
+								class="px-4 py-2 text-sm font-medium rounded-lg bg-[#257556] hover:bg-[#1d5e45] text-white transition-colors"
 							>
 								I acknowledge
 							</button>
@@ -3101,8 +3101,8 @@ watch(
 							<div class="flex items-center justify-between">
 								<div class="flex items-center space-x-3">
 									<div class="flex-shrink-0">
-										<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" style="color: #15919A" viewBox="0 0 24 24">
-											<path fill="#15919A" d="m9.94 12.646l-2.248-.749c-2.353-.784-3.53-1.176-3.53-1.897c0-.72 1.177-1.113 3.53-1.897l8.513-2.838c1.656-.552 2.484-.828 2.921-.391s.161 1.265-.39 2.92l-2.839 8.514c-.784 2.353-1.176 3.53-1.897 3.53c-.72 0-1.113-1.177-1.897-3.53l-.75-2.247l4.354-4.354a1 1 0 0 0-1.414-1.414z" />
+										<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" style="color: #257556" viewBox="0 0 24 24">
+											<path fill="#257556" d="m9.94 12.646l-2.248-.749c-2.353-.784-3.53-1.176-3.53-1.897c0-.72 1.177-1.113 3.53-1.897l8.513-2.838c1.656-.552 2.484-.828 2.921-.391s.161 1.265-.39 2.92l-2.839 8.514c-.784 2.353-1.176 3.53-1.897 3.53c-.72 0-1.113-1.177-1.897-3.53l-.75-2.247l4.354-4.354a1 1 0 0 0-1.414-1.414z" />
 										</svg>
 									</div>
 									<div>
@@ -3161,7 +3161,7 @@ watch(
 								<textarea 
 									v-model="conversationRatingComment"
 									rows="3"
-									class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#15919A] focus:border-transparent resize-none text-sm"
+									class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#257556] focus:border-transparent resize-none text-sm"
 									placeholder="What did you like or what could we improve?"
 								></textarea>
 								<p class="mt-2 text-xs text-gray-500">Your feedback helps us improve ACT AI</p>
@@ -3187,8 +3187,8 @@ watch(
 									@click="submitConversationRating"
 									:disabled="conversationRating === 0"
 									class="inline-flex justify-center items-center px-6 py-2.5 text-sm font-semibold text-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all"
-									:class="conversationRating > 0 ? 'focus:ring-[#15919A] hover:opacity-90' : 'bg-gray-300 cursor-not-allowed'"
-									:style="conversationRating > 0 ? 'background: linear-gradient(to right, #15919A, #0d9488);' : ''"
+									:class="conversationRating > 0 ? 'focus:ring-[#257556] hover:opacity-90' : 'bg-gray-300 cursor-not-allowed'"
+									:style="conversationRating > 0 ? 'background: linear-gradient(to right, #257556, #0d9488);' : ''"
 								>
 									<svg v-if="conversationRating > 0" class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />

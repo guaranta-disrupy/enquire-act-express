@@ -97,7 +97,7 @@ input[type="text"]:disabled {
 .scrollbar-thin {
     /* Base property for Firefox */
     scrollbar-width: thin;
-    scrollbar-color: #15919a #f1f5f9;
+    scrollbar-color: #257556 #f1f5f9;
 }
 
 /* For WebKit browsers (Chrome, Safari, Edge) */

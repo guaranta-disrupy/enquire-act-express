@@ -12,7 +12,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm dark:text-gray-700 text-base"
+                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm dark:text-gray-700 text-base"
                 >
                     <!-- <option :value="''">Default (Roboto)</option> -->
                     <option
@@ -37,7 +37,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm dark:text-gray-700 text-base w-full"
+                    class="py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm dark:text-gray-700 text-base w-full"
                 >
                     <option :value="''">Default</option>
                     <option
@@ -59,7 +59,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm"
+                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm"
                 >
                     <option :value="''">Default</option>
                     <option
@@ -81,7 +81,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm w-full"
+                    class="py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm w-full"
                 >
                     <option :selected="modelValue === ''">Default</option>
                     <option value="solid">solid</option>
@@ -102,7 +102,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm w-full"
+                    class="py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm w-full"
                 >
                     <option value="block">block</option>
                     <option value="none">none</option>
@@ -117,7 +117,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm w-full"
+                    class="py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm w-full"
                 >
                     <option :selected="modelValue === ''">Default</option>
                     <option value="solid">solid</option>
@@ -140,7 +140,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm"
+                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm"
                 >
                     <option :selected="modelValue === ''">Default</option>
                     <option value="normal">Normal</option>
@@ -162,7 +162,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm"
+                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm"
                 >
                     <option value="auto">auto</option>
                     <option value="balance">balance</option>
@@ -179,7 +179,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm"
+                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm"
                 >
                     <option value="no-repeat">no-repeat</option>
                     <option value="repeat">repeat</option>
@@ -198,7 +198,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm"
+                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm"
                 >
                     <option value="left">left</option>
                     <option value="center">center</option>
@@ -220,7 +220,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm"
+                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm"
                 >
                     <option :selected="modelValue === 'none'">none</option>
                     <option value="lowercase">lowercase</option>
@@ -236,7 +236,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm pr-3 w-full"
+                    class="py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm pr-3 w-full"
                 >
                     <option :value="''">Default</option>
                     <option
@@ -260,7 +260,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm pr-3"
+                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm pr-3"
                 >
                     <option :selected="modelValue === ''">Default</option>
                     <option value="left">Left</option>
@@ -275,7 +275,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm w-[16vmin]"
+                    class="py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm w-[16vmin]"
                 >
                     <option :selected="modelValue === ''">Default</option>
                     <option value="fixed">Fixed</option>
@@ -296,7 +296,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm w-[16vmin]"
+                    class="py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm w-[16vmin]"
                 >
                     <option value="center">Center</option>
                     <option value="flex-start">Flex Start</option>
@@ -382,7 +382,7 @@
                         type="number"
                         :value="getNumericValue(modelValue)"
                         @input="handleVminInput($event.target.value)"
-                        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm w-full"
+                        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm w-full"
                         placeholder=""
                         :min="isNegativeAllowed ? -100 : 0"
                         step="0.1"
@@ -397,7 +397,7 @@
                         type="number"
                         :value="getNumericValue(modelValue)"
                         @input="handleRemInput($event.target.value)"
-                        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm w-full"
+                        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm w-full"
                         placeholder=""
                         :min="0"
                         step="0.05"
@@ -412,7 +412,7 @@
                         type="number"
                         :value="getNumericValue(modelValue)"
                         @input="handleIntegerInput($event.target.value)"
-                        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm w-full"
+                        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm w-full"
                         placeholder=""
                         min="1"
                         step="1"
@@ -427,7 +427,7 @@
                         type="number"
                         :value="getNumericValue(modelValue)"
                         @input="handleScaleInput($event.target.value)"
-                        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm w-full"
+                        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm w-full"
                         placeholder=""
                         min="0"
                         step="0.1"
@@ -442,7 +442,7 @@
                         type="number"
                         :value="getNumericValue(modelValue)"
                         @input="handlePxInput($event.target.value)"
-                        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm w-full"
+                        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm w-full"
                         placeholder=""
                         min="0"
                         step="1"
@@ -457,7 +457,7 @@
                         type="number"
                         :value="getNumericValue(modelValue)"
                         @input="handlePercentageInput($event.target.value)"
-                        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm w-full"
+                        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm w-full"
                         placeholder=""
                         step="1"
                     />
@@ -471,7 +471,7 @@
                         type="number"
                         :value="getNumericValue(modelValue)"
                         @input="handleOpacityInput($event.target.value)"
-                        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm w-[16vmin]"
+                        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm w-[16vmin]"
                         placeholder=""
                         min="0"
                         max="1"
@@ -489,7 +489,7 @@
                     type="number"
                     :value="getNumericValue(modelValue)"
                     @input="handleLineHeightInput($event.target.value)"
-                    class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm w-full"
+                    class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm w-full"
                     placeholder=""
                     min="0.5"
                     max="3"
@@ -502,7 +502,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm"
+                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm"
                 >
                     <option value="block">Block</option>
                     <option value="inline">Inline</option>
@@ -520,7 +520,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm"
+                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm"
                 >
                     <option value="row">Row</option>
                     <option value="row-reverse">Row Reverse</option>
@@ -532,7 +532,7 @@
                     :id="variable"
                     @input="$emit('update:modelValue', $event.target.value)"
                     :value="modelValue"
-                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm"
+                    class="w-full py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm"
                 >
                     <option value="1">Right</option>
                     <option value="-1">Left</option>
@@ -596,7 +596,7 @@
                     type="text"
                     :value="modelValue"
                     @input="$emit('update:modelValue', $event.target.value)"
-                    class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-sm w-full"
+                    class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-sm w-full"
                     placeholder=""
                 />
             </div>

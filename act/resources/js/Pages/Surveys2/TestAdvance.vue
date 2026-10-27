@@ -239,7 +239,7 @@ const handleAutoNextChange = (value) => {
 
 <template>
     <div
-        class="bg-[#15919A] text-white shadow p-4 mb-2 w-[100vh] text-center uppercase"
+        class="bg-[#257556] text-white shadow p-4 mb-2 w-[100vh] text-center uppercase"
     >
 		Advance
 	</div>
@@ -358,7 +358,7 @@ const handleAutoNextChange = (value) => {
                         <JetLabel value="Applied to" />
                         <select
                             v-model="macro.type"
-                            class="w-full mt-1 px-2 py-1 border border-gray-300 rounded-md shadow-xs focus:ring-[#15919A] focus:border-[#15919A] text-sm dark:text-gray-700 text-base"
+                            class="w-full mt-1 px-2 py-1 border border-gray-300 rounded-md shadow-xs focus:ring-[#257556] focus:border-[#257556] text-sm dark:text-gray-700 text-base"
                         >
                             <option value="tabular">Tabular</option>
                             <option value="respondent">Respondent Level</option>

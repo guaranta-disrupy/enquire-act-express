@@ -39,11 +39,11 @@ defineProps({
             'px-5 py-2 text-lg focus:ring-2 focus:ring-offset-2': size == 'lg',
             'bg-gray-200 hover:bg-gray-300 text-gray-600 focus:ring-gray-500':
                 variant == 'secondary',
-            'bg-[#15919A] hover:bg-[#0C7C84] text-white focus:ring-[#0C7C84]':
+            'bg-[#257556] hover:bg-[#1d5e45] text-white focus:ring-[#1d5e45]':
                 variant == 'primary',
-            'bg-[#15919A20] hover:bg-[#15919A50] text-[#15919A] focus:ring-[#0C7C84]':
+            'bg-[#25755620] hover:bg-[#25755650] text-[#257556] focus:ring-[#1d5e45]':
                 variant == 'primary-light',
-            'bg-[#15919A40] hover:bg-[#15919A20] text-[#15919A] focus:ring-[#0C7C84]':
+            'bg-[#25755640] hover:bg-[#25755620] text-[#257556] focus:ring-[#1d5e45]':
                 variant == 'primary-dark',
             'bg-orange-400 hover:bg-orange-500 text-white focus:ring-orange-500':
                 variant == 'warning',
@@ -81,7 +81,7 @@ defineProps({
                 variant == 'gray-100',
             'bg-slate-600 hover:bg-slate-500 text-white focus:ring-slate-500':
                 variant == 'slate',
-            'bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-500 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 focus:ring-[#15919A]':
+            'bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-500 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 focus:ring-[#257556]':
                 variant == 'default',
             'rounded-full': rounded == 'full',
             'rounded-lg': rounded == 'lg',

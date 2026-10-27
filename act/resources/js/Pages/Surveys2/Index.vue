@@ -819,7 +819,7 @@ const trialAction = (type = "trial") => {
                                 "
                             >
                                 <button
-                                    class="bg-[#15919A] text-white rounded-full text-[16px] hover:bg-[#0C7C84] w-[200px] h-[44px] justify-center items-center flex gap-2"
+                                    class="bg-[#257556] text-white rounded-full text-[16px] hover:bg-[#1d5e45] w-[200px] h-[44px] justify-center items-center flex gap-2"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -860,7 +860,7 @@ const trialAction = (type = "trial") => {
                                         viewBox="0 0 24 24"
                                         stroke-width="1.5"
                                         stroke="currentColor"
-                                        class="w-[60px] hover:stroke-[#15919A] transition-colors duration-200"
+                                        class="w-[60px] hover:stroke-[#257556] transition-colors duration-200"
                                     >
                                         <path
                                             data-v-8cc99868=""
@@ -909,7 +909,7 @@ const trialAction = (type = "trial") => {
                                     <div
                                         v-for="survey in surveys"
                                         :key="survey.id"
-                                        class="hover:bg-[#15919A20] transition-all duration-200"
+                                        class="hover:bg-[#25755620] transition-all duration-200"
                                     >
                                         <DropdownLink
                                             :href="
@@ -929,7 +929,7 @@ const trialAction = (type = "trial") => {
                     </div> -->
 
                     <div
-                        class="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#15919A30] text-[#15919A] text-[20px] cursor-default"
+                        class="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#25755630] text-[#257556] text-[20px] cursor-default"
                         :title="$page.props.auth.user.name"
                     >
                         {{ getInitials($page.props.auth.user.name) }}
@@ -975,7 +975,7 @@ const trialAction = (type = "trial") => {
                         <!-- <Link :href="route('survey2.create', props.survey)" v-if="userPermissions.canUpdateSurvey"> -->
                         <!-- <Link :href="route('survey2.create', props.survey)" v-if="userPermissions.canUpdateSurvey">
                         <button
-                            class="w-full py-6 gap-2 border text-[14px] font-bold border-gray-200 flex flex-col rounded-none bg-white hover:text-white hover:bg-[#15919A] text-[#323232] items-center"
+                            class="w-full py-6 gap-2 border text-[14px] font-bold border-gray-200 flex flex-col rounded-none bg-white hover:text-white hover:bg-[#257556] text-[#323232] items-center"
                             shadow="xl"
                         >
                             <svg
@@ -1010,7 +1010,7 @@ const trialAction = (type = "trial") => {
 
                         <!-- Add Round -->
                         <!-- <button
-                            class="w-full py-6 gap-2 text-[14px] font-bold flex flex-col rounded-none border border-gray-200 bg-white hover:text-white hover:bg-[#15919A] text-[#323232] items-center"
+                            class="w-full py-6 gap-2 text-[14px] font-bold flex flex-col rounded-none border border-gray-200 bg-white hover:text-white hover:bg-[#257556] text-[#323232] items-center"
                             shadow="xl"
                             @click.prevent="openTrialModeSelection()"
                         >
@@ -1043,7 +1043,7 @@ const trialAction = (type = "trial") => {
                         </button> -->
                         <!-- Add round 2.0 -->
                         <button
-                            class="w-full py-6 gap-1 text-[14px] font-bold flex flex-col rounded-none border border-gray-200 text-white bg-[#15919A] text-[#323232] items-center duration-300 transition-all ease-in-out cursor-default"
+                            class="w-full py-6 gap-1 text-[14px] font-bold flex flex-col rounded-none border border-gray-200 text-white bg-[#257556] text-[#323232] items-center duration-300 transition-all ease-in-out cursor-default"
                             shadow="xl"
                         >
                             <svg
@@ -1070,7 +1070,7 @@ const trialAction = (type = "trial") => {
                         >
                             <button
                                 size="sm"
-                                class="w-full py-5 gap-2 flex flex-col rounded-none border text-[14px] font-bold border-gray-200 bg-white hover:text-white hover:bg-[#15919A] text-[#323232] items-center duration-300 transition-all ease-in-out"
+                                class="w-full py-5 gap-2 flex flex-col rounded-none border text-[14px] font-bold border-gray-200 bg-white hover:text-white hover:bg-[#257556] text-[#323232] items-center duration-300 transition-all ease-in-out"
                                 shadow="xl"
                             >
                                 <svg
@@ -1104,7 +1104,7 @@ const trialAction = (type = "trial") => {
                                     survey.id,
                                 ])
                             "
-                            class="w-full py-6 gap-2 text-[14px] font-bold flex flex-col rounded-none border border-gray-200 bg-white hover:text-white hover:bg-[#15919A] text-[#323232] items-center duration-300 transition-all ease-in-out"
+                            class="w-full py-6 gap-2 text-[14px] font-bold flex flex-col rounded-none border border-gray-200 bg-white hover:text-white hover:bg-[#257556] text-[#323232] items-center duration-300 transition-all ease-in-out"
                             shadow="xl"
                         >
                             <svg
@@ -1145,7 +1145,7 @@ const trialAction = (type = "trial") => {
                         <!-- Settings -->
                         <button
                             v-if="props.survey.config.theme !== 0"
-                            class="w-full py-6 gap-2 text-[14px] font-bold flex flex-col rounded-none border border-gray-200 bg-white hover:text-white hover:bg-[#15919A] text-[#323232] items-center duration-300 transition-all ease-in-out"
+                            class="w-full py-6 gap-2 text-[14px] font-bold flex flex-col rounded-none border border-gray-200 bg-white hover:text-white hover:bg-[#257556] text-[#323232] items-center duration-300 transition-all ease-in-out"
                             shadow="xl"
                             @click.prevent="settingModal = true"
                         >
@@ -1176,7 +1176,7 @@ const trialAction = (type = "trial") => {
                         <!-- Themes -->
                         <!-- <button
                             v-if="props.survey.config.theme !== 0"
-                            class="w-full py-6 gap-2 text-[14px] font-bold flex flex-col rounded-none border border-gray-200 bg-white hover:text-white hover:bg-[#15919A] text-[#323232] items-center duration-300 transition-all ease-in-out"
+                            class="w-full py-6 gap-2 text-[14px] font-bold flex flex-col rounded-none border border-gray-200 bg-white hover:text-white hover:bg-[#257556] text-[#323232] items-center duration-300 transition-all ease-in-out"
                             shadow="xl"
                             @click.prevent="themesModal = true"
                         >
@@ -1214,7 +1214,7 @@ const trialAction = (type = "trial") => {
                         <!-- Advance -->
                         <button
                             v-if="props.survey.config.theme !== 0"
-                            class="w-full py-6 gap-2 text-[14px] font-bold flex flex-col rounded-none border border-gray-200 bg-white hover:text-white hover:bg-[#15919A] text-[#323232] items-center duration-300 transition-all ease-in-out"
+                            class="w-full py-6 gap-2 text-[14px] font-bold flex flex-col rounded-none border border-gray-200 bg-white hover:text-white hover:bg-[#257556] text-[#323232] items-center duration-300 transition-all ease-in-out"
                             shadow="xl"
                             @click.prevent="advanceModal = true"
                         >
@@ -1247,7 +1247,7 @@ const trialAction = (type = "trial") => {
 
                         <!-- Variable 2.0 -->
                         <!-- <button
-                            class="w-full py-6 gap-2 text-[14px] font-bold flex flex-col rounded-none border border-gray-200 bg-white hover:text-white hover:bg-[#15919A] text-[#323232] items-center"
+                            class="w-full py-6 gap-2 text-[14px] font-bold flex flex-col rounded-none border border-gray-200 bg-white hover:text-white hover:bg-[#257556] text-[#323232] items-center"
                             shadow="xl"
                             @click.prevent="variableModal = true"
                         >
@@ -1290,7 +1290,7 @@ const trialAction = (type = "trial") => {
                             }"
                         >
                             <button
-                                class="w-full py-6 gap-2 border text-[14px] font-bold border-gray-200 flex flex-col rounded-none bg-white hover:text-white hover:bg-[#15919A] text-[#323232] items-center duration-300 transition-all ease-in-out"
+                                class="w-full py-6 gap-2 border text-[14px] font-bold border-gray-200 flex flex-col rounded-none bg-white hover:text-white hover:bg-[#257556] text-[#323232] items-center duration-300 transition-all ease-in-out"
                                 shadow="xl"
                             >
                                 <svg
@@ -1322,7 +1322,7 @@ const trialAction = (type = "trial") => {
                             class="flex flex-col w-full uppercase"
                         >
                             <button
-                                class="w-full py-6 gap-2 border text-[14px] font-bold border-gray-200 flex flex-col rounded-none bg-white hover:text-white hover:bg-[#15919A] text-[#323232] items-center"
+                                class="w-full py-6 gap-2 border text-[14px] font-bold border-gray-200 flex flex-col rounded-none bg-white hover:text-white hover:bg-[#257556] text-[#323232] items-center"
                                 shadow="xl"
                             >
                                 <svg
@@ -1378,7 +1378,7 @@ const trialAction = (type = "trial") => {
                                     'flex items-center justify-center w-12 h-12 rounded-full shadow-lg ring-2 ring-white select-none',
                                     dragging ? 'cursor-grabbing scale-[0.98]' : 'cursor-grab'
                                 ]"
-                                :style="isChatOpen ? 'background-color: #323232;' : 'background-color: #15919A;'"
+                                :style="isChatOpen ? 'background-color: #323232;' : 'background-color: #257556;'"
                                 >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="text-white">
                                     <path fill="currentColor"
@@ -1494,12 +1494,12 @@ const trialAction = (type = "trial") => {
                                                     width="26"
                                                     height="26"
                                                     rx="13"
-                                                    stroke="#15919A"
+                                                    stroke="#257556"
                                                     stroke-width="2"
                                                 />
                                                 <path
                                                     d="M66 64.8125V77.1875M72.1875 71H59.8125"
-                                                    stroke="#15919A"
+                                                    stroke="#257556"
                                                     stroke-width="2"
                                                     stroke-linecap="round"
                                                     stroke-linejoin="round"
@@ -1537,7 +1537,7 @@ const trialAction = (type = "trial") => {
                                                 @click.prevent="
                                                     openTrialModeSelection()
                                                 "
-                                                class="mt-2 bg-[#15919A] text-white hover:bg-[#0C7C84] text-[20px] flex items-center rounded-lg text-center px-4 py-2 gap-2 group overflow-hidden relative hidden"
+                                                class="mt-2 bg-[#257556] text-white hover:bg-[#1d5e45] text-[20px] flex items-center rounded-lg text-center px-4 py-2 gap-2 group overflow-hidden relative hidden"
                                             >
                                                 Add Round
                                             </button>
@@ -1568,7 +1568,7 @@ const trialAction = (type = "trial") => {
                                                 Add Round
                                             </JetButton>
                                             <div
-                                                class="absolute bottom-full left-[-153px] mb-1.5 px-4 leading-none rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                                class="absolute bottom-full left-[-153px] mb-1.5 px-4 leading-none rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                                 role="tooltip"
                                             >
                                                 <p>
@@ -1644,7 +1644,7 @@ const trialAction = (type = "trial") => {
                                                 </span>
                                             </template>
 
-                                            <!-- <div class="flex items-center text-sm rounded-lg bg-[#15919A] text-white  px-2 font-medium">
+                                            <!-- <div class="flex items-center text-sm rounded-lg bg-[#257556] text-white  px-2 font-medium">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-auto h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
@@ -1887,7 +1887,7 @@ const trialAction = (type = "trial") => {
                                     }"
                                 >
                                     <div
-                                        class="text-sm font-bold text-base mb-3 bg-[#15919A10] py-1.5 rounded-t-md text-center uppercase"
+                                        class="text-sm font-bold text-base mb-3 bg-[#25755610] py-1.5 rounded-t-md text-center uppercase"
                                     >
                                         Round Title
                                     </div>
@@ -1908,7 +1908,7 @@ const trialAction = (type = "trial") => {
                                     "
                                 >
                                     <div
-                                        class="text-sm font-bold text-base mb-3 bg-[#15919A10] py-1.5 rounded-t-md text-center uppercase"
+                                        class="text-sm font-bold text-base mb-3 bg-[#25755610] py-1.5 rounded-t-md text-center uppercase"
                                     >
                                         Header
                                     </div>
@@ -1927,7 +1927,7 @@ const trialAction = (type = "trial") => {
                                     v-if="test.primes.length > 0"
                                 >
                                     <div
-                                        class="text-sm font-bold text-base mb-3 bg-[#15919A10] py-1.5 uppercase"
+                                        class="text-sm font-bold text-base mb-3 bg-[#25755610] py-1.5 uppercase"
                                     >
                                         Primes
                                         <span
@@ -2049,7 +2049,7 @@ const trialAction = (type = "trial") => {
                                     v-if="test.targets.length > 0"
                                 >
                                     <div
-                                        class="text-sm font-bold text-base mb-3 bg-[#15919A10] py-1.5 uppercase"
+                                        class="text-sm font-bold text-base mb-3 bg-[#25755610] py-1.5 uppercase"
                                     >
                                         Targets
                                         <span
@@ -2147,7 +2147,7 @@ const trialAction = (type = "trial") => {
                                                             "
                                                         >
                                                             <span
-                                                                class="text-xs py-0.5 px-2 bg-[#15919A] rounded-full text-white"
+                                                                class="text-xs py-0.5 px-2 bg-[#257556] rounded-full text-white"
                                                                 >Unselect</span
                                                             >
                                                         </span>
@@ -2497,13 +2497,13 @@ const trialAction = (type = "trial") => {
                         <div>
                             <div class="font-semibold text-left mb-3 mt-2">
                                 <span
-                                    class="bg-[#15919A] text-white text-md py-1 px-4 rounded-lg"
+                                    class="bg-[#257556] text-white text-md py-1 px-4 rounded-lg"
                                     >{{ variable.name }}</span
                                 >
                             </div>
                             <ul class="list-disc list-inside text-gray-700">
                                 <a
-                                    class="my-1 block hover:text-[#15919A] hover:underline cursor-pointer text-lg"
+                                    class="my-1 block hover:text-[#257556] hover:underline cursor-pointer text-lg"
                                     v-for="(
                                         criterion, index
                                     ) in (variable.config &&

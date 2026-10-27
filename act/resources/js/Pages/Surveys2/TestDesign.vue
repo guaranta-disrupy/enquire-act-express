@@ -48,7 +48,7 @@ const setTheme = (val) => {
 
 <template>
   <div class="flex flex-col w-[40vh] ">
-    <div class="bg-[#15919A] text-white  p-4 w-full text-center uppercase">
+    <div class="bg-[#257556] text-white  p-4 w-full text-center uppercase">
       Design
     </div>
 
@@ -63,8 +63,8 @@ const setTheme = (val) => {
         @mouseover="isHoveringLayout = true"
         @mouseleave="isHoveringLayout = false"
         :class="[
-          'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#117c85] focus:outline-none flex flex-row justify-between',
-          dropdowns.layout ? 'bg-[#15919A] text-white' : 'bg-[#E7E7E7] text-[#454545]'
+          'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#1d5e45] focus:outline-none flex flex-row justify-between',
+          dropdowns.layout ? 'bg-[#257556] text-white' : 'bg-[#E7E7E7] text-[#454545]'
         ]"
       >
         <span
@@ -102,7 +102,7 @@ const setTheme = (val) => {
         <li class="p-3 border-t">
           <div class="flex items-center gap-2 mb-2 text-sm text-gray-600">Choose layout theme</div>
           <div class="flex gap-2">
-            <button type="button" @click="setTheme(1)" class="px-3 py-2 rounded-md text-white bg-[#15919A] hover:bg-[#117c85]">Rounded Circle</button>
+            <button type="button" @click="setTheme(1)" class="px-3 py-2 rounded-md text-white bg-[#257556] hover:bg-[#1d5e45]">Rounded Circle</button>
             <button type="button" @click="setTheme(2)" class="px-3 py-2 rounded-md text-white bg-gray-700 hover:bg-gray-800">Outside Circle</button>
           </div>
           <div class="mt-2 text-xs text-gray-500">Current: Theme {{ (dataStore.tests?.config?.theme ?? 1) }}</div>
@@ -119,8 +119,8 @@ const setTheme = (val) => {
         @mouseover="isHoveringPrimes = true"
         @mouseleave="isHoveringPrimes = false"
         :class="[
-          'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#117c85] focus:outline-none flex flex-row justify-between',
-          dropdowns.primes ? 'bg-[#15919A] text-white' : 'bg-[#E7E7E7] text-[#454545]'
+          'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#1d5e45] focus:outline-none flex flex-row justify-between',
+          dropdowns.primes ? 'bg-[#257556] text-white' : 'bg-[#E7E7E7] text-[#454545]'
         ]"
       >
         <span
@@ -165,8 +165,8 @@ const setTheme = (val) => {
         @mouseover="isHoveringTargets = true"
         @mouseleave="isHoveringTargets = false"
         :class="[
-          'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#117c85] focus:outline-none flex flex-row justify-between',
-          dropdowns.targets ? 'bg-[#15919A] text-white' : 'bg-[#E7E7E7] text-[#454545]'
+          'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#1d5e45] focus:outline-none flex flex-row justify-between',
+          dropdowns.targets ? 'bg-[#257556] text-white' : 'bg-[#E7E7E7] text-[#454545]'
         ]"
       >
         <span
@@ -215,8 +215,8 @@ const setTheme = (val) => {
         @mouseover="isHoveringHeader = true"
         @mouseleave="isHoveringHeader = false"
         :class="[
-          'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#117c85] focus:outline-none flex flex-row justify-between',
-          dropdowns.header ? 'bg-[#15919A] text-white' : 'bg-[#E7E7E7] text-[#454545]'
+          'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#1d5e45] focus:outline-none flex flex-row justify-between',
+          dropdowns.header ? 'bg-[#257556] text-white' : 'bg-[#E7E7E7] text-[#454545]'
         ]"
       >
         <span
@@ -265,8 +265,8 @@ const setTheme = (val) => {
         @mouseover="isHoveringFooter = true"
         @mouseleave="isHoveringFooter = false"
         :class="[
-          'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#117c85] focus:outline-none flex flex-row justify-between',
-          dropdowns.footer ? 'bg-[#15919A] text-white' : 'bg-[#E7E7E7] text-[#454545]'
+          'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#1d5e45] focus:outline-none flex flex-row justify-between',
+          dropdowns.footer ? 'bg-[#257556] text-white' : 'bg-[#E7E7E7] text-[#454545]'
         ]"
       >
         <span
@@ -314,8 +314,8 @@ const setTheme = (val) => {
         @mouseover="isHoveringWarning = true"
         @mouseleave="isHoveringWarning = false"
         :class="[
-          'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#117c85] focus:outline-none flex flex-row justify-between',
-          dropdowns.warning ? 'bg-[#15919A] text-white' : 'bg-[#E7E7E7] text-[#454545]'
+          'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#1d5e45] focus:outline-none flex flex-row justify-between',
+          dropdowns.warning ? 'bg-[#257556] text-white' : 'bg-[#E7E7E7] text-[#454545]'
         ]"
       >
         <span
@@ -384,7 +384,7 @@ body {
 
 .custom-scrollbar {
   scrollbar-width: thin;              /* For Firefox */
-  scrollbar-color: #15919A transparent; /* thumb and track color */
+  scrollbar-color: #257556 transparent; /* thumb and track color */
 }
 
 /* For WebKit (Chrome, Safari, Edge) */
@@ -397,7 +397,7 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #15919A; /* light gray thumb */
+  background-color: #257556; /* light gray thumb */
   border-radius: 1px;
 }
 </style>

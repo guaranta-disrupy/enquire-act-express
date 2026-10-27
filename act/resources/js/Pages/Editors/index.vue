@@ -23,7 +23,7 @@
         class="flex items-center justify-between h-[70px] py-2 bg-white shadow-lg p-4 z-50"
       >
         <button
-          class="bg-[#15919A] text-white rounded-full text-[16px] hover:bg-[#0C7C84] w-[200px] h-[44px] flex gap-2 items-center justify-center"
+          class="bg-[#257556] text-white rounded-full text-[16px] hover:bg-[#1d5e45] w-[200px] h-[44px] flex gap-2 items-center justify-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@
       >
         <button
           @click="saveTest"
-          class="px-4 bg-[#15919A] text-white font-bold rounded-full text-[20px] hover:bg-[#0C7C84] w-[110px] h-[44px] flex items-center justify-center"
+          class="px-4 bg-[#257556] text-white font-bold rounded-full text-[20px] hover:bg-[#1d5e45] w-[110px] h-[44px] flex items-center justify-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -78,8 +78,8 @@
             :class="[
               'w-full py-5 gap-2 flex flex-col items-center text-[14px] font-bold border border-gray-200',
               activeTab === item.tab
-                ? 'bg-[#15919A] text-white'
-                : 'bg-white text-[#323232] hover:bg-[#15919A] hover:text-white',
+                ? 'bg-[#257556] text-white'
+                : 'bg-white text-[#323232] hover:bg-[#257556] hover:text-white',
             ]"
           >
             <span v-html="item.icon"></span>

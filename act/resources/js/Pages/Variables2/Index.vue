@@ -562,7 +562,7 @@ const insertImagesFromModal = () => {
                     <div class="flex items-center px-1 gap-4">
                         <!-- <div>
                             <a :href="route('redirect.fluent', survey.config.survey_id)">
-                                <Button class="bg-[#15919A] text-white rounded-full text-[16px] hover:bg-[#0C7C84] w-[200px] h-[44px] justify-center items-center flex gap-2" size="sm" shadow="2xl">
+                                <Button class="bg-[#257556] text-white rounded-full text-[16px] hover:bg-[#1d5e45] w-[200px] h-[44px] justify-center items-center flex gap-2" size="sm" shadow="2xl">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
                                     </svg>
@@ -572,7 +572,7 @@ const insertImagesFromModal = () => {
                         </div> -->
                         <!-- <div>
                             <Link class="mr-1 inline-flex items-center text-sm text-sky-500" :href="route('survey2.index', survey)">
-                                <Button class="bg-[#15919A] text-white rounded-full text-[16px] hover:bg-[#0C7C84] w-[200px] h-[44px] justify-center items-center flex gap-2" size="sm" shadow="2xl">
+                                <Button class="bg-[#257556] text-white rounded-full text-[16px] hover:bg-[#1d5e45] w-[200px] h-[44px] justify-center items-center flex gap-2" size="sm" shadow="2xl">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
                                     </svg>
@@ -595,7 +595,7 @@ const insertImagesFromModal = () => {
                                     viewBox="0 0 24 24"
                                     stroke-width="1.5"
                                     stroke="currentColor"
-                                    class="w-[60px] hover:stroke-[#15919A] transition-colors duration-200"
+                                    class="w-[60px] hover:stroke-[#257556] transition-colors duration-200"
                                 >
                                     <path
                                         data-v-8cc99868=""
@@ -619,7 +619,7 @@ const insertImagesFromModal = () => {
                     </div> -->
 
                     <div
-                        class="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#15919A30] text-[#15919A] text-[20px] cursor-default"
+                        class="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#25755630] text-[#257556] text-[20px] cursor-default"
                         :title="$page.props.auth.user.name"
                     >
                         {{ getInitials($page.props.auth.user.name) }}
@@ -654,7 +654,7 @@ const insertImagesFromModal = () => {
                                     class="px-4"
                                     :class="[
                                         1 === 1
-                                            ? 'border-[#15919A] text-[#15919A]'
+                                            ? 'border-[#257556] text-[#257556]'
                                             : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300',
                                         'whitespace-nowrap py-4 px-1 border-b-2 font-bold text-md',
                                     ]"
@@ -663,7 +663,7 @@ const insertImagesFromModal = () => {
                                     <span
                                         :class="[
                                             1 === 1
-                                                ? 'bg-[#15919A] text-white'
+                                                ? 'bg-[#257556] text-white'
                                                 : 'bg-gray-100 text-gray-900',
                                             'ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium',
                                         ]"
@@ -1211,7 +1211,7 @@ const insertImagesFromModal = () => {
             maxWidth="lg"
         >
             <template #title>
-                <span class="text-[#15919A] font-bold">Insert image URLs</span>
+                <span class="text-[#257556] font-bold">Insert image URLs</span>
             </template>
             <template #content>
                 <div class="space-y-3">
@@ -1219,7 +1219,7 @@ const insertImagesFromModal = () => {
                     <textarea
                         v-model="imageUrlsText"
                         placeholder="https://example.com/a.jpg\nhttps://example.com/b.png"
-                        class="mt-1 w-full min-h-[140px] text-sm border border-gray-300 rounded-md focus:ring-[#15919A] focus:border-[#15919A]"
+                        class="mt-1 w-full min-h-[140px] text-sm border border-gray-300 rounded-md focus:ring-[#257556] focus:border-[#257556]"
                     ></textarea>
                     <p class="text-xs text-gray-500">
                         Each non-empty line will be inserted as an image on its
@@ -1271,7 +1271,7 @@ const insertImagesFromModal = () => {
 }
 
 .overflow-y-auto::-webkit-scrollbar-thumb {
-    background: #15919a;
+    background: #257556;
     border-radius: 3px;
 }
 
@@ -1282,7 +1282,7 @@ const insertImagesFromModal = () => {
 /* Firefox scrollbar */
 .overflow-y-auto {
     scrollbar-width: thin;
-    scrollbar-color: #15919a #f1f5f9;
+    scrollbar-color: #257556 #f1f5f9;
 }
 
 /* Make images inline with text */

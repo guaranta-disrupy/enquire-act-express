@@ -111,7 +111,7 @@
                 <div class="w-2/3 ml-2">
                     <select
                         v-model="condition.left_operator"
-                        class="form-select mt-1 block w-3/6 text-xs dark:bg-gray-900 rounded-lg p-1 border-gray-300 dark:border-gray-500 focus:ring-[#15919A] focus:border-[#15919A]"
+                        class="form-select mt-1 block w-3/6 text-xs dark:bg-gray-900 rounded-lg p-1 border-gray-300 dark:border-gray-500 focus:ring-[#257556] focus:border-[#257556]"
                     >
                         <option value="and">AND</option>
                         <option value="or">OR</option>
@@ -129,7 +129,7 @@
             <div class="relative flex" v-if="condition.method !== 'process'">
                 <select
                     v-model="condition.method"
-                    class="m-0 block w-1/6 text-xs dark:bg-gray-900 rounded-l-lg p-1 border-gray-300 border-r-0 min-w-0 flex-auto dark:border-gray-500 focus:ring-[#15919A] focus:border-[#15919A]"
+                    class="m-0 block w-1/6 text-xs dark:bg-gray-900 rounded-l-lg p-1 border-gray-300 border-r-0 min-w-0 flex-auto dark:border-gray-500 focus:ring-[#257556] focus:border-[#257556]"
                 >
                     <option value="process">Process</option>
                     <!-- <option value="segment">Segment</option> -->
@@ -146,7 +146,7 @@
             <select
                 v-else
                 v-model="condition.method"
-                class="form-select mt-1 block w-full text-xs dark:bg-gray-900 rounded-lg p-1 border-gray-300 dark:border-gray-500 focus:ring-[#15919A] focus:border-[#15919A]"
+                class="form-select mt-1 block w-full text-xs dark:bg-gray-900 rounded-lg p-1 border-gray-300 dark:border-gray-500 focus:ring-[#257556] focus:border-[#257556]"
             >
                 <option value="process">Process</option>
                 <!-- <option value="segment">Segment</option> -->
@@ -166,7 +166,7 @@
                 <jet-label value="Operator" class="text-xs" />
                 <select
                     v-model="condition.operator"
-                    class="form-select mt-1 block w-full text-xs dark:bg-gray-900 rounded-lg p-1 border-gray-300 dark:border-gray-500 focus:ring-[#15919A] focus:border-[#15919A]"
+                    class="form-select mt-1 block w-full text-xs dark:bg-gray-900 rounded-lg p-1 border-gray-300 dark:border-gray-500 focus:ring-[#257556] focus:border-[#257556]"
                 >
                     <option value="==">&equals;&equals;</option>
                     <option value="!=">!&equals;</option>

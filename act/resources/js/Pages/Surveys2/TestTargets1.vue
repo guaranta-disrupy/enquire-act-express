@@ -208,7 +208,7 @@ const parseVariablesToElements = (htmlContent) => {
         const normalized = stripParagraphsAroundImages(String(htmlContent));
         return normalized.replace(/\{\{([^}]+)\}\}/g, (_m, name) => {
             const variableName = String(name).trim();
-            return `<span class="ql-variable" data-name="${variableName}" contenteditable="false" style="background: #15919A; color: #fff; padding: 4px 8px; border-radius: 6px; font-weight: 600; display: inline; margin: 0 2px; cursor: not-allowed; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; box-shadow: 2px 2px 4px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.3); border: 1px solid #0C7C84;">${variableName}</span>`;
+            return `<span class="ql-variable" data-name="${variableName}" contenteditable="false" style="background: #257556; color: #fff; padding: 4px 8px; border-radius: 6px; font-weight: 600; display: inline; margin: 0 2px; cursor: not-allowed; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; box-shadow: 2px 2px 4px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.3); border: 1px solid #1d5e45;">${variableName}</span>`;
         });
     } catch (e) {
         return htmlContent;
@@ -1337,7 +1337,7 @@ onBeforeMount(() => {
     <div class="flex flex-col">
         <div
             v-if="form.targets.length"
-            class="w-full mt-2 bg-[#15919A20] rounded-lg justify-center flex items-center"
+            class="w-full mt-2 bg-[#25755620] rounded-lg justify-center flex items-center"
         >
             <div class="flex items-center gap-2 p-2 py-3">
                 <JetButton
@@ -1520,7 +1520,7 @@ onBeforeMount(() => {
                         >
                             <a
                                 href="javascript:;"
-                                class="text-base px-2 py-1 gap-1 font-bold rounded-t-lg inline-flex items-center hover:bg-[#15919A30]"
+                                class="text-base px-2 py-1 gap-1 font-bold rounded-t-lg inline-flex items-center hover:bg-[#25755630]"
                                 @click="updateTargetDialog(i + 1)"
                             >
                                 <svg
@@ -1639,7 +1639,7 @@ onBeforeMount(() => {
         maxWidth="6xl"
     >
         <template #title>
-            <span class="text-[#15919A] font-bold">
+            <span class="text-[#257556] font-bold">
                 {{ selectedIndex ? "Update Target" : "Add Custom Targets" }}
             </span>
         </template>
@@ -1693,7 +1693,7 @@ onBeforeMount(() => {
                                     v-model="selectAllInModal"
                                     @change="toggleSelectAllInModal"
                                     :disabled="editingTargets.length === 0"
-                                    class="rounded border-gray-300 text-[#15919A] focus:ring-[#15919A] disabled:opacity-50 disabled:cursor-not-allowed"
+                                    class="rounded border-gray-300 text-[#257556] focus:ring-[#257556] disabled:opacity-50 disabled:cursor-not-allowed"
                                 />
                                 <span
                                     class="ml-2 text-sm font-medium text-gray-700"
@@ -1734,7 +1734,7 @@ onBeforeMount(() => {
                                             :disabled="
                                                 editingTargets.length === 0
                                             "
-                                            class="rounded border-gray-300 text-[#15919A] focus:ring-[#15919A] disabled:opacity-50 disabled:cursor-not-allowed"
+                                            class="rounded border-gray-300 text-[#257556] focus:ring-[#257556] disabled:opacity-50 disabled:cursor-not-allowed"
                                         />
                                     </th>
                                     <th
@@ -1775,7 +1775,7 @@ onBeforeMount(() => {
                                     v-for="(item, index) in editingTargets"
                                     :key="index"
                                     :class="{
-                                        'bg-[#15919A30]':
+                                        'bg-[#25755630]':
                                             !selectedIndex &&
                                             selectedItemsInModal.has(index),
                                     }"
@@ -1791,7 +1791,7 @@ onBeforeMount(() => {
                                                     index
                                                 )
                                             "
-                                            class="rounded border-gray-300 text-[#15919A] focus:ring-[#15919A]"
+                                            class="rounded border-gray-300 text-[#257556] focus:ring-[#257556]"
                                         />
                                     </td>
                                     <td class="px-3 py-1">
@@ -1896,7 +1896,7 @@ onBeforeMount(() => {
                                                 )
                                             "
                                             type="number"
-                                            class="w-full h-[34px] text-sm focus:ring-[#15919A] focus:border-[#15919A]"
+                                            class="w-full h-[34px] text-sm focus:ring-[#257556] focus:border-[#257556]"
                                             placeholder="Value"
                                         />
                                     </td>
@@ -1913,7 +1913,7 @@ onBeforeMount(() => {
                                                         $event
                                                     )
                                                 "
-                                                class="rounded border-gray-300 text-[#15919A] focus:ring-[#15919A]"
+                                                class="rounded border-gray-300 text-[#257556] focus:ring-[#257556]"
                                             />
                                         </div>
                                     </td>
@@ -1997,7 +1997,7 @@ onBeforeMount(() => {
                                 v-model="newItemInModal.equivalent"
                                 type="text"
                                 placeholder="Equivalent (optional)"
-                                class="w-full min-h-[40px] text-sm border border-gray-300 rounded-md focus:ring-[#15919A] focus:border-[#15919A]"
+                                class="w-full min-h-[40px] text-sm border border-gray-300 rounded-md focus:ring-[#257556] focus:border-[#257556]"
                             />
                         </div>
                         <div class="col-span-3">
@@ -2005,7 +2005,7 @@ onBeforeMount(() => {
                                 v-model="newItemInModal.value"
                                 type="number"
                                 placeholder="Value"
-                                class="w-full min-h-[40px] text-sm border border-gray-300 rounded-md focus:ring-[#15919A] focus:border-[#15919A]"
+                                class="w-full min-h-[40px] text-sm border border-gray-300 rounded-md focus:ring-[#257556] focus:border-[#257556]"
                             />
                         </div>
                         <div class="col-span-2">
@@ -2084,7 +2084,7 @@ onBeforeMount(() => {
                                 <textarea
                                     v-model="bulkEquivalentsText"
                                     placeholder=""
-                                    class="mt-1 w-full min-h-[120px] text-sm border border-gray-300 rounded-md focus:ring-[#15919A] focus:border-[#15919A]"
+                                    class="mt-1 w-full min-h-[120px] text-sm border border-gray-300 rounded-md focus:ring-[#257556] focus:border-[#257556]"
                                 ></textarea>
                                 <p class="mt-1 text-xs text-gray-500">
                                     Leave a line blank if a target has no
@@ -2111,7 +2111,7 @@ onBeforeMount(() => {
                             </JetButton>
 
                             <div
-                                class="absolute bottom-full left-[-90px] mb-1.5 px-2 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                class="absolute bottom-full left-[-90px] mb-1.5 px-2 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                 role="tooltip"
                                 >
                                 Use this option to import a list of targets from a file.<br/> The CSV file must be formatted correctly to match<br/> the platform's required structure.                                </div>
@@ -2127,7 +2127,7 @@ onBeforeMount(() => {
                             Download CSV Template
                             </JetButton>
                             <div
-                                class="absolute bottom-full left-[-30px] mb-1.5 px-2 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                class="absolute bottom-full left-[-30px] mb-1.5 px-2 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                 role="tooltip"
                                 >
                                 Click this to download a blank template file.<br/>Use this template to ensure your targets and <br/> equivalents are structured correctly before <br/>using the Upload CSV function. 
@@ -2189,7 +2189,7 @@ onBeforeMount(() => {
         maxWidth="md"
     >
         <template #title>
-            <span class="text-[#15919A] font-bold">Convert Text to Image</span>
+            <span class="text-[#257556] font-bold">Convert Text to Image</span>
         </template>
         <template #content>
             <div class="space-y-4">
@@ -2237,7 +2237,7 @@ onBeforeMount(() => {
         maxWidth="lg"
     >
         <template #title>
-            <span class="text-[#15919A] font-bold">Insert image URLs</span>
+            <span class="text-[#257556] font-bold">Insert image URLs</span>
         </template>
         <template #content>
             <div class="space-y-3">
@@ -2245,7 +2245,7 @@ onBeforeMount(() => {
                 <textarea
                     v-model="imageUrlsText"
                     placeholder="https://exemplo.com/imagem.png"
-                    class="mt-1 w-full min-h-[140px] text-sm border border-gray-300 rounded-md focus:ring-[#15919A] focus:border-[#15919A]"
+                    class="mt-1 w-full min-h-[140px] text-sm border border-gray-300 rounded-md focus:ring-[#257556] focus:border-[#257556]"
                 ></textarea>
                 <p class="text-xs text-gray-500">
                     Each non-empty line will be inserted as an image on its own
@@ -2289,7 +2289,7 @@ onBeforeMount(() => {
 
 .ios-checkbox {
     --checkbox-size: 25px;
-    --checkbox-color: #15919a;
+    --checkbox-color: #257556;
 
     --checkbox-border: #93c5fd;
 
@@ -2369,15 +2369,15 @@ onBeforeMount(() => {
 
 /* Color Themes */
 .ios-checkbox.blue {
-    --checkbox-color: #15919a;
+    --checkbox-color: #257556;
     --checkbox-bg: #dbeafe;
-    --checkbox-border: #15919a;
+    --checkbox-border: #257556;
 }
 
 .ios-checkbox.green {
     --checkbox-color: #10b981;
-    --checkbox-bg: #15919a;
-    --checkbox-border: #15919a;
+    --checkbox-bg: #257556;
+    --checkbox-border: #257556;
 }
 
 .ios-checkbox.purple {
@@ -2424,7 +2424,7 @@ onBeforeMount(() => {
 
 .custom-scrollbar {
     scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: #15919a transparent; /* thumb and track color */
+    scrollbar-color: #257556 transparent; /* thumb and track color */
     max-height: calc(100vh - 156px);
 }
 
@@ -2438,7 +2438,7 @@ onBeforeMount(() => {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #15919a; /* light gray thumb */
+    background-color: #257556; /* light gray thumb */
     border-radius: 1px;
 }
 
@@ -2519,7 +2519,7 @@ onBeforeMount(() => {
 }
 
 .quill-bubble-wrapper .ql-toolbar button.ql-active {
-    background: #15919a;
+    background: #257556;
     color: white;
 }
 

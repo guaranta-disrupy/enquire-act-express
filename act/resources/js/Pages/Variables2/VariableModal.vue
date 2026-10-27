@@ -283,7 +283,7 @@ function getInitials(name) {
                     <div class="flex items-center px-1 gap-4">
                         <!-- <div>
                             <a :href="route('redirect.fluent', survey.config.survey_id)">
-                                <Button class="bg-[#15919A] text-white rounded-full text-[16px] hover:bg-[#0C7C84] w-[200px] h-[44px] justify-center items-center flex gap-2" size="sm" shadow="2xl">
+                                <Button class="bg-[#257556] text-white rounded-full text-[16px] hover:bg-[#1d5e45] w-[200px] h-[44px] justify-center items-center flex gap-2" size="sm" shadow="2xl">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
                                     </svg>
@@ -293,7 +293,7 @@ function getInitials(name) {
                         </div> -->
                         <!-- <div>
                             <Link class="mr-1 inline-flex items-center text-sm text-sky-500" :href="route('survey2.index', survey)">
-                                <Button class="bg-[#15919A] text-white rounded-full text-[16px] hover:bg-[#0C7C84] w-[200px] h-[44px] justify-center items-center flex gap-2" size="sm" shadow="2xl">
+                                <Button class="bg-[#257556] text-white rounded-full text-[16px] hover:bg-[#1d5e45] w-[200px] h-[44px] justify-center items-center flex gap-2" size="sm" shadow="2xl">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
                                     </svg>
@@ -316,7 +316,7 @@ function getInitials(name) {
                                     viewBox="0 0 24 24"
                                     stroke-width="1.5"
                                     stroke="currentColor"
-                                    class="w-[60px] hover:stroke-[#15919A] transition-colors duration-200"
+                                    class="w-[60px] hover:stroke-[#257556] transition-colors duration-200"
                                 >
                                     <path
                                         data-v-8cc99868=""
@@ -340,7 +340,7 @@ function getInitials(name) {
                     </div> -->
 
                     <div
-                        class="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#15919A] text-white text-[20px] cursor-default"
+                        class="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#257556] text-white text-[20px] cursor-default"
                         :title="$page.props.auth.user.name"
                     >
                         {{ getInitials($page.props.auth.user.name) }}
@@ -365,7 +365,7 @@ function getInitials(name) {
                                     class="px-4"
                                     :class="[
                                         1 === 1
-                                            ? 'border-[#15919A] text-[#15919A]'
+                                            ? 'border-[#257556] text-[#257556]'
                                             : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300',
                                         'whitespace-nowrap py-4 px-1 border-b-2 font-bold text-md',
                                     ]"
@@ -374,7 +374,7 @@ function getInitials(name) {
                                     <span
                                         :class="[
                                             1 === 1
-                                                ? 'bg-[#15919A] text-white'
+                                                ? 'bg-[#257556] text-white'
                                                 : 'bg-gray-100 text-gray-900',
                                             'ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium',
                                         ]"
@@ -915,7 +915,7 @@ function getInitials(name) {
 }
 
 .overflow-y-auto::-webkit-scrollbar-thumb {
-    background: #15919a;
+    background: #257556;
     border-radius: 3px;
 }
 
@@ -926,6 +926,6 @@ function getInitials(name) {
 /* Firefox scrollbar */
 .overflow-y-auto {
     scrollbar-width: thin;
-    scrollbar-color: #15919a #f1f5f9;
+    scrollbar-color: #257556 #f1f5f9;
 }
 </style>

@@ -7,7 +7,7 @@
         >
             <details class="control-group" open>
                 <summary
-                    class="font-semibold text-gray-800 cursor-pointer hover:text-[#15919A] flex items-center"
+                    class="font-semibold text-gray-800 cursor-pointer hover:text-[#257556] flex items-center"
                 >
                     <svg
                         class="w-4 h-4 mr-2 transition-transform duration-200 details-arrow"
@@ -37,7 +37,7 @@
                             id="test-selector"
                             v-model="selectedTest"
                             @change="selectedTestChange(selectedTest)"
-                            class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-xs focus:ring-[#15919A] focus:border-[#15919A] text-sm dark:text-gray-700 text-base"
+                            class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-xs focus:ring-[#257556] focus:border-[#257556] text-sm dark:text-gray-700 text-base"
                         >
                             <option
                                 v-for="(test, index) in tests"
@@ -70,7 +70,7 @@
                         <select
                             id="trial-selector"
                             v-model="selectedTrial"
-                            class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-xs focus:ring-[#15919A] focus:border-[#15919A] text-sm dark:text-gray-700 text-base"
+                            class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-xs focus:ring-[#257556] focus:border-[#257556] text-sm dark:text-gray-700 text-base"
                         >
                             <option
                                 v-for="(trial, index) in trials"
@@ -120,7 +120,7 @@
                                     selectedTrial,
                                 ])
                             "
-                            class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-xs focus:ring-[#15919A] focus:border-[#15919A] text-sm dark:text-gray-700 text-base"
+                            class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-xs focus:ring-[#257556] focus:border-[#257556] text-sm dark:text-gray-700 text-base"
                         >
                             <option
                                 v-for="el in maxTotalVariables"
@@ -148,8 +148,8 @@
                             :class="[
                                 'p-2 rounded-md transition-all duration-200',
                                 activeDevice === 'desktop'
-                                    ? 'bg-[#15919A] text-white shadow-md'
-                                    : 'bg-white text-gray-600 hover:bg-gray-50 hover:text-[#15919A] border border-gray-300',
+                                    ? 'bg-[#257556] text-white shadow-md'
+                                    : 'bg-white text-gray-600 hover:bg-gray-50 hover:text-[#257556] border border-gray-300',
                             ]"
                             title="Desktop"
                         >
@@ -184,8 +184,8 @@
                             :class="[
                                 'p-2 rounded-md transition-all duration-200',
                                 activeDevice === 'tablet'
-                                    ? 'bg-[#15919A] text-white shadow-md'
-                                    : 'bg-white text-gray-600 hover:bg-gray-50 hover:text-[#15919A] border border-gray-300',
+                                    ? 'bg-[#257556] text-white shadow-md'
+                                    : 'bg-white text-gray-600 hover:bg-gray-50 hover:text-[#257556] border border-gray-300',
                             ]"
                             title="Tablet"
                         >
@@ -220,8 +220,8 @@
                             :class="[
                                 'p-2 rounded-md transition-all duration-200',
                                 activeDevice === 'mobile'
-                                    ? 'bg-[#15919A] text-white shadow-md'
-                                    : 'bg-white text-gray-600 hover:bg-gray-50 hover:text-[#15919A] border border-gray-300',
+                                    ? 'bg-[#257556] text-white shadow-md'
+                                    : 'bg-white text-gray-600 hover:bg-gray-50 hover:text-[#257556] border border-gray-300',
                             ]"
                             title="Mobile"
                         >
@@ -260,7 +260,7 @@
                                 ref="desktopTrigger"
                                 type="button"
                                 @click="toggleDropdown('desktop')"
-                                class="w-full px-4 py-3 text-left bg-white border border-gray-200 rounded-xl shadow-sm hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#15919A] focus:border-[#15919A] transition-all duration-200 flex items-center justify-between"
+                                class="w-full px-4 py-3 text-left bg-white border border-gray-200 rounded-xl shadow-sm hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#257556] focus:border-[#257556] transition-all duration-200 flex items-center justify-between"
                             >
                                 <span class="text-sm font-medium text-gray-900">
                                     {{ selectedDesktop.name }} —
@@ -296,9 +296,9 @@
                                         @click="
                                             selectResolution('desktop', res)
                                         "
-                                        class="px-4 py-1 text-xs cursor-pointer hover:bg-[#15919A20] first:rounded-t-lg last:rounded-b-lg transition-colors duration-150"
+                                        class="px-4 py-1 text-xs cursor-pointer hover:bg-[#25755620] first:rounded-t-lg last:rounded-b-lg transition-colors duration-150"
                                         :class="{
-                                            'bg-[#15919A] text-white hover:bg-[#0C7C84]':
+                                            'bg-[#257556] text-white hover:bg-[#1d5e45]':
                                                 res.name ===
                                                 selectedDesktop.name,
                                         }"
@@ -316,7 +316,7 @@
                                 ref="tabletTrigger"
                                 type="button"
                                 @click="toggleDropdown('tablet')"
-                                class="w-full px-4 py-3 text-left bg-white border border-gray-200 rounded-xl shadow-sm hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#15919A] focus:border-[#15919A] transition-all duration-200 flex items-center justify-between"
+                                class="w-full px-4 py-3 text-left bg-white border border-gray-200 rounded-xl shadow-sm hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#257556] focus:border-[#257556] transition-all duration-200 flex items-center justify-between"
                             >
                                 <span class="text-sm font-medium text-gray-900">
                                     {{ selectedTablet.name }}
@@ -349,9 +349,9 @@
                                         v-for="res in TABLET_RESOLUTIONS"
                                         :key="res.name"
                                         @click="selectResolution('tablet', res)"
-                                        class="px-4 py-1 text-xs cursor-pointer hover:bg-[#15919A20] first:rounded-t-lg last:rounded-b-lg transition-colors duration-150"
+                                        class="px-4 py-1 text-xs cursor-pointer hover:bg-[#25755620] first:rounded-t-lg last:rounded-b-lg transition-colors duration-150"
                                         :class="{
-                                            'bg-[#15919A] text-white hover:bg-[#0C7C84]':
+                                            'bg-[#257556] text-white hover:bg-[#1d5e45]':
                                                 res.name ===
                                                 selectedTablet.name,
                                         }"
@@ -368,7 +368,7 @@
                                 ref="mobileTrigger"
                                 type="button"
                                 @click="toggleDropdown('mobile')"
-                                class="w-full px-4 py-3 text-left bg-white border border-gray-200 rounded-xl shadow-sm hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#15919A] focus:border-[#15919A] transition-all duration-200 flex items-center justify-between"
+                                class="w-full px-4 py-3 text-left bg-white border border-gray-200 rounded-xl shadow-sm hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#257556] focus:border-[#257556] transition-all duration-200 flex items-center justify-between"
                             >
                                 <span class="text-sm font-medium text-gray-900">
                                     {{ selectedMobile.name }} ({{
@@ -403,9 +403,9 @@
                                         v-for="res in MOBILE_RESOLUTIONS"
                                         :key="res.name"
                                         @click="selectResolution('mobile', res)"
-                                        class="px-4 py-1 text-xs cursor-pointer hover:bg-[#15919A20] first:rounded-t-lg last:rounded-b-lg transition-colors duration-150"
+                                        class="px-4 py-1 text-xs cursor-pointer hover:bg-[#25755620] first:rounded-t-lg last:rounded-b-lg transition-colors duration-150"
                                         :class="{
-                                            'bg-[#15919A] text-white hover:bg-[#0C7C84]':
+                                            'bg-[#257556] text-white hover:bg-[#1d5e45]':
                                                 res.name ===
                                                 selectedMobile.name,
                                         }"
@@ -426,7 +426,7 @@
                             @click="isRotated = !isRotated"
                             :class="[
                                 'p-2 rounded-md transition-all duration-200',
-                                'bg-white text-gray-600 hover:bg-gray-50 hover:text-[#15919A] border border-gray-300',
+                                'bg-white text-gray-600 hover:bg-gray-50 hover:text-[#257556] border border-gray-300',
                             ]"
                             :title="
                                 isRotated
@@ -508,7 +508,7 @@
                                 :class="[
                                     'w-9 h-9 p-1.5 bg-white rounded-md transition-scale duration-300 active:scale-75',
                                     editorStore.activeBrowser === browser.name
-                                        ? 'ring-1 ring-offset-1 ring-[#15919A]'
+                                        ? 'ring-1 ring-offset-1 ring-[#257556]'
                                         : 'hover:opacity-80',
                                 ]"
                             >
@@ -525,7 +525,7 @@
             <!-- Preview Settings -->
             <details v-if="0" class="control-group">
                 <summary
-                    class="font-semibold text-gray-800 cursor-pointer hover:text-[#15919A] flex items-center"
+                    class="font-semibold text-gray-800 cursor-pointer hover:text-[#257556] flex items-center"
                 >
                     <svg
                         class="w-4 h-4 mr-2 transition-transform duration-200 details-arrow"
@@ -558,7 +558,7 @@
                             class="flex-1 inline-flex items-center justify-center gap-2 rounded-md py-2 font-medium transition-colors"
                             :class="
                                 activeDevice === 'desktop'
-                                    ? 'bg-[#15919A20] shadow text-[#15919A]'
+                                    ? 'bg-[#25755620] shadow text-[#257556]'
                                     : 'text-gray-700 hover:text-gray-900'
                             "
                         >
@@ -572,7 +572,7 @@
                             class="flex-1 inline-flex items-center justify-center gap-2 rounded-md py-2 font-medium transition-colors"
                             :class="
                                 activeDevice === 'tablet'
-                                    ? 'bg-[#15919A20] shadow text-[#15919A]'
+                                    ? 'bg-[#25755620] shadow text-[#257556]'
                                     : 'text-gray-700 hover:text-gray-900'
                             "
                         >
@@ -586,7 +586,7 @@
                             class="flex-1 inline-flex items-center justify-center gap-2 rounded-md py-2 font-medium transition-colors"
                             :class="
                                 activeDevice === 'mobile'
-                                    ? 'bg-[#15919A20] shadow text-[#15919A]'
+                                    ? 'bg-[#25755620] shadow text-[#257556]'
                                     : 'text-gray-700 hover:text-gray-900'
                             "
                         >
@@ -598,7 +598,7 @@
                     <select
                         v-if="activeDevice === 'desktop'"
                         v-model="selectedDesktop"
-                        class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-xs dark:text-gray-700 text-base"
+                        class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-xs dark:text-gray-700 text-base"
                     >
                         <option
                             v-for="res in DESKTOP_RESOLUTIONS"
@@ -612,7 +612,7 @@
                     <select
                         v-if="activeDevice === 'tablet'"
                         v-model="selectedTablet"
-                        class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-xs dark:text-gray-700 text-base"
+                        class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-xs dark:text-gray-700 text-base"
                     >
                         <option
                             v-for="res in TABLET_RESOLUTIONS"
@@ -626,7 +626,7 @@
                     <select
                         v-if="activeDevice === 'mobile'"
                         v-model="selectedMobile"
-                        class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#15919A] focus:border-[#15919A] text-xs dark:text-gray-700 text-base"
+                        class="w-full px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:ring-[#257556] focus:border-[#257556] text-xs dark:text-gray-700 text-base"
                     >
                         <option
                             v-for="res in MOBILE_RESOLUTIONS"
@@ -645,7 +645,7 @@
                         <span class="text-xs text-gray-500"
                             >Orientation:
                             <span
-                                class="font-bold dark:text-[#15919A] text-[#15919A]"
+                                class="font-bold dark:text-[#257556] text-[#257556]"
                                 >{{
                                     isRotated ? "Landscape" : "Portrait"
                                 }}</span
@@ -655,7 +655,7 @@
                             type="button"
                             @click="isRotated = !isRotated"
                             :aria-pressed="isRotated"
-                            class="px-3 py-1 rounded-md text-xs font-medium border border-gray-300 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#15919A] dark:text-gray-700 text-base"
+                            class="px-3 py-1 rounded-md text-xs font-medium border border-gray-300 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#257556] dark:text-gray-700 text-base"
                             title="Rotate"
                         >
                             Rotate
@@ -672,7 +672,7 @@
                     :open="!collapsedGroupTitles.has(group.title)"
                 >
                     <summary
-                        class="font-semibold text-gray-800 cursor-pointer hover:text-[#15919A] flex items-center justify-between"
+                        class="font-semibold text-gray-800 cursor-pointer hover:text-[#257556] flex items-center justify-between"
                     >
                         <div class="flex items-center">
                             <svg
@@ -707,7 +707,7 @@
                             class="focus:outline-none rounded-full px-1"
                             :class="
                                 toggledGroups.has(group.title)
-                                    ? 'bg-[#15919A30]'
+                                    ? 'bg-[#25755630]'
                                     : ''
                             "
                             title="Reset to default"
@@ -716,8 +716,8 @@
                             <svg
                                 :class="
                                     toggledGroups.has(group.title)
-                                        ? 'text-[#15919A] '
-                                        : 'text-gray-400/70 hover:text-[#15919A]'
+                                        ? 'text-[#257556] '
+                                        : 'text-gray-400/70 hover:text-[#257556]'
                                 "
                                 @click.stop="handleResetClick(group)"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -872,7 +872,7 @@
                 id="saveBtn"
                 @click="saveChanges"
                 :disabled="isSaving || !hasUnsavedChanges"
-                class="w-full flex items-center justify-center bg-[#15919A] text-white font-bold py-2 px-4 rounded-lg hover:bg-[#0C7C84] transition-colors duration-200 focus:outline-none disabled:opacity-20 disabled:cursor-not-allowed uppercase"
+                class="w-full flex items-center justify-center bg-[#257556] text-white font-bold py-2 px-4 rounded-lg hover:bg-[#1d5e45] transition-colors duration-200 focus:outline-none disabled:opacity-20 disabled:cursor-not-allowed uppercase"
                 :class="{
                     '': hasUnsavedChanges && !isSaving,
                 }"
@@ -2563,7 +2563,7 @@ const paletteKeys = computed(() => {
 }
 
 .control-group:hover {
-    border: 1px solid #15919a80;
+    border: 1px solid #25755680;
     transition: border 0.3s ease-in-out;
 }
 
@@ -2598,7 +2598,7 @@ const paletteKeys = computed(() => {
 
 .device-toolbar select:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(21, 145, 154, 0.1);
+    box-shadow: 0 0 0 3px rgba(37, 117, 86, 0.1);
 }
 
 .device-toolbar button {
@@ -2608,7 +2608,7 @@ const paletteKeys = computed(() => {
 
 .device-toolbar button:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(21, 145, 154, 0.1);
+    box-shadow: 0 0 0 3px rgba(37, 117, 86, 0.1);
 }
 @keyframes jiggle {
     /* Jiggle for the first 2 seconds of a 5-second cycle */

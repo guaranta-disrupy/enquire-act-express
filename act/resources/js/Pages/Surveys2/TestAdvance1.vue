@@ -395,9 +395,9 @@ const selectDisplayStyle = (style) => {
     <div class="flex flex-row gap-2 mb-2 items-center">
         <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_621_14998)">
-            <path d="M41.1415 0H8.8584C3.96572 0 0 3.96582 0 8.85772V15.625H50V8.85772C50 3.96582 46.0342 0 41.1415 0Z" fill="#15919A"/>
-            <path d="M0 41.1423C0 46.0342 3.96572 50 8.8584 50H28.9062V21.0938H0V41.1423Z" fill="#15919A"/>
-            <path d="M34.375 50H41.1415C46.0342 50 50 46.0342 50 41.1423V21.0938H34.375V50Z" fill="#15919A"/>
+            <path d="M41.1415 0H8.8584C3.96572 0 0 3.96582 0 8.85772V15.625H50V8.85772C50 3.96582 46.0342 0 41.1415 0Z" fill="#257556"/>
+            <path d="M0 41.1423C0 46.0342 3.96572 50 8.8584 50H28.9062V21.0938H0V41.1423Z" fill="#257556"/>
+            <path d="M34.375 50H41.1415C46.0342 50 50 46.0342 50 41.1423V21.0938H34.375V50Z" fill="#257556"/>
             </g>
             <defs>
             <clipPath id="clip0_621_14998">
@@ -412,7 +412,7 @@ const selectDisplayStyle = (style) => {
 
         <div class="flex flex-row gap-2 w-full">
         <div  class="w-full px-4 py-2 border-2 cursor-pointer text-center justify-center items-center shadow-lg flex transition-colors rounded-lg"
-              :class="selectedDisplayStyle === 'rounded' ? 'border-[#15919A] bg-[#15919A]/10' : 'border-gray-100 hover:border-[#15919A]'"
+              :class="selectedDisplayStyle === 'rounded' ? 'border-[#257556] bg-[#257556]/10' : 'border-gray-100 hover:border-[#257556]'"
               @click="selectDisplayStyle('rounded')">
           <button1 class="flex flex-col items-center justify-center gap-2 font-extrabold text-center">
             Rounded Targets
@@ -430,7 +430,7 @@ const selectDisplayStyle = (style) => {
         </div>
 
         <div  class="w-full px-4 py-2 border-2 cursor-pointer text-center justify-center items-center shadow-lg flex transition-colors rounded-lg"
-              :class="selectedDisplayStyle === 'outside' ? 'border-[#15919A] bg-[#15919A]/10' : 'border-gray-100 hover:border-[#15919A]'"
+              :class="selectedDisplayStyle === 'outside' ? 'border-[#257556] bg-[#257556]/10' : 'border-gray-100 hover:border-[#257556]'"
               @click="selectDisplayStyle('outside')">
           <button1 class="flex flex-col items-center justify-center gap-2 font-extrabold text-center">
             Outside Targets
@@ -448,7 +448,7 @@ const selectDisplayStyle = (style) => {
         </div>
 
         <div  class="w-full px-4 py-2 border-2 cursor-pointer text-center justify-center items-center shadow-lg flex transition-colors rounded-lg"
-              :class="selectedDisplayStyle === 'box' ? 'border-[#15919A] bg-[#15919A]/10' : 'border-gray-100 hover:border-[#15919A]'"
+              :class="selectedDisplayStyle === 'box' ? 'border-[#257556] bg-[#257556]/10' : 'border-gray-100 hover:border-[#257556]'"
               @click="selectDisplayStyle('box')">
           <button1 class="flex flex-col items-center justify-center gap-2 font-extrabold text-center">
             Box Targets

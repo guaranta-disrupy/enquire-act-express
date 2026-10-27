@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col w-full h-full gap-3 overflow-y-auto bg-gray-50">
     <div
-      class="bg-[#15919A] shadow p-4 mb-2 w-[full] justify-between flex flex-row text-white text-[20px] font-bold"
+      class="bg-[#257556] shadow p-4 mb-2 w-[full] justify-between flex flex-row text-white text-[20px] font-bold"
     >
       Targets
 
@@ -30,7 +30,7 @@
       <div class="">
         <button
           @click="showModal = true"
-          class="group uppercase shadow flex flex-col border border-gray-300 h-[237px] w-[352px] rounded-lg justify-center items-center text-[#323232] hover:bg-[#15919A] hover:text-white font-bold"
+          class="group uppercase shadow flex flex-col border border-gray-300 h-[237px] w-[352px] rounded-lg justify-center items-center text-[#323232] hover:bg-[#257556] hover:text-white font-bold"
         >
           <svg
             data-v-9889b466=""
@@ -177,13 +177,13 @@
         <!-- index -->
         <div class="flex justify-end gap-2">
           <div
-            class="font-bold text-center text-[#323232] text-[12px] w-[70px] p-1 rounded-full bg-[#15919A] text-white"
+            class="font-bold text-center text-[#323232] text-[12px] w-[70px] p-1 rounded-full bg-[#257556] text-white"
           >
             <strong>Value:</strong> <span>{{ target.value }}</span>
           </div>
 
           <div
-            class="font-bold text-center text-[#323232] text-[12px] w-[70px] p-1 rounded-full bg-[#15919A] text-white"
+            class="font-bold text-center text-[#323232] text-[12px] w-[70px] p-1 rounded-full bg-[#257556] text-white"
           >
             Index: {{ index + 1 }}
           </div>
@@ -590,15 +590,15 @@ const editTarget = (index) => {
 
 /* Color Themes */
 .ios-checkbox.blue {
-  --checkbox-color: #15919a;
+  --checkbox-color: #257556;
   --checkbox-bg: #dbeafe;
-  --checkbox-border: #15919a;
+  --checkbox-border: #257556;
 }
 
 .ios-checkbox.green {
   --checkbox-color: #10b981;
-  --checkbox-bg: #15919a;
-  --checkbox-border: #15919a;
+  --checkbox-bg: #257556;
+  --checkbox-border: #257556;
 }
 
 .ios-checkbox.purple {

@@ -113,7 +113,7 @@ const predefinedVariables = [
     },
     {
         topic: "Occasions",
-        color: "#15919A",
+        color: "#257556",
         names: [
             "event",
             "holiday",

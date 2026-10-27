@@ -246,7 +246,7 @@ function getInitials(name) {
                                     viewBox="0 0 24 24"
                                     stroke-width="1.5"
                                     stroke="currentColor"
-                                    class="w-[60px] hover:stroke-[#15919A] transition-colors duration-200"
+                                    class="w-[60px] hover:stroke-[#257556] transition-colors duration-200"
                                 >
                                     <path
                                         data-v-8cc99868=""
@@ -266,7 +266,7 @@ function getInitials(name) {
                     </div>
 
                     <div
-                        class="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#15919A] text-white text-[20px] cursor-default"
+                        class="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#257556] text-white text-[20px] cursor-default"
                         :title="$page.props.auth.user.name"
                     >
                         {{ getInitials($page.props.auth.user.name) }}

@@ -15,7 +15,7 @@ export const getDefaultStyles = (
         // timer
         "--timer-container-bg-color": "#fff",
         "--timer-circle-stroke-color": "#08c6d4",
-        "--timer-circle-track-stroke-color": "#15919A15",
+        "--timer-circle-track-stroke-color": "#25755615",
         "--timer-text-color": "#525151",
         // control section visibility
         "--header-show": "",
@@ -39,7 +39,7 @@ export const getDefaultStyles = (
         "--bottom-img-margin-left": "0vmin",
         "--bottom-img-margin-right": "0vmin",
         // Target
-        "--target-selected-border-color": "#15919A",
+        "--target-selected-border-color": "#257556",
         "--target-selected-bg-color": "#EAF4F5",
         "--target-selected-text-color": "black",
         "--target-selected-text-color-theme2": "#c0c0c0",

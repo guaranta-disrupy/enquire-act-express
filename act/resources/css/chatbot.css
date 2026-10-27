@@ -28,7 +28,7 @@
 }
 
 .bubble-speech .user-bubble {
-  --bubble-bg: #15919A;
+  --bubble-bg: #257556;
   color: #fff;
 }
 .bubble-speech .user-bubble * { color: #fff !important; }
@@ -85,7 +85,7 @@
   width: 6px;
   height: 6px;
   border-radius: 9999px;
-  background-color: var(--mcolor, #15919A);
+  background-color: var(--mcolor, #257556);
   opacity: .6;
   animation: chat-typing 1.2s infinite ease-in-out;
 }
@@ -192,12 +192,12 @@
 
 .like-btn:hover, .dislike-btn:hover {
   opacity: 1;
-  background-color: rgba(21, 145, 154, 0.1);
+  background-color: rgba(37, 117, 86, 0.1);
 }
 
 .like-btn.active, .dislike-btn.active {
   opacity: 1;
-  background-color: rgba(21, 145, 154, 0.2);
+  background-color: rgba(37, 117, 86, 0.2);
 }
 
 .like-btn.disabled, .dislike-btn.disabled {
@@ -216,18 +216,18 @@
   max-height: 120px;
   overflow-y: auto;
   line-height: 1.4;
-  border: 1px solid #15919A;
+  border: 1px solid #257556;
   transition: border-color 0.2s ease;
 }
 
 .textarea:focus {
   outline: none;
-  border-color: var(--mcolor, #15919A);
-  box-shadow: 0 0 0 3px rgba(21, 145, 154, 0.1);
+  border-color: var(--mcolor, #257556);
+  box-shadow: 0 0 0 3px rgba(37, 117, 86, 0.1);
 }
 
 .textarea:disabled {
-  background-color: #15919A;
+  background-color: #257556;
   cursor: not-allowed;
   opacity: 0.6;
 }
@@ -303,7 +303,7 @@ input[type="radio"]:checked::before {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--mcolor, #15919A);
+  background-color: var(--mcolor, #257556);
 }
 
 /* Checkbox styling for preview */
@@ -318,8 +318,8 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-  background-color: var(--mcolor, #15919A);
-  border-color: var(--mcolor, #15919A);
+  background-color: var(--mcolor, #257556);
+  border-color: var(--mcolor, #257556);
 }
 
 input[type="checkbox"]:checked::before {
@@ -367,7 +367,7 @@ button[class*="flex-1"] {
 }
 
 button[class*="flex-1"]:focus {
-  outline: 2px solid var(--mcolor, #15919A);
+  outline: 2px solid var(--mcolor, #257556);
   outline-offset: 2px;
 }
 
@@ -426,9 +426,9 @@ button[class*="flex-1"]:active {
 
 .confirmation-btn-success:hover,
 .confirmation-btn-success:focus-visible {
-  background-color: #15919A;
+  background-color: #257556;
   color: #fff;
-  box-shadow: 0 10px 25px -12px rgba(21, 145, 154, 0.65);
+  box-shadow: 0 10px 25px -12px rgba(37, 117, 86, 0.65);
 }
 
 /* Ghost Error Button (No) */
@@ -645,7 +645,7 @@ button[class*="flex-1"]:active {
 }
 
 .fill-warning {
-  background: linear-gradient(135deg, #15919A, #0d9488, #0f766e);
+  background: linear-gradient(135deg, #257556, #0d9488, #0f766e);
 }
 
 .fill-error {

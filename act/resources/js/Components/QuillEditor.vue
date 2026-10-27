@@ -192,14 +192,14 @@ export function addVariablesToolbarButton(quill, editorId) {
         button.setAttribute("data-editor-id", editorId);
         button.title = "Variables";
         button.style.cssText =
-            "background-color: #e0f7fa; color: #15919a; border-radius: 9999px; padding: 0px 70px 0px 10px;";
+            "background-color: #e0f7fa; color: #257556; border-radius: 9999px; padding: 0px 70px 0px 10px;";
         button.addEventListener("mouseenter", () => {
             button.style.backgroundColor = "#b2ebf2";
-            button.style.color = "#0c7c84";
+            button.style.color = "#1d5e45";
         });
         button.addEventListener("mouseleave", () => {
             button.style.backgroundColor = "#e0f7fa";
-            button.style.color = "#15919a";
+            button.style.color = "#257556";
         });
         button.textContent = "Variables";
         button.addEventListener("click", () => {
@@ -351,7 +351,7 @@ export function enableImageResize(quill) {
             if (!frameEl) {
                 frameEl = document.createElement("div");
                 frameEl.style.position = "absolute";
-                frameEl.style.border = "1px dashed #15919A";
+                frameEl.style.border = "1px dashed #257556";
                 frameEl.style.pointerEvents = "none";
                 frameEl.style.zIndex = "5";
                 container.appendChild(frameEl);
@@ -362,7 +362,7 @@ export function enableImageResize(quill) {
                 handleEl.style.position = "absolute";
                 handleEl.style.width = "12px";
                 handleEl.style.height = "12px";
-                handleEl.style.background = "#15919A";
+                handleEl.style.background = "#257556";
                 handleEl.style.border = "2px solid #fff";
                 handleEl.style.borderRadius = "2px";
                 handleEl.style.boxShadow = "0 1px 3px rgba(0,0,0,0.2)";

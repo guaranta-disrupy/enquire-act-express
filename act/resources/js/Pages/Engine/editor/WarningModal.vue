@@ -52,7 +52,7 @@
                         </button>
                         <button
                             @click="handleSave"
-                            class="px-4 py-2 text-sm font-medium text-white bg-[#15919A] rounded-md hover:bg-[#0C7C84]"
+                            class="px-4 py-2 text-sm font-medium text-white bg-[#257556] rounded-md hover:bg-[#1d5e45]"
                         >
                             Save Changes
                         </button>
