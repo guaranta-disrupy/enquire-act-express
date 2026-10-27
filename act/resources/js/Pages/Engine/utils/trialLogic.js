@@ -98,8 +98,10 @@ export function useTrialLogic(trialData, config, id) {
         _log("startTrial -- started!", currentPrimeData.value);
     };
 
+    // performance.now(): relógio monotônico com resolução abaixo de 1 ms
+    // (Date.now() pode pular com ajuste de hora do aparelho).
     const startResponseTimer = () => {
-        startTime.value = Date.now();
+        startTime.value = performance.now();
         _log("Response timer started");
     };
 
@@ -136,8 +138,8 @@ export function useTrialLogic(trialData, config, id) {
             });
         } else {
             // Select target
-            const currentTime = Date.now();
-            const responseTime = currentTime - startTime.value;
+            const currentTime = performance.now();
+            const responseTime = Math.round(currentTime - startTime.value);
             const newRank = selectedTargets.value.length + 1;
 
             if (config.value.single_select) {
@@ -177,7 +179,7 @@ export function useTrialLogic(trialData, config, id) {
     };
 
     const completeTrial = () => {
-        endTime.value = Date.now();
+        endTime.value = performance.now();
 
         // Create response object matching the survey response format
         const response = {

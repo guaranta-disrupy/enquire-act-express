@@ -306,13 +306,24 @@ const startTrial = () => {
 
 ### User Interaction Flow
 
+**0. Quando o tempo de resposta começa (conferido no código em 2026-10-27)**
+
+O relógio NÃO começa no primeiro clique. `TrialComponent.enableTrialInteraction()`
+espera o atraso da rodada (`config.target_delay`, padrão 1500 ms, na primeira
+rodada do teste ou quando a frase-prime muda; 300 ms nas demais), então mostra as
+opções (`isTrialReady`, que controla o `v-if` dos targets), libera os cliques e
+chama `startResponseTimer()` no mesmo instante. Logo, `rt` = clique − aparecimento
+das opções. As opções entram com transição de ~200 ms (posição/opacidade), que
+fica dentro do `rt`. O "start on first interaction" abaixo é só reserva, para o
+caso de o timer não ter sido iniciado. Relógio: `performance.now()`.
+
 **1. Target Selection**
 
 ```javascript
 const selectTarget = (target) => {
     // Start timer on first interaction
     if (startTime.value === 0) {
-        startResponseTimer(); // startTime.value = Date.now()
+        startResponseTimer(); // reserva: normalmente já iniciado em enableTrialInteraction
     }
 
     const targetIndex = selectedTargets.value.findIndex(

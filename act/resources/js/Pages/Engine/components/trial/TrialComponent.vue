@@ -1562,9 +1562,16 @@ watch(
                 const selectableTargets = newTrial.targets.filter(
                     (target) => target.can_unselect !== true
                 );
-                const shuffledSelectableTargets = [...selectableTargets].sort(
-                    () => Math.random() - 0.5
-                );
+                // Fisher-Yates: toda ordem com a mesma chance (o sort com
+                // Math.random() - 0.5 favorece algumas posições).
+                const shuffledSelectableTargets = [...selectableTargets];
+                for (let i = shuffledSelectableTargets.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [shuffledSelectableTargets[i], shuffledSelectableTargets[j]] = [
+                        shuffledSelectableTargets[j],
+                        shuffledSelectableTargets[i],
+                    ];
+                }
                 const shuffledTargets = [
                     ...shuffledSelectableTargets,
                     ...unselectableTargets,
