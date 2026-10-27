@@ -92,7 +92,7 @@
                 #<slot name="n"></slot>
             </span>
             <div
-                class="absolute bottom-full left-0 mb-6 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                class="absolute bottom-full left-0 mb-6 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                 role="tooltip"
                 >
                     This value are the position /<br/> order of the target in the list.
@@ -103,12 +103,12 @@
 
                 <div class="relative group">
                     <span
-                        class="text-xs text-[#15919A] bg-[#15919A30] px-3 py-1 ml-1 rounded-full font-semibold"
+                        class="text-xs text-[#257556] bg-[#25755630] px-3 py-1 ml-1 rounded-full font-semibold"
                     >
                         Index: <slot name="index"></slot>
                     </span>
                     <div
-                        class="absolute bottom-full right-0 mb-2 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                        class="absolute bottom-full right-0 mb-2 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                         role="tooltip"
                     >
                         This value affects index<br/> ranking or scoring.
@@ -117,12 +117,12 @@
 
                 <div class="relative group">
                     <span
-                        class="text-xs text-[#15919A] bg-[#15919A30] px-3 py-1 ml-1 rounded-full font-semibold"
+                        class="text-xs text-[#257556] bg-[#25755630] px-3 py-1 ml-1 rounded-full font-semibold"
                     >
                         Value: <slot name="value"></slot>
                     </span>
                     <div
-                        class="absolute bottom-full right-0 mb-2 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                        class="absolute bottom-full right-0 mb-2 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                         role="tooltip"
                     >
                         This is the value of <br/>the target in the list.

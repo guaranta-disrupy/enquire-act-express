@@ -5,8 +5,8 @@
             class="flex flex-row items-center gap-10 cursor-pointer border-2 rounded-lg p-5 px-10 flex-1 transition-colors duration-200"
             :class="
                 selectedType === 2
-                    ? 'border-[#15919A] bg-[#15919A20]'
-                    : 'border-gray-200 hover:border-[#15919a70]'
+                    ? 'border-[#257556] bg-[#25755620]'
+                    : 'border-gray-200 hover:border-[#25755670]'
             "
         >
             <div class="w-20 flex items-center justify-center ml-2">
@@ -39,8 +39,8 @@
             class="flex flex-row items-center gap-10 cursor-pointer border-2 rounded-lg p-5 px-10 flex-1 transition-colors duration-200"
             :class="
                 selectedType === 1
-                    ? 'border-[#15919A] bg-[#15919A20]'
-                    : 'border-gray-200 hover:border-[#15919a70]'
+                    ? 'border-[#257556] bg-[#25755620]'
+                    : 'border-gray-200 hover:border-[#25755670]'
             "
         >
             <div class="w-20 flex items-center justify-center ml-2">

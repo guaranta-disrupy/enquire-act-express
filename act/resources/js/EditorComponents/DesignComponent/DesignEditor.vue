@@ -46,7 +46,7 @@ const isHoveringWarning = ref(false);
 <template>
   <div class="flex flex-col w-full">
     <div
-      class="bg-[#15919A] text-white shadow p-4 w-full text-center uppercase"
+      class="bg-[#257556] text-white shadow p-4 w-full text-center uppercase"
     >
       Design
     </div>
@@ -59,9 +59,9 @@ const isHoveringWarning = ref(false);
           @mouseover="isHoveringLayout = true"
           @mouseleave="isHoveringLayout = false"
           :class="[
-            'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#117c85] focus:outline-none flex flex-row justify-between',
+            'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#1d5e45] focus:outline-none flex flex-row justify-between',
             dropdowns.layout
-              ? 'bg-[#15919A] text-white'
+              ? 'bg-[#257556] text-white'
               : 'bg-[#E7E7E7] text-[#454545]',
           ]"
         >
@@ -115,9 +115,9 @@ const isHoveringWarning = ref(false);
           @mouseover="isHoveringPrimes = true"
           @mouseleave="isHoveringPrimes = false"
           :class="[
-            'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#117c85] focus:outline-none flex flex-row justify-between',
+            'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#1d5e45] focus:outline-none flex flex-row justify-between',
             dropdowns.primes
-              ? 'bg-[#15919A] text-white'
+              ? 'bg-[#257556] text-white'
               : 'bg-[#E7E7E7] text-[#454545]',
           ]"
         >
@@ -175,9 +175,9 @@ const isHoveringWarning = ref(false);
             @mouseover="isHoveringTargets = true"
             @mouseleave="isHoveringTargets = false"
             :class="[
-              'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#117c85] focus:outline-none flex flex-row justify-between',
+              'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#1d5e45] focus:outline-none flex flex-row justify-between',
               dropdowns.targets
-                ? 'bg-[#15919A] text-white'
+                ? 'bg-[#257556] text-white'
                 : 'bg-[#E7E7E7] text-[#454545]',
             ]"
           >
@@ -233,9 +233,9 @@ const isHoveringWarning = ref(false);
           @mouseover="isHoveringHeader = true"
           @mouseleave="isHoveringHeader = false"
           :class="[
-            'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#117c85] focus:outline-none flex flex-row justify-between',
+            'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#1d5e45] focus:outline-none flex flex-row justify-between',
             dropdowns.header
-              ? 'bg-[#15919A] text-white'
+              ? 'bg-[#257556] text-white'
               : 'bg-[#E7E7E7] text-[#454545]',
           ]"
         >
@@ -290,9 +290,9 @@ const isHoveringWarning = ref(false);
           @mouseover="isHoveringFooter = true"
           @mouseleave="isHoveringFooter = false"
           :class="[
-            'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#117c85] focus:outline-none flex flex-row justify-between',
+            'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#1d5e45] focus:outline-none flex flex-row justify-between',
             dropdowns.footer
-              ? 'bg-[#15919A] text-white'
+              ? 'bg-[#257556] text-white'
               : 'bg-[#E7E7E7] text-[#454545]',
           ]"
         >
@@ -347,9 +347,9 @@ const isHoveringWarning = ref(false);
           @mouseover="isHoveringWarning = true"
           @mouseleave="isHoveringWarning = false"
           :class="[
-            'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#117c85] focus:outline-none flex flex-row justify-between',
+            'group text-center items-center px-4 py-2 rounded-md ml-2 mr-2 mt-2 hover:bg-[#1d5e45] focus:outline-none flex flex-row justify-between',
             dropdowns.warning
-              ? 'bg-[#15919A] text-white'
+              ? 'bg-[#257556] text-white'
               : 'bg-[#E7E7E7] text-[#454545]',
           ]"
         >
@@ -423,7 +423,7 @@ body {
 
 .custom-scrollbar {
   scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: #15919a transparent; /* thumb and track color */
+  scrollbar-color: #257556 transparent; /* thumb and track color */
 }
 
 /* For WebKit (Chrome, Safari, Edge) */
@@ -436,7 +436,7 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #15919a; /* light gray thumb */
+  background-color: #257556; /* light gray thumb */
   border-radius: 1px;
 }
 </style>

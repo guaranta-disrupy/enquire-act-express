@@ -1,13 +1,13 @@
 <template>
   <div class="flex flex-col w-full h-full overflow-y-auto bg-gray-50">
-    <div class="bg-[#15919A] shadow p-4 mb-2 w-full justify-between flex flex-row text-white text-[20px] font-bold">
+    <div class="bg-[#257556] shadow p-4 mb-2 w-full justify-between flex flex-row text-white text-[20px] font-bold">
       Instructions
     </div>
 
     <div class="flex flex-col gap-2 p-4">
       <button 
         @click="openModal('title')"
-        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#15919A]"
+        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#257556]"
       >
         <span class="text-lg font-semibold text-gray-700">Round Title</span>
         <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -17,7 +17,7 @@
 
       <button 
         @click="openModal('main_header')"
-        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#15919A]"
+        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#257556]"
       >
         <span class="text-lg font-semibold text-gray-700">Main Header</span>
         <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -27,7 +27,7 @@
 
       <button 
         @click="openModal('bottom_text')"
-        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#15919A]"
+        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#257556]"
       >
         <span class="text-lg font-semibold text-gray-700">Bottom Text</span>
         <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -37,7 +37,7 @@
 
       <button 
         @click="openModal('warning_text')"
-        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#15919A]"
+        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#257556]"
       >
         <span class="text-lg font-semibold text-gray-700">Warning Text</span>
         <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -47,7 +47,7 @@
 
       <button 
         @click="openModal('warning_text')"
-        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#15919A]"
+        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#257556]"
       >
         <span class="text-lg font-semibold text-gray-700">Progress Text</span>
         <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -58,7 +58,7 @@
 
       <button 
         @click="openModal('')"
-        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#15919A]"
+        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#257556]"
       >
         <span class="text-lg font-semibold text-gray-700">Saving Progress Text</span>
         <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,7 +68,7 @@
 
       <button 
         @click="openModal('')"
-        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#15919A]"
+        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#257556]"
       >
         <span class="text-lg font-semibold text-gray-700">Redirecting Text</span>
         <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -78,7 +78,7 @@
 
       <button 
         @click="openModal('')"
-        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#15919A]"
+        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#257556]"
       >
         <span class="text-lg font-semibold text-gray-700">Error Starting the App</span>
         <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -88,7 +88,7 @@
 
       <button 
         @click="openModal('')"
-        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#15919A]"
+        class="flex items-center justify-between p-4 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-200 border border-gray-200 hover:border-[#257556]"
       >
         <span class="text-lg font-semibold text-gray-700">Error Saving Progress</span>
         <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -373,7 +373,7 @@ const insertImageFromModal = (imageUrl) => {
 .instruction-modal-save-btn {
   padding: 8px 16px;
   color: white;
-  background-color: #15919A;
+  background-color: #257556;
 
   cursor: pointer;
   font-weight: 500;
@@ -381,7 +381,7 @@ const insertImageFromModal = (imageUrl) => {
 }
 
 .instruction-modal-save-btn:hover {
-  background-color: #0C7C84;
+  background-color: #1d5e45;
 }
 
 /* Quill editor styling - unique classes */
@@ -411,12 +411,12 @@ const insertImageFromModal = (imageUrl) => {
 
 .instruction-modal-content .ql-bubble .ql-tooltip a.ql-action,
 .instruction-modal-content .ql-bubble .ql-tooltip a.ql-remove {
-  color: #15919A;
+  color: #257556;
 }
 
 .instruction-modal-content .ql-bubble .ql-tooltip a.ql-action:hover,
 .instruction-modal-content .ql-bubble .ql-tooltip a.ql-remove:hover {
-  color: #0C7C84;
+  color: #1d5e45;
 }
 
 /* Ensure toolbar appears above modal */

@@ -82,7 +82,7 @@ const props = defineProps({
   position: absolute;
   top: -20px;
   opacity: 0;
-  background-color: #15919a;
+  background-color: #257556;
   color: white;
   border-radius: 5px;
   display: flex;
@@ -105,7 +105,7 @@ const props = defineProps({
   content: "";
   width: 10px;
   height: 10px;
-  background-color: #15919a;
+  background-color: #257556;
   background-size: 1000%;
   background-position: center;
   transform: rotate(45deg);

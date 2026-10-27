@@ -55,12 +55,12 @@ const select = (key) => {
                                 <!-- Active indicator -->
                                 <div
                                     v-if="tab.key === selected"
-                                    class="bg-[#15919A] absolute inset-0 border-b-[#15919A] rounded-xl"
+                                    class="bg-[#257556] absolute inset-0 border-b-[#257556] rounded-xl"
                                 ></div>
                                 <!-- Hover effect -->
                                 <div
                                     v-if="!tab.disabled && tab.key !== selected"
-                                    class="bg-gray-100 absolute inset-0 rounded-xl group-hover:bg-[#15919A20]"
+                                    class="bg-gray-100 absolute inset-0 rounded-xl group-hover:bg-[#25755620]"
                                 ></div>
                             </button>
                         </li>
@@ -81,14 +81,14 @@ span[class*="text-white"] svg {
 }
 
 span[class*="text-gray-600"] svg {
-    color: #15919a;
+    color: #257556;
 }
 
 /* Target SVG stroke elements directly - only icons, not text */
 :deep(span[class*="text-gray-600"] svg path),
 :deep(span[class*="text-gray-600"] svg circle),
 :deep(span[class*="text-gray-600"] svg rect) {
-    stroke: #15919a !important;
+    stroke: #257556 !important;
 }
 
 :deep(span[class*="text-white"] svg path),

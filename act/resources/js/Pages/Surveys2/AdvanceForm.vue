@@ -18,7 +18,7 @@
                         <div class="relative group">
                             <Tooltip text="Add custom styles to modify the look and feel of your project." />
                             <div
-                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                             style="right: -90px;"
                             >
@@ -72,7 +72,7 @@
                         <div class="relative group">
                             <Tooltip text="Add advanced logic or interactivity using custom JavaScript." />
                             <div
-                                class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                 role="tooltip"
                                 style="right: -90px;"
                                 >

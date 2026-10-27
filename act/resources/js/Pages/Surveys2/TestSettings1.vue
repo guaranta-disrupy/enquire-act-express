@@ -480,9 +480,9 @@ watch(
     <div class="flex flex-row gap-2 mb-2 items-center">
         <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_621_14998)">
-            <path d="M41.1415 0H8.8584C3.96572 0 0 3.96582 0 8.85772V15.625H50V8.85772C50 3.96582 46.0342 0 41.1415 0Z" fill="#15919A"/>
-            <path d="M0 41.1423C0 46.0342 3.96572 50 8.8584 50H28.9062V21.0938H0V41.1423Z" fill="#15919A"/>
-            <path d="M34.375 50H41.1415C46.0342 50 50 46.0342 50 41.1423V21.0938H34.375V50Z" fill="#15919A"/>
+            <path d="M41.1415 0H8.8584C3.96572 0 0 3.96582 0 8.85772V15.625H50V8.85772C50 3.96582 46.0342 0 41.1415 0Z" fill="#257556"/>
+            <path d="M0 41.1423C0 46.0342 3.96572 50 8.8584 50H28.9062V21.0938H0V41.1423Z" fill="#257556"/>
+            <path d="M34.375 50H41.1415C46.0342 50 50 46.0342 50 41.1423V21.0938H34.375V50Z" fill="#257556"/>
             </g>
             <defs>
             <clipPath id="clip0_621_14998">
@@ -497,7 +497,7 @@ watch(
 
         <div class="flex flex-row gap-2 w-full">
         <div  class="w-full px-4 py-2 border-2 cursor-pointer text-center justify-center items-center shadow-lg flex transition-colors rounded-lg"
-              :class="selectedDisplayStyle === 'rounded' ? 'border-[#15919A] bg-[#15919A]/10' : 'border-gray-100 hover:border-[#15919A]'"
+              :class="selectedDisplayStyle === 'rounded' ? 'border-[#257556] bg-[#257556]/10' : 'border-gray-100 hover:border-[#257556]'"
               @click="selectDisplayStyle('rounded')">
           <button1 class="flex flex-col items-center justify-center gap-2 font-extrabold text-center">
             Rounded Targets
@@ -515,7 +515,7 @@ watch(
         </div>
 
         <div  class="w-full px-4 py-2 border-2 cursor-pointer text-center justify-center items-center shadow-lg flex transition-colors rounded-lg"
-              :class="selectedDisplayStyle === 'outside' ? 'border-[#15919A] bg-[#15919A]/10' : 'border-gray-100 hover:border-[#15919A]'"
+              :class="selectedDisplayStyle === 'outside' ? 'border-[#257556] bg-[#257556]/10' : 'border-gray-100 hover:border-[#257556]'"
               @click="selectDisplayStyle('outside')">
           <button1 class="flex flex-col items-center justify-center gap-2 font-extrabold text-center">
             Outside Targets
@@ -533,7 +533,7 @@ watch(
         </div>
 
         <div  class="w-full px-4 py-2 border-2 cursor-pointer text-center justify-center items-center shadow-lg flex transition-colors rounded-lg"
-              :class="selectedDisplayStyle === 'box' ? 'border-[#15919A] bg-[#15919A]/10' : 'border-gray-100 hover:border-[#15919A]'"
+              :class="selectedDisplayStyle === 'box' ? 'border-[#257556] bg-[#257556]/10' : 'border-gray-100 hover:border-[#257556]'"
               @click="selectDisplayStyle('box')">
           <button1 class="flex flex-col items-center justify-center gap-2 font-extrabold text-center">
             Box Targets
@@ -593,7 +593,7 @@ watch(
                 <div class="relative group">
                   <Tooltip text="By toggling it i will randomize the targets." />
                   <div
-                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                             style="right: -65px;"
                             >
@@ -612,7 +612,7 @@ watch(
                 <div class="relative group">
                   <Tooltip text="By toggling it i will randomize the primes." />
                   <div
-                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                             style="right: -65px;"
                             >
@@ -645,7 +645,7 @@ watch(
                 <div class="relative group">
                   <Tooltip text="By toggling it i will make the prime as the next button." />
                   <div
-                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                             style="right: -90px;"
                             >
@@ -674,7 +674,7 @@ watch(
                 <div class="relative group">
                   <Tooltip text="By toggling it i will auto next once it select a target in the round." />
                   <div
-                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                             style="right: -95px;"
                             >
@@ -693,7 +693,7 @@ watch(
                 <div class="relative group">
                   <Tooltip text="Clicking 'None of these' unselects other selections. " />
                   <div
-                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                             style="right: -75px;"
                             >
@@ -713,7 +713,7 @@ watch(
                 <div class="relative group">
                   <Tooltip text="Requires users to confirm their choice if they attempt to proceed without selecting any options" />
                   <div
-                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                             style="right: -90px;"
                             >
@@ -740,7 +740,7 @@ watch(
                 <div class="relative group">
                   <Tooltip text="By toggling it i will randomize the primes." />
                   <div
-                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                             style="right: -90px;"
                             >
@@ -781,7 +781,7 @@ watch(
               v-model="form.config.empty_selection"
             />
             <div
-              class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+              class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
               role="tooltip"
               >
               Warning message when no target is selected.
@@ -796,7 +796,7 @@ watch(
                 v-model="form.config.limit"
               />
               <div
-              class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+              class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
               role="tooltip"
               >
               Maximum number of targets that can be selected.
@@ -814,7 +814,7 @@ watch(
                 @change="handleDisplayByChange"
               />
               <div
-              class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+              class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
               role="tooltip"
               >
               Number of targets to be displayed.
@@ -830,7 +830,7 @@ watch(
               @mouseleave="enforceMinimumTargetDelay"
             />
             <div
-            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
             role="tooltip"
             >
             Delay time in milliseconds before the targets are displayed.
@@ -850,7 +850,7 @@ watch(
               v-model="form.config.trial_unselect_label"
             />
             <div
-            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
             role="tooltip"
             >
             Label for the trial unselect option.
@@ -864,7 +864,7 @@ watch(
           v-model="form.config.limit_reach" 
         />
         <div
-        class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+        class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
         role="tooltip"
         >
         Warning message when the selection limit is reached.
@@ -883,7 +883,7 @@ watch(
                 placeholder="selection"
               />
               <div
-              class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+              class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
               role="tooltip"
               >
               Number of targets to be selected to auto next.

@@ -4,7 +4,7 @@ import { ref } from 'vue';
 
 <template>
 
-        <div  class="px-4 py-2 border-2 border-transparent hover:border-[#15919A] cursor-pointer text-center justify-center items-center shadow-lg flex ">
+        <div  class="px-4 py-2 border-2 border-transparent hover:border-[#257556] cursor-pointer text-center justify-center items-center shadow-lg flex ">
           <button class="flex flex-col items-center justify-center gap-2 font-extrabold text-center">
             Rounded Targets
 
@@ -20,7 +20,7 @@ import { ref } from 'vue';
           </button>
         </div>
 
-        <div  class="px-4 py-2 border-2 border-transparent hover:border-[#15919A] cursor-pointer text-center justify-center items-center shadow-lg flex ">
+        <div  class="px-4 py-2 border-2 border-transparent hover:border-[#257556] cursor-pointer text-center justify-center items-center shadow-lg flex ">
           <button class="flex flex-col items-center justify-center gap-2 font-extrabold text-center">
             Outside Targets
 
@@ -37,7 +37,7 @@ import { ref } from 'vue';
           </button>
         </div>
 
-        <div  class="px-4 py-2 border-2 border-transparent hover:border-[#15919A] cursor-pointer text-center justify-center items-center shadow-lg flex ">
+        <div  class="px-4 py-2 border-2 border-transparent hover:border-[#257556] cursor-pointer text-center justify-center items-center shadow-lg flex ">
           <button class="flex flex-col items-center justify-center gap-2 font-extrabold text-center">
             Box Targets
 

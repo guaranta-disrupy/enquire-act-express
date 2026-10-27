@@ -41,7 +41,7 @@
                             <JetLabel value="Criteria (one per line)" />
                             <textarea
                                 v-model="bulkData.labels"
-                                class="w-full focus:ring-[#15919A] focus:border-[#15919A] rounded-lg border-gray-300"
+                                class="w-full focus:ring-[#257556] focus:border-[#257556] rounded-lg border-gray-300"
                                 rows="8"
                             ></textarea>
                         </div>
@@ -51,7 +51,7 @@
                             />
                             <textarea
                                 v-model="bulkData.values"
-                                class="w-full focus:ring-[#15919A] focus:border-[#15919A] rounded-lg border-gray-300"
+                                class="w-full focus:ring-[#257556] focus:border-[#257556] rounded-lg border-gray-300"
                                 rows="8"
                             ></textarea>
                         </div>
@@ -61,7 +61,7 @@
                             />
                             <textarea
                                 v-model="bulkData.equivalents"
-                                class="w-full focus:ring-[#15919A] focus:border-[#15919A] rounded-lg border-gray-300"
+                                class="w-full focus:ring-[#257556] focus:border-[#257556] rounded-lg border-gray-300"
                                 rows="8"
                             ></textarea>
                         </div>

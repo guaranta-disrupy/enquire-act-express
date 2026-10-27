@@ -75,12 +75,12 @@
                     width="26"
                     height="26"
                     rx="13"
-                    stroke="#15919A"
+                    stroke="#257556"
                     stroke-width="2"
                 ></rect>
                 <path
                     d="M66 64.8125V77.1875M72.1875 71H59.8125"
-                    stroke="#15919A"
+                    stroke="#257556"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"

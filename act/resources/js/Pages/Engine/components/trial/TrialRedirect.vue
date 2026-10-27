@@ -24,7 +24,7 @@
             <button
                 v-if="surveyTestState.testState === 'editor_survey_end'"
                 @click="restartPreview"
-                class="btn rounded-full bg-[#15919A] text-white px-4 py-2 hover:shadow-lg"
+                class="btn rounded-full bg-[#257556] text-white px-4 py-2 hover:shadow-lg"
             >
                 Restart Preview
             </button>

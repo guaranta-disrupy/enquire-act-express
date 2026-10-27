@@ -107,7 +107,7 @@ const props = defineProps({
     },
     bgColor: {
         type: String,
-        default: 'var(--mcolor, #15919A)',
+        default: 'var(--mcolor, #257556)',
     },
 });
 
@@ -153,7 +153,7 @@ const computedLabel = computed(() => {
     height: 0;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-top: 7px solid var(--mcolor, #15919A);
+    border-top: 7px solid var(--mcolor, #257556);
     bottom: -7px;
     top: unset;
 }

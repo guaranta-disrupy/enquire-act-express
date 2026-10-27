@@ -12,7 +12,7 @@
 
             <button
                 type="button"
-                class="inline-flex items-center px-4 py-2 rounded-full bg-[#15919A] text-white text-sm font-semibold shadow-sm hover:bg-[#15919A] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#15919A]"
+                class="inline-flex items-center px-4 py-2 rounded-full bg-[#257556] text-white text-sm font-semibold shadow-sm hover:bg-[#257556] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#257556]"
                 @click="openAddTheme"
             >
                 <span class="text-lg leading-none mr-2">+</span>
@@ -67,7 +67,7 @@
                     >
                         <button
                             type="button"
-                            class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/90 text-gray-500 shadow-sm hover:text-gray-700 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#15919A]"
+                            class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/90 text-gray-500 shadow-sm hover:text-gray-700 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#257556]"
                             @click.stop="toggleActions(theme.id)"
                         >
                             <svg

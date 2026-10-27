@@ -831,7 +831,7 @@ onBeforeUnmount(() => {
                                     viewBox="0 0 24 24"
                                     stroke-width="1.5"
                                     stroke="currentColor"
-                                    class="w-[60px] hover:stroke-[#15919A] transition-colors duration-200"
+                                    class="w-[60px] hover:stroke-[#257556] transition-colors duration-200"
                                 >
                                     <path
                                         data-v-8cc99868=""
@@ -848,7 +848,7 @@ onBeforeUnmount(() => {
                                 viewBox="0 0 24 24"
                                 stroke-width="1.5"
                                 stroke="currentColor"
-                                class="w-[60px] hover:stroke-[#15919A] transition-colors duration-200 active:scale-[0.95] transition-all duration-200"
+                                class="w-[60px] hover:stroke-[#257556] transition-colors duration-200 active:scale-[0.95] transition-all duration-200"
                             >
                                 <path
                                     data-v-8cc99868=""
@@ -858,7 +858,7 @@ onBeforeUnmount(() => {
                                 ></path>
                             </svg> -->
 
-                                <!-- <svg data-v-8cc99868="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[60px] hover:stroke-[#15919A] transition-colors duration-200"><path data-v-8cc99868="" stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path></svg> -->
+                                <!-- <svg data-v-8cc99868="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[60px] hover:stroke-[#257556] transition-colors duration-200"><path data-v-8cc99868="" stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path></svg> -->
                             </Link>
                         </div>
                         <div class="text-lg flex items-center ml-2">
@@ -869,7 +869,7 @@ onBeforeUnmount(() => {
                     </div>
 
                     <div
-                        class="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#15919A30] text-[#15919A] text-[20px] cursor-default"
+                        class="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#25755630] text-[#257556] text-[20px] cursor-default"
                         :title="$page.props.auth.user.name"
                     >
                         {{ getInitials($page.props.auth.user.name) }}
@@ -883,13 +883,13 @@ onBeforeUnmount(() => {
                <button
                 type="button"
                 @click="saveTest()"
-                class="px-4 bg-[#15919A] text-white font-bold rounded-full text-[20px] hover:bg-[#0C7C84] w-[110px] h-[44px] justify-center items-center flex"
+                class="px-4 bg-[#257556] text-white font-bold rounded-full text-[20px] hover:bg-[#1d5e45] w-[110px] h-[44px] justify-center items-center flex"
               >
               
                 Save
               </button> -->
                 <!-- <Button
-                class="px-4 e bg-[#15919A] text-white font-bold rounded-full text-[20px] hover:bg-[#0C7C84] w-[110px] h-[44px] justify-center items-center flex"
+                class="px-4 e bg-[#257556] text-white font-bold rounded-full text-[20px] hover:bg-[#1d5e45] w-[110px] h-[44px] justify-center items-center flex"
                 shadow="xl"
                 @click="trialAction"
                 v-if="userPermissions.canUpdateSurvey"
@@ -1022,7 +1022,7 @@ onBeforeUnmount(() => {
                                     'flex items-center justify-center w-12 h-12 rounded-full shadow-lg ring-2 ring-white select-none',
                                     dragging ? 'cursor-grabbing scale-[0.98]' : 'cursor-grab'
                                 ]"
-                                :style="isChatOpen ? 'background-color: #323232;' : 'background-color: #15919A;'"
+                                :style="isChatOpen ? 'background-color: #323232;' : 'background-color: #257556;'"
                                 >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="text-white">
                                     <path fill="currentColor"

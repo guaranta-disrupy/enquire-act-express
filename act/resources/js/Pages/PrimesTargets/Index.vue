@@ -401,7 +401,7 @@ const parseVariablesToElements = (htmlContent) => {
         const normalized = stripParagraphsAroundImages(String(htmlContent));
         return normalized.replace(/\{\{([^}]+)\}\}/g, (_m, name) => {
             const variableName = String(name).trim();
-            return `<span class="ql-variable" data-name="${variableName}" contenteditable="false" style="background: #15919A; color: #fff; padding: 4px 8px; border-radius: 6px; font-weight: 600; display: inline; margin: 0 2px; cursor: not-allowed; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; box-shadow: 2px 2px 4px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.3); border: 1px solid #0C7C84;">${variableName}</span>`;
+            return `<span class="ql-variable" data-name="${variableName}" contenteditable="false" style="background: #257556; color: #fff; padding: 4px 8px; border-radius: 6px; font-weight: 600; display: inline; margin: 0 2px; cursor: not-allowed; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; box-shadow: 2px 2px 4px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.3); border: 1px solid #1d5e45;">${variableName}</span>`;
         });
     } catch (e) {
         return htmlContent;
@@ -1286,7 +1286,7 @@ function addBulkTargets() {
                                     viewBox="0 0 24 24"
                                     stroke-width="1.5"
                                     stroke="currentColor"
-                                    class="w-[60px] hover:stroke-[#15919A] transition-colors duration-200"
+                                    class="w-[60px] hover:stroke-[#257556] transition-colors duration-200"
                                 >
                                     <path
                                         stroke-linecap="round"
@@ -1305,7 +1305,7 @@ function addBulkTargets() {
                     </div>
 
                     <div
-                        class="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#15919A30] text-[#15919A] text-[20px] cursor-default"
+                        class="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-[#25755630] text-[#257556] text-[20px] cursor-default"
                         :title="$page.props.auth.user.name"
                     >
                         {{ getInitials($page.props.auth.user.name) }}
@@ -1326,7 +1326,7 @@ function addBulkTargets() {
                                 @click="activeTab = 'primes'"
                                 :class="[
                                     activeTab === 'primes'
-                                        ? 'border-[#15919A] text-[#15919A]'
+                                        ? 'border-[#257556] text-[#257556]'
                                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300',
                                     'whitespace-nowrap py-4 px-1 border-b-2 font-bold text-md',
                                 ]"
@@ -1335,7 +1335,7 @@ function addBulkTargets() {
                                 <span
                                     :class="[
                                         activeTab === 'primes'
-                                            ? 'bg-[#15919A] text-white'
+                                            ? 'bg-[#257556] text-white'
                                             : 'bg-gray-100 text-gray-900',
                                         'ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium',
                                     ]"
@@ -1348,7 +1348,7 @@ function addBulkTargets() {
                                 @click="activeTab = 'targets'"
                                 :class="[
                                     activeTab === 'targets'
-                                        ? 'border-[#15919A] text-[#15919A]'
+                                        ? 'border-[#257556] text-[#257556]'
                                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300',
                                     'whitespace-nowrap py-4 px-1 border-b-2 font-bold text-md',
                                 ]"
@@ -1357,7 +1357,7 @@ function addBulkTargets() {
                                 <span
                                     :class="[
                                         activeTab === 'targets'
-                                            ? 'bg-[#15919A] text-white'
+                                            ? 'bg-[#257556] text-white'
                                             : 'bg-gray-100 text-gray-900',
                                         'ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium',
                                     ]"
@@ -1419,7 +1419,7 @@ function addBulkTargets() {
                                     <div class="flex items-center space-x-4">
                                         <!-- <div class="flex-shrink-0">
                                             <div
-                                                class="w-10 h-10 bg-[#15919A] rounded-full flex items-center justify-center text-white font-semibold"
+                                                class="w-10 h-10 bg-[#257556] rounded-full flex items-center justify-center text-white font-semibold"
                                             >
                                                 {{
                                                     activeTab === "primes"
@@ -1635,7 +1635,7 @@ function addBulkTargets() {
             @close="showEditModal = false"
         >
             <template #title>
-                <span class="text-[#15919A] font-bold">
+                <span class="text-[#257556] font-bold">
                     {{ isCreating ? "Add" : "Edit" }}
                     {{ selectedType === "prime" ? "Prime" : "Target" }} Template
                 </span>
@@ -1698,7 +1698,7 @@ function addBulkTargets() {
                                         v-model="selectAll"
                                         @change="toggleSelectAll"
                                         :disabled="editForm.template_data.length === 0"
-                                        class="rounded border-gray-300 text-[#15919A] focus:ring-[#15919A] disabled:opacity-50 disabled:cursor-not-allowed"
+                                        class="rounded border-gray-300 text-[#257556] focus:ring-[#257556] disabled:opacity-50 disabled:cursor-not-allowed"
                                     />
                                     <span
                                         class="ml-2 text-sm font-medium text-gray-700"
@@ -1736,7 +1736,7 @@ function addBulkTargets() {
                                                 v-model="selectAll"
                                                 @change="toggleSelectAll"
                                                 :disabled="editForm.template_data.length === 0"
-                                                class="rounded border-gray-300 text-[#15919A] focus:ring-[#15919A] disabled:opacity-50 disabled:cursor-not-allowed"
+                                                class="rounded border-gray-300 text-[#257556] focus:ring-[#257556] disabled:opacity-50 disabled:cursor-not-allowed"
                                             />
                                         </th>
                                         <th
@@ -1784,7 +1784,7 @@ function addBulkTargets() {
                                         ) in editForm.template_data"
                                         :key="index"
                                         :class="{
-                                            'bg-[#15919A30]':
+                                            'bg-[#25755630]':
                                                 selectedItems.has(index),
                                         }"
                                     >
@@ -1797,7 +1797,7 @@ function addBulkTargets() {
                                                 @change="
                                                     toggleItemSelection(index)
                                                 "
-                                                class="rounded border-gray-300 text-[#15919A] focus:ring-[#15919A]"
+                                                class="rounded border-gray-300 text-[#257556] focus:ring-[#257556]"
                                             />
                                         </td>
                                         <td class="px-3 py-1">
@@ -1811,7 +1811,7 @@ function addBulkTargets() {
                                                     )
                                                 "
                                                 type="text"
-                                                class="w-full h-[34px] text-sm bg-gray-50 border border-gray-300 rounded-md px-3 py-2 flex items-center focus:ring-[#15919A] focus:border-[#15919A]"
+                                                class="w-full h-[34px] text-sm bg-gray-50 border border-gray-300 rounded-md px-3 py-2 flex items-center focus:ring-[#257556] focus:border-[#257556]"
                                                 placeholder="Index"
                                             >
                                             {{ item.index }}
@@ -1934,7 +1934,7 @@ function addBulkTargets() {
                                                     )
                                                 "
                                                 type="number"
-                                                class="w-full h-[34px] text-sm focus:ring-[#15919A] focus:border-[#15919A]"
+                                                class="w-full h-[34px] text-sm focus:ring-[#257556] focus:border-[#257556]"
                                                 placeholder="Value"
                                             />
                                         </td>
@@ -1954,7 +1954,7 @@ function addBulkTargets() {
                                                             $event
                                                         )
                                                     "
-                                                    class="rounded border-gray-300 text-[#15919A] focus:ring-[#15919A]"
+                                                    class="rounded border-gray-300 text-[#257556] focus:ring-[#257556]"
                                                 />
                                             </div>
                                         </td>
@@ -2018,7 +2018,7 @@ function addBulkTargets() {
                                     <JetInput
                                         v-model="newItem.prime"
                                         placeholder="Prime content"
-                                        class="w-full min-h-[40px] text-sm border border-gray-300 rounded-md focus:ring-[#15919A] focus:border-[#15919A]"
+                                        class="w-full min-h-[40px] text-sm border border-gray-300 rounded-md focus:ring-[#257556] focus:border-[#257556]"
                                     ></JetInput>
                                 </div>
                                 <div class="col-span-5">
@@ -2026,7 +2026,7 @@ function addBulkTargets() {
                                         v-model="newItem.equivalent"
                                         type="text"
                                         placeholder="Equivalent (optional)"
-                                        class="w-full min-h-[40px] text-sm border border-gray-300 rounded-md focus:ring-[#15919A] focus:border-[#15919A]"
+                                        class="w-full min-h-[40px] text-sm border border-gray-300 rounded-md focus:ring-[#257556] focus:border-[#257556]"
                                     />
                                 </div>
                                 <div class="col-span-1">
@@ -2044,7 +2044,7 @@ function addBulkTargets() {
                                     <JetInput
                                         v-model="newItem.target"
                                         placeholder="Target content"
-                                        class="w-full min-h-[40px] text-sm border border-gray-300 rounded-md focus:ring-[#15919A] focus:border-[#15919A]"
+                                        class="w-full min-h-[40px] text-sm border border-gray-300 rounded-md focus:ring-[#257556] focus:border-[#257556]"
                                     ></JetInput>
                                 </div>
                                 <div class="col-span-5">
@@ -2147,7 +2147,7 @@ function addBulkTargets() {
                                     <textarea
                                         v-model="bulkEquivalents"
                                         placeholder=""
-                                        class="mt-1 w-full min-h-[120px] text-sm border border-gray-300 rounded-md focus:ring-[#15919A] focus:border-[#15919A]"
+                                        class="mt-1 w-full min-h-[120px] text-sm border border-gray-300 rounded-md focus:ring-[#257556] focus:border-[#257556]"
                                     ></textarea>
                                     <p class="mt-1 text-xs text-gray-500">
                                         Leave a line blank if a prime has no
@@ -2175,7 +2175,7 @@ function addBulkTargets() {
                                     Upload CSV
                                 </JetButton>
                                 <div
-                                class="absolute bottom-full left-[-80px] mb-1.5 px-2 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                class="absolute bottom-full left-[-80px] mb-1.5 px-2 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                 role="tooltip"
                                 >
                                 Use this option to import a list of primes from a file.<br/> The CSV file must be formatted correctly to match<br/> the platform's required structure.                                </div>
@@ -2194,7 +2194,7 @@ function addBulkTargets() {
                                     Download CSV Template
                                 </JetButton>
                                 <div
-                                class="absolute bottom-full left-[-30px] mb-1.5 px-2 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                class="absolute bottom-full left-[-30px] mb-1.5 px-2 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                 role="tooltip"
                                 >
                                 Click this to download a blank template file. <br/>Use this template to ensure your primes and <br/> equivalents are structured correctly before <br/>using the Upload CSV function. 
@@ -2292,7 +2292,7 @@ function addBulkTargets() {
                                     <textarea
                                         v-model="bulkTargetsEquivalents"
                                         placeholder=""
-                                        class="mt-1 w-full min-h-[120px] text-sm border border-gray-300 rounded-md focus:ring-[#15919A] focus:border-[#15919A]"
+                                        class="mt-1 w-full min-h-[120px] text-sm border border-gray-300 rounded-md focus:ring-[#257556] focus:border-[#257556]"
                                     ></textarea>
                                     <p class="mt-1 text-xs text-gray-500">
                                         Leave a line blank if a target has no
@@ -2320,7 +2320,7 @@ function addBulkTargets() {
                                     Upload CSV
                                 </JetButton>
                                 <div
-                                class="absolute bottom-full left-[-80px] mb-1.5 px-2 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                class="absolute bottom-full left-[-80px] mb-1.5 px-2 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                 role="tooltip"
                                 >
                                 Use this option to import a list of targets from a file.<br/> The CSV file must be formatted correctly to match<br/> the platform's required structure.                                </div>
@@ -2340,7 +2340,7 @@ function addBulkTargets() {
                                     Download CSV Template
                                 </JetButton>
                                 <div
-                                class="absolute bottom-full left-[-30px] mb-1.5 px-2 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                class="absolute bottom-full left-[-30px] mb-1.5 px-2 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                 role="tooltip"
                                 >
                                 Click this to download a blank template file.<br/>Use this template to ensure your targets and <br/> equivalents are structured correctly before <br/>using the Upload CSV function. 
@@ -2414,7 +2414,7 @@ function addBulkTargets() {
             @close="showCreateModal = false"
         >
             <template #title>
-                <span class="text-[#15919A] font-bold"
+                <span class="text-[#257556] font-bold"
                     >New
                     {{ createType === "prime" ? "Prime" : "Target" }}
                     Template</span
@@ -2513,7 +2513,7 @@ function addBulkTargets() {
             maxWidth="md"
         >
             <template #title>
-                <span class="text-[#15919A] font-bold">Convert Text to Image</span>
+                <span class="text-[#257556] font-bold">Convert Text to Image</span>
             </template>
             <template #content>
                 <div class="space-y-4">
@@ -2561,7 +2561,7 @@ function addBulkTargets() {
             maxWidth="lg"
         >
             <template #title>
-                <span class="text-[#15919A] font-bold">Insert image URLs</span>
+                <span class="text-[#257556] font-bold">Insert image URLs</span>
             </template>
             <template #content>
                 <div class="space-y-3">
@@ -2569,7 +2569,7 @@ function addBulkTargets() {
                     <textarea
                         v-model="imageUrlsText"
                         placeholder="https://example.com/image.png"
-                        class="mt-1 w-full min-h-[140px] text-sm border border-gray-300 rounded-md focus:ring-[#15919A] focus:border-[#15919A]"
+                        class="mt-1 w-full min-h-[140px] text-sm border border-gray-300 rounded-md focus:ring-[#257556] focus:border-[#257556]"
                     ></textarea>
                     <p class="text-xs text-gray-500">
                         Each non-empty line will be inserted as an image on its own
@@ -2614,7 +2614,7 @@ function addBulkTargets() {
 }
 
 .overflow-y-auto::-webkit-scrollbar-thumb {
-    background: #15919a;
+    background: #257556;
     border-radius: 3px;
 }
 
@@ -2625,7 +2625,7 @@ function addBulkTargets() {
 /* Firefox scrollbar */
 .overflow-y-auto {
     scrollbar-width: thin;
-    scrollbar-color: #15919a #f1f5f9;
+    scrollbar-color: #257556 #f1f5f9;
 }
 
 /* Quill Bubble Editor Custom Styles */
@@ -2689,7 +2689,7 @@ function addBulkTargets() {
 }
 
 .quill-bubble-wrapper .ql-toolbar button.ql-active {
-    background: #15919a;
+    background: #257556;
     color: white;
 }
 
@@ -2839,7 +2839,7 @@ function addBulkTargets() {
     padding: 4px 8px;
     border-radius: 6px;
     font-weight: 600;
-    background: #15919a;
+    background: #257556;
     color: #fff;
     display: inline;
     margin: 0 2px;
@@ -2850,7 +2850,7 @@ function addBulkTargets() {
     -ms-user-select: none;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2),
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    border: 1px solid #0c7c84;
+    border: 1px solid #1d5e45;
     transition: all 0.2s ease;
 }
 

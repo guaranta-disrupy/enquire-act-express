@@ -217,7 +217,7 @@ const toggleExpand = () => {
 <template>
 	
 	<div :class="['flex flex-col transition-all duration-300', isExpanded ? 'w-[160vh]' : 'w-[40vh]']">
-		<div class="bg-[#15919A] shadow p-4 mb-2 w-[full] justify-between flex flex-row">
+		<div class="bg-[#257556] shadow p-4 mb-2 w-[full] justify-between flex flex-row">
 			<div class="text-white text-[20px] font-bold ">
 				Gallery
 			</div>
@@ -250,7 +250,7 @@ const toggleExpand = () => {
 	<!-- Expand and Shrink Button -->
 			 <div class=" rounded-full px-2 font-bold flex justify-end bottom-[-48.50rem] relative right-[-1.5rem] shadow-lg">
 				<button
-				class="bg-[#15919A] rounded-lg py-[28px] absolute bottom-[25.25rem]  shadow-lg"
+				class="bg-[#257556] rounded-lg py-[28px] absolute bottom-[25.25rem]  shadow-lg"
 				@click="toggleExpand"
 				>
 				<!-- SVG rotates when expanded -->
@@ -278,7 +278,7 @@ const toggleExpand = () => {
 			<div class="text-center">
 			  <button
 					@click="addPrimeDialog"
-					class="group uppercase m-2 shadow flex flex-col border border-gray-300  h-[237px] rounded-lg justify-center items-center text-[#323232] hover:bg-[#15919A] hover:text-white font-bold"
+					class="group uppercase m-2 shadow flex flex-col border border-gray-300  h-[237px] rounded-lg justify-center items-center text-[#323232] hover:bg-[#257556] hover:text-white font-bold"
 				>
 					<svg
 					width="80"
@@ -338,7 +338,7 @@ const toggleExpand = () => {
 							class="absolute right-0 z-50 flex flex-col bg-white border rounded-lg shadow-lg top-6 w-36 animate-fade-in"
 							>
 
-						<a href="javascript:;" class="text-base px-2 py-1 gap-1 text-[#323232] font-bold rounded-t-lg inline-flex items-center hover:bg-[#15919A] hover:text-white" @click="updatePrimeDialog(i+1)">
+						<a href="javascript:;" class="text-base px-2 py-1 gap-1 text-[#323232] font-bold rounded-t-lg inline-flex items-center hover:bg-[#257556] hover:text-white" @click="updatePrimeDialog(i+1)">
 							<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
 							<path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />
 							<path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd" />
@@ -455,7 +455,7 @@ const toggleExpand = () => {
 
 .ios-checkbox {
   --checkbox-size: 25px;
-  --checkbox-color: #15919A;
+  --checkbox-color: #257556;
 
   --checkbox-border: #93c5fd;
 
@@ -535,15 +535,15 @@ const toggleExpand = () => {
 
 /* Color Themes */
 .ios-checkbox.blue {
-  --checkbox-color: #15919A;
+  --checkbox-color: #257556;
   --checkbox-bg: #dbeafe;
-  --checkbox-border: #15919A;
+  --checkbox-border: #257556;
 }
 
 .ios-checkbox.green {
   --checkbox-color: #10b981;
-  --checkbox-bg: #15919A;
-  --checkbox-border: #15919A;
+  --checkbox-bg: #257556;
+  --checkbox-border: #257556;
 }
 
 .ios-checkbox.purple {
@@ -584,7 +584,7 @@ const toggleExpand = () => {
 
 .custom-scrollbar {
   scrollbar-width: thin;              /* For Firefox */
-  scrollbar-color: #15919A transparent; /* thumb and track color */
+  scrollbar-color: #257556 transparent; /* thumb and track color */
 }
 
 /* For WebKit (Chrome, Safari, Edge) */
@@ -597,7 +597,7 @@ const toggleExpand = () => {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #15919A; /* light gray thumb */
+  background-color: #257556; /* light gray thumb */
   border-radius: 1px;
 }
 
@@ -610,7 +610,7 @@ const toggleExpand = () => {
 }
 
 .upload-modal-header {
-  background: #15919A;
+  background: #257556;
   color: white;
   font-weight: 600;
   font-size: 18px;
@@ -640,7 +640,7 @@ const toggleExpand = () => {
 }
 
 .upload-area:hover {
-  border-color: #15919A;
+  border-color: #257556;
   background: #f8fafc;
 }
 
@@ -702,7 +702,7 @@ const toggleExpand = () => {
 }
 
 .upload-btn {
-  background: #15919A;
+  background: #257556;
   color: white;
   border: none;
   padding: 10px 20px;

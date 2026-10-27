@@ -218,7 +218,7 @@ onUnmounted(() => {
 /* trialTimerCircleTrack */
 /* .progress-circle-track {
     stroke-width: 6px;
-    stroke: #15919a15;
+    stroke: #25755615;
 } */
 
 /* trialTimerText */

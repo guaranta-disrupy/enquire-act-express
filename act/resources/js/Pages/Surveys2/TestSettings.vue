@@ -218,7 +218,7 @@ const handleDefaultTrialUnselectChange = (value) => {
 
 <template>
     <div
-        class="bg-[#15919A] text-white shadow p-4 mb-2 w-[80vh] text-center uppercase"
+        class="bg-[#257556] text-white shadow p-4 mb-2 w-[80vh] text-center uppercase"
     >
         Settings
     </div>
@@ -325,9 +325,9 @@ const handleDefaultTrialUnselectChange = (value) => {
     <div class="flex flex-row gap-2 mb-2 items-center">
         <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_621_14998)">
-            <path d="M41.1415 0H8.8584C3.96572 0 0 3.96582 0 8.85772V15.625H50V8.85772C50 3.96582 46.0342 0 41.1415 0Z" fill="#15919A"/>
-            <path d="M0 41.1423C0 46.0342 3.96572 50 8.8584 50H28.9062V21.0938H0V41.1423Z" fill="#15919A"/>
-            <path d="M34.375 50H41.1415C46.0342 50 50 46.0342 50 41.1423V21.0938H34.375V50Z" fill="#15919A"/>
+            <path d="M41.1415 0H8.8584C3.96572 0 0 3.96582 0 8.85772V15.625H50V8.85772C50 3.96582 46.0342 0 41.1415 0Z" fill="#257556"/>
+            <path d="M0 41.1423C0 46.0342 3.96572 50 8.8584 50H28.9062V21.0938H0V41.1423Z" fill="#257556"/>
+            <path d="M34.375 50H41.1415C46.0342 50 50 46.0342 50 41.1423V21.0938H34.375V50Z" fill="#257556"/>
             </g>
             <defs>
             <clipPath id="clip0_621_14998">
@@ -342,7 +342,7 @@ const handleDefaultTrialUnselectChange = (value) => {
 
         <div class="flex flex-row gap-2 w-full">
         <div  class="w-full px-4 py-2 border-2 cursor-pointer text-center justify-center items-center shadow-lg flex transition-colors rounded-lg"
-              :class="selectedDisplayStyle === 'rounded' ? 'border-[#15919A] bg-[#15919A]/10' : 'border-gray-100 hover:border-[#15919A]'"
+              :class="selectedDisplayStyle === 'rounded' ? 'border-[#257556] bg-[#257556]/10' : 'border-gray-100 hover:border-[#257556]'"
               @click="selectDisplayStyle('rounded')">
           <button1 class="flex flex-col items-center justify-center gap-2 font-extrabold text-center">
             Rounded Targets
@@ -360,7 +360,7 @@ const handleDefaultTrialUnselectChange = (value) => {
         </div>
 
         <div  class="w-full px-4 py-2 border-2 cursor-pointer text-center justify-center items-center shadow-lg flex transition-colors rounded-lg"
-              :class="selectedDisplayStyle === 'outside' ? 'border-[#15919A] bg-[#15919A]/10' : 'border-gray-100 hover:border-[#15919A]'"
+              :class="selectedDisplayStyle === 'outside' ? 'border-[#257556] bg-[#257556]/10' : 'border-gray-100 hover:border-[#257556]'"
               @click="selectDisplayStyle('outside')">
           <button1 class="flex flex-col items-center justify-center gap-2 font-extrabold text-center">
             Outside Targets
@@ -378,7 +378,7 @@ const handleDefaultTrialUnselectChange = (value) => {
         </div>
 
         <div  class="w-full px-4 py-2 border-2 cursor-pointer text-center justify-center items-center shadow-lg flex transition-colors rounded-lg"
-              :class="selectedDisplayStyle === 'box' ? 'border-[#15919A] bg-[#15919A]/10' : 'border-gray-100 hover:border-[#15919A]'"
+              :class="selectedDisplayStyle === 'box' ? 'border-[#257556] bg-[#257556]/10' : 'border-gray-100 hover:border-[#257556]'"
               @click="selectDisplayStyle('box')">
           <button1 class="flex flex-col items-center justify-center gap-2 font-extrabold text-center">
             Box Targets
@@ -411,7 +411,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                         <div class="flex flex-col pb-2">
                             <jet-label class="mt-0">
                                 <div
-                                    class="flex items-center gap-2 hover:text-[#15919a] cursor-pointer"
+                                    class="flex items-center gap-2 hover:text-[#257556] cursor-pointer"
                                 >
                                     <Toggle
                                         v-model="form.config.main_trial"
@@ -426,7 +426,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                                             text="By toggling it i will switch to main trial mode."
                                         />
                                         <div
-                                            class="absolute bottom-full left--100 mb-[-30px] px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                            class="absolute bottom-full left--100 mb-[-30px] px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                             role="tooltip"
                                             style="right: -160px"
                                         >
@@ -438,7 +438,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                             </jet-label>
                             <jet-label class="mt-2">
                                 <div
-                                    class="flex items-center gap-2 hover:text-[#15919a] cursor-pointer"
+                                    class="flex items-center gap-2 hover:text-[#257556] cursor-pointer"
                                 >
                                     <Toggle
                                         v-model="form.config.practice_trial"
@@ -453,7 +453,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                                             text="By toggling it i will switch to practice trial mode."
                                         />
                                         <div
-                                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                             role="tooltip"
                                             style="right: -70px"
                                         >
@@ -472,7 +472,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                         <legend class="fieldset-legend">Randomization:</legend>
                         <div class="flex flex-col pb-2">
                             <jet-label
-                                class="mt-0 hover:text-[#15919a] cursor-pointer"
+                                class="mt-0 hover:text-[#257556] cursor-pointer"
                             >
                                 <div class="flex items-center gap-2">
                                     <Toggle
@@ -485,7 +485,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                                             text="By toggling it i will randomize the primes."
                                         />
                                         <div
-                                            class="absolute bottom-full left--100 mb-[-34px] px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                            class="absolute bottom-full left--100 mb-[-34px] px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                             role="tooltip"
                                             style="right: -135px"
                                         >
@@ -496,7 +496,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                                 </div>
                             </jet-label>
                             <jet-label
-                                class="mt-2 hover:text-[#15919a] cursor-pointer"
+                                class="mt-2 hover:text-[#257556] cursor-pointer"
                             >
                                 <div class="flex items-center gap-2">
                                     <Toggle v-model="form.config.random" />
@@ -507,7 +507,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                                             text="By toggling it i will randomize the targets."
                                         />
                                         <div
-                                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                            class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                             role="tooltip"
                                             style="right: -65px"
                                         >
@@ -529,7 +529,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                             Response Behaviour:
                         </legend>
                         <jet-label
-                            class="mt-0 hover:text-[#15919a] cursor-pointer"
+                            class="mt-0 hover:text-[#257556] cursor-pointer"
                         >
                             <div class="flex items-center gap-2">
                                 <Toggle
@@ -543,7 +543,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                                         text="Treat the prime as a button to continue to the next screen."
                                     />
                                     <div
-                                        class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                        class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                         role="tooltip"
                                         style="right: -90px"
                                     >
@@ -565,7 +565,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                 </jet-label> -->
 
                         <jet-label
-                            class="mt-1 hover:text-[#15919a] cursor-pointer"
+                            class="mt-1 hover:text-[#257556] cursor-pointer"
                         >
                             <div class="flex items-center gap-2">
                                 <Toggle
@@ -579,7 +579,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                                         text="Automatically advance to the next round after a response is selected."
                                     />
                                     <div
-                                        class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                        class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                         role="tooltip"
                                         style="right: -95px"
                                     >
@@ -591,7 +591,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                         </jet-label>
 
                         <jet-label
-                            class="mt-1 hover:text-[#15919a] cursor-pointer"
+                            class="mt-1 hover:text-[#257556] cursor-pointer"
                         >
                             <div class="flex items-center gap-2">
                                 <Toggle
@@ -605,7 +605,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                                         text="Clicking 'None of these' unselects other selections. "
                                     />
                                     <div
-                                        class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                        class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                         role="tooltip"
                                         style="right: -75px"
                                     >
@@ -617,7 +617,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                         </jet-label>
 
                         <jet-label
-                            class="mt-1 mb-2 hover:text-[#15919a] cursor-pointer"
+                            class="mt-1 mb-2 hover:text-[#257556] cursor-pointer"
                         >
                             <div class="flex items-center gap-2">
                                 <Toggle
@@ -631,7 +631,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                                         text="Requires users to confirm their choice if they attempt to proceed without selecting any options"
                                     />
                                     <div
-                                        class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                        class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                         role="tooltip"
                                         style="right: -90px"
                                     >
@@ -648,7 +648,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                     >
                         <legend class="fieldset-legend">Targets Layout:</legend>
                         <jet-label
-                            class="mt-0 hover:text-[#15919a] cursor-pointer"
+                            class="mt-0 hover:text-[#257556] cursor-pointer"
                         >
                             <div class="flex items-center gap-1">
                                 <Toggle
@@ -665,7 +665,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                                         text="By toggling it i will randomize the primes."
                                     />
                                     <div
-                                        class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                                        class="absolute bottom-full left--100 mb-1 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                                         role="tooltip"
                                         style="right: -85px"
                                     >
@@ -680,7 +680,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                 </div>
             </div>
             <div v-else class="flex flex-col gap-1">
-                <jet-label class="mt-3 hover:text-[#15919a] cursor-pointer">
+                <jet-label class="mt-3 hover:text-[#257556] cursor-pointer">
                     <div class="flex items-center gap-2">
                         <Toggle v-model="form.config.random_prime" />
                         <div class="ml-2">Randomize primes</div>
@@ -708,7 +708,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                             v-model="form.config.trial_unselect_label"
                         />
                         <div
-                            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                         >
                             Label for the Instant None Response option.
@@ -727,7 +727,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                             placeholder="selection"
                         />
                         <div
-                            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                         >
                             Number of targets to be selected to auto next.
@@ -740,7 +740,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                             v-model="form.config.empty_selection"
                         />
                         <div
-                            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                         >
                             Warning message when no target is selected.
@@ -753,7 +753,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                             v-model="form.config.limit_reach"
                         />
                         <div
-                            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                         >
                             Warning message when the selection limit is reached.
@@ -769,7 +769,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                             v-model="form.config.limit"
                         />
                         <div
-                            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                         >
                             Maximum number of targets that can be selected.
@@ -783,7 +783,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                             @change="handleDisplayByChange"
                         />
                         <div
-                            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                         >
                             Number of targets to be displayed.
@@ -798,7 +798,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                             @mouseleave="enforceMinimumTargetDelay"
                         />
                         <div
-                            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                            class="absolute bottom-full left-0 mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                             role="tooltip"
                         >
                             Delay time in milliseconds before the targets are
@@ -918,7 +918,7 @@ const handleDefaultTrialUnselectChange = (value) => {
 
 .custom-scrollbar {
     scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: #15919a transparent; /* thumb and track color */
+    scrollbar-color: #257556 transparent; /* thumb and track color */
     max-height: calc(100vh - 156px);
 }
 
@@ -932,7 +932,7 @@ const handleDefaultTrialUnselectChange = (value) => {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #15919a; /* light gray thumb */
+    background-color: #257556; /* light gray thumb */
     border-radius: 1px;
 }
 </style>

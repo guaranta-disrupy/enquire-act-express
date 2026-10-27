@@ -403,7 +403,7 @@ const parseVariablesToElements = (htmlContent) => {
     let parsedContent = normalized.replace(
         /\{\{([^}]+)\}\}/g,
         (match, variableName) => {
-            return `<span class="ql-variable" data-name="${variableName}" contenteditable="false" style="background: #15919A; color: #fff; padding: 4px 8px; border-radius: 6px; font-weight: 600; display: inline; margin: 0 2px; cursor: not-allowed; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; box-shadow: 2px 2px 4px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.3); border: 1px solid #0C7C84;">${variableName}</span>`;
+            return `<span class="ql-variable" data-name="${variableName}" contenteditable="false" style="background: #257556; color: #fff; padding: 4px 8px; border-radius: 6px; font-weight: 600; display: inline; margin: 0 2px; cursor: not-allowed; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; box-shadow: 2px 2px 4px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.3); border: 1px solid #1d5e45;">${variableName}</span>`;
         }
     );
 
@@ -454,7 +454,7 @@ const insertVariableCard = (rawVariableName, targetEditor = null) => {
             variableElement.setAttribute("data-name", variableName);
             variableElement.setAttribute("contenteditable", false);
             variableElement.style.cssText =
-                "background: #15919A; color: #fff; padding: 4px 8px; border-radius: 6px; font-weight: 600; display: inline; margin: 0 2px; cursor: not-allowed; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; box-shadow: 2px 2px 4px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.3); border: 1px solid #0C7C84;";
+                "background: #257556; color: #fff; padding: 4px 8px; border-radius: 6px; font-weight: 600; display: inline; margin: 0 2px; cursor: not-allowed; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; box-shadow: 2px 2px 4px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.3); border: 1px solid #1d5e45;";
             variableElement.textContent = variableName; // Display just the variable name, not {{variableName}}
 
             // Insert the element directly into the Quill editor's DOM at the current cursor position
@@ -842,7 +842,7 @@ const insertImagesFromModal = () => {
 
 <template>
     <div
-        class="bg-[#15919A] text-white shadow p-4 mb-2 w-[100vh] text-center uppercase"
+        class="bg-[#257556] text-white shadow p-4 mb-2 w-[100vh] text-center uppercase"
     >
         Instruction
     </div>
@@ -869,7 +869,7 @@ const insertImagesFromModal = () => {
                     <Toggle v-model="props.tests.config.dummy_trial" />
                     <div class="ml-2">Dummy round</div>
                     <div
-                        class="absolute bottom-[-10px] left-[150px] mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#15919a] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                        class="absolute bottom-[-10px] left-[150px] mb-0 px-1.5 py-2 rounded text-xs text-white bg-[#257556] shadow z-20 whitespace-nowrap opacity-0 translate-y-1 pointer-events-none transition duration-150 ease-out group-hover:opacity-100 group-hover:translate-y-0"
                         role="tooltip"
                     >
                         Toggle this switch ON if the instruction you are
@@ -918,7 +918,7 @@ const insertImagesFromModal = () => {
                     <!-- <div class="mb-2">
                         <button
                             @click="openTitleModal"
-                            class="px-3 py-1 bg-[#15919A30] hover:bg-[#15919A90] hover:text-white text-[#15919A] rounded-full text-sm transition-colors"
+                            class="px-3 py-1 bg-[#25755630] hover:bg-[#25755690] hover:text-white text-[#257556] rounded-full text-sm transition-colors"
                         >
                             Variables
                         </button>
@@ -1266,7 +1266,7 @@ const insertImagesFromModal = () => {
         maxWidth="lg"
     >
         <template #title>
-            <span class="text-[#15919A] font-bold">Insert image URLs</span>
+            <span class="text-[#257556] font-bold">Insert image URLs</span>
         </template>
         <template #content>
             <div class="space-y-3">
@@ -1274,7 +1274,7 @@ const insertImagesFromModal = () => {
                 <textarea
                     v-model="imageUrlsText"
                     placeholder="https://exemplo.com/imagem.png"
-                    class="mt-1 w-full min-h-[140px] text-sm border border-gray-300 rounded-md focus:ring-[#15919A] focus:border-[#15919A]"
+                    class="mt-1 w-full min-h-[140px] text-sm border border-gray-300 rounded-md focus:ring-[#257556] focus:border-[#257556]"
                 ></textarea>
                 <p class="text-xs text-gray-500">
                     Enter one image URL per line. Each URL will be inserted as
@@ -1319,7 +1319,7 @@ const insertImagesFromModal = () => {
     padding: 4px 8px;
     border-radius: 6px;
     font-weight: 600;
-    background: #15919a;
+    background: #257556;
     color: #fff;
     display: inline;
     margin: 0 2px;
@@ -1330,12 +1330,12 @@ const insertImagesFromModal = () => {
     -ms-user-select: none;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2),
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    border: 1px solid #0c7c84;
+    border: 1px solid #1d5e45;
     transition: all 0.2s ease;
 }
 
 :deep(.ql-variable:hover) {
-    background: #0c7c84;
+    background: #1d5e45;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3),
         inset 0 1px 0 rgba(255, 255, 255, 0.4);
     transform: translateY(-1px);
@@ -1358,13 +1358,13 @@ const insertImagesFromModal = () => {
 
 /* Custom Variables button styling inside Quill toolbar */
 ::deep(.ql-toolbar .ql-open-variables) {
-    background-color: rgba(21, 145, 154, 0.19);
-    color: #15919a;
+    background-color: rgba(37, 117, 86, 0.19);
+    color: #257556;
     padding: 0px 60px 0px 10px;
     border-radius: 9999px;
     font-size: 12px;
     line-height: 1;
-    border: 1px solid rgba(21, 145, 154, 0.25);
+    border: 1px solid rgba(37, 117, 86, 0.25);
     cursor: pointer;
     transition: all 0.2s ease;
     text-align: center;
@@ -1374,14 +1374,14 @@ const insertImagesFromModal = () => {
 
 /* Removed separate Testing button; Variables button handles behavior */
 ::deep(.ql-toolbar .ql-open-variables:hover) {
-    background-color: rgba(21, 145, 154, 0.56);
+    background-color: rgba(37, 117, 86, 0.56);
     color: #ffffff;
-    border-color: #15919a;
+    border-color: #257556;
 }
 
 ::deep(.ql-toolbar .ql-open-variables:focus) {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(21, 145, 154, 0.25);
+    box-shadow: 0 0 0 2px rgba(37, 117, 86, 0.25);
 }
 
 :deep(.ql-container) {
@@ -1411,13 +1411,13 @@ const insertImagesFromModal = () => {
 
 :deep(.ql-toolbar .ql-insert-image:hover) {
     background: #f8f9fa;
-    border-color: #15919a;
-    color: #15919a;
+    border-color: #257556;
+    color: #257556;
 }
 
 :deep(.ql-toolbar .ql-insert-image:focus) {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(21, 145, 154, 0.25);
+    box-shadow: 0 0 0 2px rgba(37, 117, 86, 0.25);
 }
 
 /* Variables table styling to match Variables2/Index.vue */
@@ -1442,7 +1442,7 @@ const insertImagesFromModal = () => {
 }
 
 .overflow-y-auto::-webkit-scrollbar-thumb {
-    background: #15919a;
+    background: #257556;
     border-radius: 3px;
 }
 
@@ -1453,7 +1453,7 @@ const insertImagesFromModal = () => {
 /* Firefox scrollbar */
 .overflow-y-auto {
     scrollbar-width: thin;
-    scrollbar-color: #15919a #f1f5f9;
+    scrollbar-color: #257556 #f1f5f9;
 }
 
 /* Make images inline with text */

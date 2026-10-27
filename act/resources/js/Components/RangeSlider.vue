@@ -11,14 +11,14 @@
       <!-- Track -->
       <div class="absolute top-1/2 w-full h-2 bg-gray-300 rounded-full -translate-y-1/2">
         <div
-          class="h-full bg-[#15919A] rounded-full"
+          class="h-full bg-[#257556] rounded-full"
           :style="{ width: percent + '%' }"
         ></div>
       </div>
 
       <!-- Draggable Bubble -->
       <div
-        class="absolute top-[3px] w-8 h-8 border-4 border-[#15919A] bg-white text-[#323232] text-xs flex items-center justify-center rounded-full shadow-md cursor-pointer "
+        class="absolute top-[3px] w-8 h-8 border-4 border-[#257556] bg-white text-[#323232] text-xs flex items-center justify-center rounded-full shadow-md cursor-pointer "
         :style="{ left: percent + '%', transform: 'translate(-50%, 0)' }"
         @mousedown.stop.prevent="startDrag"
         @touchstart.stop.passive="startTouch"
