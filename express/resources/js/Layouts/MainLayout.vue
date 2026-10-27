@@ -11,6 +11,10 @@ import { faArrowLeft, faChartBar, faCopy, faEdit, faExternalLinkAlt, faTrashAlt,
 import SideMenuLayout from './SideMenuLayout.vue';
 import { ref } from 'vue'
 import Chatbot from '@/S4/AI/Chatbot.vue'
+
+// Helpbot escondido até ter backend próprio; VITE_HELPBOT_ENABLED=true religa.
+const helpbotEnabled = import.meta.env.VITE_HELPBOT_ENABLED === 'true';
+
 // import { Link } from "@inertiajs/vue3";
 
 
@@ -54,7 +58,7 @@ const isChatOpen = ref(false);
                 </div>
             </div>
             <slot name="modals"></slot>
-            <Chatbot v-model:open="isChatOpen" />
+            <Chatbot v-if="helpbotEnabled" v-model:open="isChatOpen" />
         </template>
     </app-layout>
 </template>
