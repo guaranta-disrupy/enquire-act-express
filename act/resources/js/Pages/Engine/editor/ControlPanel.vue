@@ -703,6 +703,43 @@
                             >
                         </div>
                         <button
+                            v-if="overlayKeyForGroup[group.title]"
+                            type="button"
+                            class="focus:outline-none rounded-full px-1 ml-auto mr-1"
+                            :class="
+                                editorStore.previewOverlays[
+                                    overlayKeyForGroup[group.title]
+                                ]
+                                    ? 'bg-[#25755630] text-[#257556]'
+                                    : 'text-gray-400/70 hover:text-[#257556]'
+                            "
+                            :title="
+                                group.title === 'Unselect Modal'
+                                    ? 'Show the modal in the preview'
+                                    : 'Show the alert in the preview'
+                            "
+                            @click.stop.prevent="
+                                toggleOverlay(overlayKeyForGroup[group.title])
+                            "
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"
+                                />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                        <button
                             type="button"
                             class="focus:outline-none rounded-full px-1"
                             :class="
@@ -762,6 +799,11 @@
                                     class="col-span-1"
                                     :label="control.label"
                                     :variable="control.variable"
+                                    :customized="
+                                        editorStore.customizedStyles.has(
+                                            control.variable
+                                        )
+                                    "
                                     :modelValue="
                                         editorStore.styles[control.variable]
                                     "
@@ -808,6 +850,11 @@
                                 :key="control.variable"
                                 :label="control.label"
                                 :variable="control.variable"
+                                :customized="
+                                    editorStore.customizedStyles.has(
+                                        control.variable
+                                    )
+                                "
                                 :modelValue="
                                     editorStore.styles[control.variable]
                                 "
@@ -970,6 +1017,15 @@ const collapsedGroupTitles = new Set([
 
 // Track which groups have eye icon toggled
 const toggledGroups = ref(new Set());
+
+// Olho que mostra no preview elementos que só aparecem na interação
+const overlayKeyForGroup = {
+    "Unselect Modal": "unselect",
+    "Warning Text / Others": "warning",
+};
+const toggleOverlay = (key) => {
+    editorStore.previewOverlays[key] = !editorStore.previewOverlays[key];
+};
 
 // Map control group titles to their corresponding CSS variables
 const groupToVariableMap = {
@@ -1507,9 +1563,9 @@ const handleResetClick = (group) => {
     // GROUPS WITH GROUPED CONTROLS
     // ============================================
 
-    // Header Images: Has groupedControls structure
+    // Header Images / Prime Image: Has groupedControls structure
     if (
-        group.title === "Header Images" &&
+        ["Header Images", "Prime Image"].includes(group.title) &&
         originalGroup.grouped &&
         originalGroup.groupedControls
     ) {
@@ -1742,6 +1798,7 @@ const allControlGroups = [
             { label: "Bottom", variable: "--logo-bottom" },
             { label: "Left", variable: "--logo-left" },
             { label: "Right", variable: "--logo-right" },
+            { label: "Display", variable: "--bg-logo-display" },
             // {
             //     label: "Background Repeat",
             //     variable: "--engine-background-repeat",
@@ -1753,6 +1810,16 @@ const allControlGroups = [
             // { label: "Background Size", variable: "--engine-background-size" },
             // { label: "Box Sizing", variable: "--engine-background-box-sizing" },
             // { label: "Margin", variable: "--logo-margin" },
+        ],
+    },
+    {
+        title: "Progress Bar",
+        controls: [
+            { label: "Color 1", variable: "--progress-color-1" },
+            { label: "Color 2", variable: "--progress-color-2" },
+            { label: "Color 3", variable: "--progress-color-3" },
+            { label: "Color 4", variable: "--progress-color-4" },
+            { label: "Track Color", variable: "--progress-track-color" },
         ],
     },
     {
@@ -1889,6 +1956,8 @@ const allControlGroups = [
             { label: "Padding X", variable: "--header-padding-vertical" },
             { label: "Padding Y", variable: "--header-padding-horizontal" },
             { label: "Line Height", variable: "--header-line-height" },
+            { label: "Font Weight", variable: "--header-font-weight" },
+            { label: "Text Align", variable: "--header-text-align" },
             { label: "Font Color", variable: "--header-text-color" },
         ],
     },
@@ -1896,8 +1965,11 @@ const allControlGroups = [
         title: "Header Images",
         controls: [
             { label: "Width", variable: "--header-img-width" },
+            { label: "Height", variable: "--header-img-height" },
             { label: "Margin X", variable: "--header-img-margin-x" },
             { label: "Margin Y", variable: "--header-img-margin-y" },
+            { label: "Padding", variable: "--header-img-padding" },
+            { label: "Border Radius", variable: "--header-img-border-radius" },
         ],
         grouped: true,
         groupedControls: [
@@ -1906,7 +1978,13 @@ const allControlGroups = [
                 controls: [
                     { label: "Width", variable: "--header-img-width" },
                     { label: "Margin X", variable: "--header-img-margin-x" },
+                    { label: "Height", variable: "--header-img-height" },
                     { label: "Margin Y", variable: "--header-img-margin-y" },
+                    { label: "Padding", variable: "--header-img-padding" },
+                    {
+                        label: "Border Radius",
+                        variable: "--header-img-border-radius",
+                    },
                     { label: "Display", variable: "--header-img-display" },
                 ],
             },
@@ -1950,6 +2028,10 @@ const allControlGroups = [
             { label: "Border Color", variable: "--prime-border-color" },
             { label: "Background Color", variable: "--prime-bg-color" },
             { label: "Font Color", variable: "--prime-font-color" },
+            {
+                label: "Font Hover Color",
+                variable: "--prime-hover-font-color",
+            },
         ],
     },
     {
@@ -1961,6 +2043,74 @@ const allControlGroups = [
             { label: "Margin Bottom", variable: "--prime-img-margin-bottom" },
             { label: "Display", variable: "--prime-img-display" },
             { label: "Margin X", variable: "--prime-img-margin-x" },
+            { label: "Padding", variable: "--prime-img-padding" },
+            { label: "Border Radius", variable: "--prime-img-border-radius" },
+        ],
+        // "All" vale para todas as imagens do prime; 1-3 sobrescrevem uma
+        // imagem específica (vazio = usa o valor de "All").
+        grouped: true,
+        groupedControls: [
+            {
+                imageNumber: "All",
+                controls: [
+                    { label: "Width", variable: "--prime-img-width" },
+                    { label: "Height", variable: "--prime-img-height" },
+                    { label: "Margin Top", variable: "--prime-img-margin-top" },
+                    {
+                        label: "Margin Bottom",
+                        variable: "--prime-img-margin-bottom",
+                    },
+                    { label: "Margin X", variable: "--prime-img-margin-x" },
+                    { label: "Padding", variable: "--prime-img-padding" },
+                    {
+                        label: "Border Radius",
+                        variable: "--prime-img-border-radius",
+                    },
+                    { label: "Display", variable: "--prime-img-display" },
+                ],
+            },
+            {
+                imageNumber: "1",
+                controls: [
+                    { label: "Width", variable: "--prime-img-1-width" },
+                    { label: "Height", variable: "--prime-img-1-height" },
+                    { label: "Margin X", variable: "--prime-img-1-margin-x" },
+                    { label: "Padding", variable: "--prime-img-1-padding" },
+                    {
+                        label: "Border Radius",
+                        variable: "--prime-img-1-border-radius",
+                    },
+                    { label: "Display", variable: "--prime-img-1-display" },
+                ],
+            },
+            {
+                imageNumber: "2",
+                controls: [
+                    { label: "Width", variable: "--prime-img-2-width" },
+                    { label: "Height", variable: "--prime-img-2-height" },
+                    { label: "Margin X", variable: "--prime-img-2-margin-x" },
+                    { label: "Padding", variable: "--prime-img-2-padding" },
+                    {
+                        label: "Border Radius",
+                        variable: "--prime-img-2-border-radius",
+                    },
+                    { label: "Display", variable: "--prime-img-2-display" },
+                ],
+            },
+            {
+                imageNumber: "3",
+                controls: [
+                    { label: "Width", variable: "--prime-img-3-width" },
+                    { label: "Height", variable: "--prime-img-3-height" },
+                    { label: "Margin X", variable: "--prime-img-3-margin-x" },
+                    { label: "Padding", variable: "--prime-img-3-padding" },
+                    {
+                        label: "Border Radius",
+                        variable: "--prime-img-3-border-radius",
+                    },
+                    { label: "Display", variable: "--prime-img-3-display" },
+                ],
+            },
         ],
     },
     {
@@ -1992,6 +2142,10 @@ const allControlGroups = [
             { label: "Height", variable: "--target-img-height" },
             { label: "Margin Top", variable: "--target-img-margin-top" },
             { label: "Margin Bottom", variable: "--target-img-margin-bottom" },
+            { label: "Margin X", variable: "--target-img-margin-x" },
+            { label: "Padding", variable: "--target-img-padding" },
+            { label: "Border Radius", variable: "--target-img-border-radius" },
+            { label: "Display", variable: "--target-img-display" },
         ],
     },
     {
@@ -2209,6 +2363,9 @@ const allControlGroups = [
             { label: "Margin Bottom", variable: "--bottom-img-margin-bottom" },
             { label: "Margin Left", variable: "--bottom-img-margin-left" },
             { label: "Margin Right", variable: "--bottom-img-margin-right" },
+            { label: "Height", variable: "--bottom-img-height" },
+            { label: "Padding", variable: "--bottom-img-padding" },
+            { label: "Border Radius", variable: "--bottom-img-border-radius" },
         ],
     },
     {
@@ -2245,6 +2402,35 @@ const allControlGroups = [
                 label: "Buttons Alignment",
                 variable: "--unselect-modal-actions-justify-content",
             },
+            { label: "Background Color", variable: "--unselect-modal-bg-color" },
+            {
+                label: "Backdrop Color",
+                variable: "--unselect-modal-backdrop-color",
+            },
+            {
+                label: "Message Font Color",
+                variable: "--unselect-modal-message-color",
+            },
+            {
+                label: "Cancel BG Color",
+                variable: "--unselect-modal-cancel-bg-color",
+            },
+            {
+                label: "Cancel Font Color",
+                variable: "--unselect-modal-cancel-font-color",
+            },
+            {
+                label: "Cancel Border Color",
+                variable: "--unselect-modal-cancel-border-color",
+            },
+            {
+                label: "Confirm BG Color",
+                variable: "--unselect-modal-submit-bg-color",
+            },
+            {
+                label: "Confirm Font Color",
+                variable: "--unselect-modal-submit-font-color",
+            },
         ],
     },
     {
@@ -2274,6 +2460,8 @@ const allControlGroups = [
                 label: "SSR GIF Logo",
                 variable: "--logo-display",
             },
+            { label: "Alert BG Color", variable: "--warning-bg-color" },
+            { label: "Alert Text Color", variable: "--warning-text-color" },
         ],
     },
 ];
@@ -2285,6 +2473,7 @@ const activeControlGroups = computed(() => {
         const descriptiveTitles = [
             "General",
             "Background Logo",
+            "Progress Bar",
             "Descriptive Text",
             "Descriptive Images",
             "Button",
@@ -2392,14 +2581,18 @@ const activeControlGroups = computed(() => {
                                 : "tablet";
                         return (
                             control.variable ===
-                            `--warning-margin-bottom-${tabletType}`
+                                `--warning-margin-bottom-${tabletType}` ||
+                            control.variable === "--warning-bg-color" ||
+                            control.variable === "--warning-text-color"
                         );
                     } else {
                         return (
                             control.variable === "--warning-margin-bottom" ||
                             control.variable === "--redirect-text-color" ||
                             control.variable === "--loading-infinity-color" ||
-                            control.variable === "--logo-display"
+                            control.variable === "--logo-display" ||
+                            control.variable === "--warning-bg-color" ||
+                            control.variable === "--warning-text-color"
                         );
                     }
                 }),

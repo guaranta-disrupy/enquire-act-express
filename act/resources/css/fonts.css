@@ -1,3 +1,27 @@
+/* Fontes extras do painel de estilo (paridade com a SSR), via Fontsource:
+   os arquivos entram no build, sem chamar o Google no navegador do respondente. */
+@import "@fontsource-variable/nunito-sans";
+@import "@fontsource-variable/dm-sans";
+@import "@fontsource-variable/playfair-display";
+@import "@fontsource-variable/raleway";
+@import "@fontsource-variable/rubik";
+@import "@fontsource-variable/work-sans";
+@import "@fontsource-variable/outfit";
+@import "@fontsource-variable/plus-jakarta-sans";
+@import "@fontsource-variable/oswald";
+@import "@fontsource-variable/source-sans-3";
+@import "@fontsource/lato/300.css";
+@import "@fontsource/lato/400.css";
+@import "@fontsource/lato/700.css";
+@import "@fontsource/lato/900.css";
+@import "@fontsource/poppins/300.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/700.css";
+@import "@fontsource/poppins/900.css";
+@import "@fontsource/libre-baskerville/400.css";
+@import "@fontsource/libre-baskerville/700.css";
+
 /* [Verified] Self-hosted variable fonts for Engine and app */
 
 /* Nunito */
