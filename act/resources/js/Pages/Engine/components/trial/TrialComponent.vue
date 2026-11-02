@@ -495,11 +495,16 @@ import { useLogger } from "../../utils/logger.js";
 import TrialUnselectModal from "./TrialUnselectModal.vue";
 const { _log } = useLogger();
 
+// O editor manda o aparelho por postMessage (EDITOR_DEVICE_CHANGE). O último
+// recebido fica em window.__actEditorDevice, porque este componente é recriado a
+// cada trial e voltaria a "desktop" (o Layout gravado em
+// --layout-grid-rows-portrait-iphone-safari não aparecia no preview).
 const editorDevice = ref({
     device: "desktop",
     browser: "chrome",
     mobile: "iPhone",
     tablet: "iPad",
+    ...(window.__actEditorDevice || {}),
 });
 
 const showUnselectModal = ref(false);
@@ -1280,6 +1285,7 @@ const handleEditorMessage = (event) => {
         editorDevice.value.browser = browser;
         editorDevice.value.mobile = mobile;
         editorDevice.value.tablet = tablet;
+        window.__actEditorDevice = { device, browser, mobile, tablet };
     }
 };
 
@@ -1502,6 +1508,11 @@ onMounted(() => {
     document.addEventListener("fullscreenchange", handleFullscreenChange);
     document.addEventListener("webkitfullscreenchange", handleFullscreenChange); // For Safari
     window.addEventListener("message", handleEditorMessage);
+    if (isEditorMode.value && window.parent !== window) {
+        // Pede o aparelho ao editor: a mensagem do load do iframe pode chegar
+        // antes deste componente montar.
+        window.parent.postMessage({ type: "REQUEST_EDITOR_DEVICE" }, window.location.origin);
+    }
     
     // Listen for TEST_DATA_UPDATED message from Chatbot
     const handleTestDataUpdate = (event) => {
