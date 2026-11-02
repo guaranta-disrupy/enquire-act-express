@@ -318,6 +318,10 @@ onMounted(() => {
             );
             return;
         }
+        if (event.data.type === "REQUEST_EDITOR_DEVICE") {
+            sendDeviceConfigToPreview();
+            return;
+        }
         if (event.data.type === "RELOAD_PREVIEW") {
             let testIndex = event.data.testIndex;
             let trialIndex = event.data.trialIndex;

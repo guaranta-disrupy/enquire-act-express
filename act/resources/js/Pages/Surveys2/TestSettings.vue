@@ -133,6 +133,13 @@ const handleDisplayByChange = (value) => {
     }
 };
 
+const handleAutoNextWhenChange = (value) => {
+    const numValue = parseInt(value, 10);
+    if (!Number.isNaN(numValue)) {
+        form.value.config.auto_next_when = numValue;
+    }
+};
+
 const MIN_TARGET_DELAY = 300;
 
 const enforceMinimumTargetDelay = () => {
@@ -723,7 +730,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                             type="number"
                             label="Auto Next Trial At"
                             v-model="form.config.auto_next_when"
-                            @change="handleDisplayByChange"
+                            @change="handleAutoNextWhenChange"
                             placeholder="selection"
                         />
                         <div
@@ -778,7 +785,7 @@ const handleDefaultTrialUnselectChange = (value) => {
                     <div class="w-2/3 relative group">
                         <CustomInput
                             type="number"
-                            label="Display Targets by"
+                            label="Number of Targets per Trial"
                             v-model="form.config.display_by"
                             @change="handleDisplayByChange"
                         />
