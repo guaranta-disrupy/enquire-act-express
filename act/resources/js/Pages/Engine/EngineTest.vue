@@ -483,6 +483,7 @@ onUnmounted(() => {
     width: var(--logo-width, 100vmin);
     opacity: var(--logo-opacity, 0.025);
     filter: blur(var(--logo-blur, 3px));
+    display: var(--bg-logo-display, block);
     /* new added styles */
     /* background-repeat: var(--engine-background-repeat, no-repeat);
     background-position: var(--engine-background-position, center);

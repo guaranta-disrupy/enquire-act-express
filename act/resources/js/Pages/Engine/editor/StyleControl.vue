@@ -5,6 +5,11 @@
             class="block text-xs font-medium text-gray-700 mb-1 capitalize"
         >
             {{ label }}
+            <span
+                v-if="customized"
+                class="inline-block w-1.5 h-1.5 rounded-full bg-[#257556] align-middle ml-0.5"
+                title="Changed from default"
+            ></span>
         </label>
         <div class="grid grid-cols-2">
             <div v-if="variable === '--font-family'" class="col-span-2">
@@ -30,7 +35,8 @@
                 class="col-span-2"
                 v-else-if="
                     variable === '--target-font-weight' ||
-                    variable === '--prime-font-weight'
+                    variable === '--prime-font-weight' ||
+                    variable === '--header-font-weight'
                 "
             >
                 <select
@@ -253,7 +259,8 @@
                 class="col-span-2"
                 v-else-if="
                     variable === '--descriptive-text-align' ||
-                    variable === '--unselect-modal-message-text-align'
+                    variable === '--unselect-modal-message-text-align' ||
+                    variable === '--header-text-align'
                 "
             >
                 <select
@@ -571,7 +578,8 @@
                     variable === '--timer-text-color' ||
                     variable === '--header-text-color' ||
                     variable === '--redirect-text-color' ||
-                    variable === '--loading-infinity-color'
+                    variable === '--loading-infinity-color' ||
+                    colorVariables.includes(variable)
                 "
                 :id="variable"
                 @pureColorChange="(color) => $emit('update:modelValue', color)"
@@ -616,6 +624,8 @@ const props = defineProps({
     modelValue: String,
     variable: String,
     label: String,
+    // true quando o valor difere do padrão (mostra o ponto ao lado do nome)
+    customized: Boolean,
 });
 
 const emit = defineEmits(["update:modelValue", "reset"]);
@@ -742,10 +752,57 @@ const vminVariables = [
     "--timer-position-right",
     "--timer-position-left",
     "--timer-position-bottom",
+    // Imagens: paridade com a SSR (altura, padding, raio, margem X)
+    "--header-img-height",
+    "--header-img-padding",
+    "--header-img-border-radius",
+    "--prime-img-padding",
+    "--prime-img-border-radius",
+    "--prime-img-1-width",
+    "--prime-img-1-height",
+    "--prime-img-1-margin-x",
+    "--prime-img-1-padding",
+    "--prime-img-1-border-radius",
+    "--prime-img-2-width",
+    "--prime-img-2-height",
+    "--prime-img-2-margin-x",
+    "--prime-img-2-padding",
+    "--prime-img-2-border-radius",
+    "--prime-img-3-width",
+    "--prime-img-3-height",
+    "--prime-img-3-margin-x",
+    "--prime-img-3-padding",
+    "--prime-img-3-border-radius",
+    "--target-img-padding",
+    "--target-img-border-radius",
+    "--target-img-margin-x",
+    "--bottom-img-height",
+    "--bottom-img-padding",
+    "--bottom-img-border-radius",
     // Warning Text
     "--warning-margin-bottom",
     "--warning-margin-bottom-ipad",
     "--warning-margin-bottom-tablet",
+];
+
+// Cores do painel de estilo adicionadas para paridade com a SSR
+const colorVariables = [
+    "--prime-hover-font-color",
+    "--progress-color-1",
+    "--progress-color-2",
+    "--progress-color-3",
+    "--progress-color-4",
+    "--progress-track-color",
+    "--unselect-modal-bg-color",
+    "--unselect-modal-backdrop-color",
+    "--unselect-modal-message-color",
+    "--unselect-modal-cancel-bg-color",
+    "--unselect-modal-cancel-font-color",
+    "--unselect-modal-cancel-border-color",
+    "--unselect-modal-submit-bg-color",
+    "--unselect-modal-submit-font-color",
+    "--warning-bg-color",
+    "--warning-text-color",
 ];
 
 // List of variables that should use decimal input for rem
@@ -849,6 +906,11 @@ const displayVariables = [
     "--bottom-img-display",
     "--button-arrow-display",
     "--prime-img-display",
+    "--prime-img-1-display",
+    "--prime-img-2-display",
+    "--prime-img-3-display",
+    "--target-img-display",
+    "--bg-logo-display",
 ];
 
 // List of variables that should use text transform select input

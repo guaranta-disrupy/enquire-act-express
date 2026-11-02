@@ -399,7 +399,7 @@
                                     :message="errorMessage"
                                     @close="showError = false"
                                     :cssStyle="{}"
-                                    :delayDuration="2000"
+                                    :delayDuration="previewWarning ? 0 : 2000"
                                     :isEditorMode="isEditorMode"
                                 />
                             </div>
@@ -801,7 +801,7 @@ const primeInnerClasses = computed(() => ({
     "active:opacity-80 active:scale-[1.15]":
         isPrimeAsNext.value && isMobile.value,
     "hover:opacity-70": !isMobile.value && isPrimeAsNext.value,
-    "hover:text-green-600": isPrimeAsNext.value && !isIphone.value,
+    "prime-hover-color": isPrimeAsNext.value && !isIphone.value,
     "landscape:text-[2vmin]": isIphoneLandscape.value,
     "landscape:text-[2.5vmin]": !isIphoneLandscape.value,
     "active:text-green-600": isPrimeActive.value,
@@ -1287,6 +1287,25 @@ const handleEditorMessage = (event) => {
         editorDevice.value.tablet = tablet;
         window.__actEditorDevice = { device, browser, mobile, tablet };
     }
+    if (data.type === "EDITOR_PREVIEW_OVERLAY") {
+        window.__actEditorOverlay = data.payload || {};
+        applyEditorOverlay();
+    }
+};
+
+// Olho do painel de estilo: mostra no preview o modal Unselect e o alerta,
+// que normalmente só aparecem durante a interação.
+const previewWarning = ref(false);
+const applyEditorOverlay = () => {
+    if (!isEditorMode.value) return;
+    const overlay = window.__actEditorOverlay || {};
+    showUnselectModal.value = !!overlay.unselect;
+    previewWarning.value = !!overlay.warning;
+    if (overlay.warning) {
+        errorMessage.value =
+            props.config?.empty_selection || "Please select an option.";
+    }
+    showError.value = !!overlay.warning;
 };
 
 // Apply styles to the engine container
@@ -1313,7 +1332,7 @@ const applyPrimeImageStyles = () => {
         if (!primeEl) return;
         const imgs = primeEl.querySelectorAll("img");
         if (!imgs || imgs.length === 0) return;
-        imgs.forEach((img) => {
+        imgs.forEach((img, imgIndex) => {
             // Rewrite cross-origin src through proxy for cacheability
             if (isEditorMode.value) {
                 try {
@@ -1326,13 +1345,22 @@ const applyPrimeImageStyles = () => {
                 } catch (_) {}
             }
 
-            img.style.width = "var(--prime-img-width, 20vmin)";
-            img.style.height = "var(--prime-img-height, auto)";
+            // --prime-img-N-* (N = 1..3) sobrescreve uma imagem; vazio cai no
+            // valor de todas as imagens (--prime-img-*).
+            const n = imgIndex + 1;
+            const v = (prop, fallback) =>
+                n <= 3
+                    ? `var(--prime-img-${n}-${prop}, var(--prime-img-${prop}, ${fallback}))`
+                    : `var(--prime-img-${prop}, ${fallback})`;
+            img.style.width = v("width", "20vmin");
+            img.style.height = v("height", "auto");
             img.style.marginTop = "var(--prime-img-margin-top, 1vmin)";
             img.style.marginBottom = "var(--prime-img-margin-bottom, 1vmin)";
-            img.style.marginLeft = "var(--prime-img-margin-x, auto)";
-            img.style.marginRight = "var(--prime-img-margin-x, auto)";
-            img.style.display = "var(--prime-img-display, inline)";
+            img.style.marginLeft = v("margin-x", "auto");
+            img.style.marginRight = v("margin-x", "auto");
+            img.style.display = v("display", "inline");
+            img.style.padding = v("padding", "0vmin");
+            img.style.borderRadius = v("border-radius", "1vmin");
         });
     } catch (_) {}
 };
@@ -1404,9 +1432,26 @@ const applyTargetImageStyles = () => {
                     "margin-bottom",
                     "var(--target-img-margin-bottom, 0vmin)"
                 );
-                img.style.setProperty("display", "block");
-                img.style.setProperty("margin-left", "auto");
-                img.style.setProperty("margin-right", "auto");
+                img.style.setProperty(
+                    "display",
+                    "var(--target-img-display, block)"
+                );
+                img.style.setProperty(
+                    "margin-left",
+                    "var(--target-img-margin-x, auto)"
+                );
+                img.style.setProperty(
+                    "margin-right",
+                    "var(--target-img-margin-x, auto)"
+                );
+                img.style.setProperty(
+                    "padding",
+                    "var(--target-img-padding, 0vmin)"
+                );
+                img.style.setProperty(
+                    "border-radius",
+                    "var(--target-img-border-radius, 1vmin)"
+                );
             });
         });
     } catch (_) {}
@@ -1450,6 +1495,10 @@ const applyBottomTextImageStyles = () => {
                         "var(--bottom-img-margin-left, 0vmin)";
                     img.style.marginRight =
                         "var(--bottom-img-margin-right, 0vmin)";
+                    img.style.height = "var(--bottom-img-height, auto)";
+                    img.style.padding = "var(--bottom-img-padding, 0vmin)";
+                    img.style.borderRadius =
+                        "var(--bottom-img-border-radius, 1vmin)";
                 });
             }
         } catch (_) {}
@@ -1512,6 +1561,7 @@ onMounted(() => {
         // Pede o aparelho ao editor: a mensagem do load do iframe pode chegar
         // antes deste componente montar.
         window.parent.postMessage({ type: "REQUEST_EDITOR_DEVICE" }, window.location.origin);
+        applyEditorOverlay();
     }
     
     // Listen for TEST_DATA_UPDATED message from Chatbot
@@ -1627,7 +1677,10 @@ const applyHeaderImageStyles = () => {
                 img.style.marginTop = "var(--header-img-margin-y, 0.5vmin)";
                 img.style.marginBottom = "var(--header-img-margin-y, 0.5vmin)";
                 img.style.display = "var(--header-img-display, inline)";
-                img.style.height = "auto";
+                img.style.height = "var(--header-img-height, auto)";
+                img.style.padding = "var(--header-img-padding, 0vmin)";
+                img.style.borderRadius =
+                    "var(--header-img-border-radius, 1vmin)";
             });
         }
     }
@@ -1914,5 +1967,10 @@ const processedDescriptiveTitle = computed(() => {
     text-wrap-style: var(--target-text-wrap-style);
     /* overflow-wrap: break-word; */
     /* hyphens: auto; */
+}
+
+/* Cor do texto do prime no hover quando ele é o botão de avançar */
+.prime-hover-color:hover {
+    color: var(--prime-hover-font-color, #16a34a);
 }
 </style>

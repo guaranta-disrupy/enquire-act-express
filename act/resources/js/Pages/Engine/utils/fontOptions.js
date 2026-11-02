@@ -42,6 +42,92 @@ export const ENGINE_FONT_FAMILIES = [
         label: "Cormorant Garamond",
         value: "Cormorant Garamond",
     },
+    {
+        label: "Lato",
+        value: '"Lato", sans-serif',
+    },
+    {
+        label: "Poppins",
+        value: '"Poppins", sans-serif',
+    },
+    {
+        label: "Nunito Sans",
+        value: '"Nunito Sans Variable", sans-serif',
+    },
+    {
+        label: "DM Sans",
+        value: '"DM Sans Variable", sans-serif',
+    },
+    {
+        label: "Raleway",
+        value: '"Raleway Variable", sans-serif',
+    },
+    {
+        label: "Rubik",
+        value: '"Rubik Variable", sans-serif',
+    },
+    {
+        label: "Work Sans",
+        value: '"Work Sans Variable", sans-serif',
+    },
+    {
+        label: "Outfit",
+        value: '"Outfit Variable", sans-serif',
+    },
+    {
+        label: "Plus Jakarta Sans",
+        value: '"Plus Jakarta Sans Variable", sans-serif',
+    },
+    {
+        label: "Oswald",
+        value: '"Oswald Variable", sans-serif',
+    },
+    {
+        label: "Source Sans 3",
+        value: '"Source Sans 3 Variable", sans-serif',
+    },
+    {
+        label: "Playfair Display",
+        value: '"Playfair Display Variable", serif',
+    },
+    {
+        label: "Libre Baskerville",
+        value: '"Libre Baskerville", serif',
+    },
+    // Fontes do sistema: não são carregadas, dependem do aparelho (caem na
+    // alternativa da lista onde não existem, ex.: Android).
+    {
+        label: "Arial Black (system)",
+        value: '"Arial Black", Arial, sans-serif',
+    },
+    {
+        label: "Tahoma (system)",
+        value: 'Tahoma, Verdana, sans-serif',
+    },
+    {
+        label: "Segoe UI (system)",
+        value: '"Segoe UI", system-ui, sans-serif',
+    },
+    {
+        label: "Century Gothic (system)",
+        value: '"Century Gothic", "Avenir Next", sans-serif',
+    },
+    {
+        label: "Franklin Gothic Medium (system)",
+        value: '"Franklin Gothic Medium", "Arial Narrow", sans-serif',
+    },
+    {
+        label: "Candara (system)",
+        value: 'Candara, Calibri, sans-serif',
+    },
+    {
+        label: "Optima (system)",
+        value: 'Optima, Candara, sans-serif',
+    },
+    {
+        label: "Lucida Console (system)",
+        value: '"Lucida Console", Monaco, monospace',
+    },
 ];
 
 // Discrete weights we expose in the UI. All variable fonts we load support

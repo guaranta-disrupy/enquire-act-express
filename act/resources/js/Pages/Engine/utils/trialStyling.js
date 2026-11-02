@@ -192,9 +192,9 @@ export const trialUnselectModalContainerStyle = {
 };
 
 export const trialHeaderStyle = {
-    fontWeight: "normal",
+    fontWeight: "var(--header-font-weight, normal)",
     color: "var(--header-text-color)",
-    textAlign: "center",
+    textAlign: "var(--header-text-align, center)",
     width: "100%",
     fontSize: "var(--header-font-size)",
     maxWidth: "var(--header-max-width)",
