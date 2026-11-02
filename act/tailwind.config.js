@@ -37,5 +37,7 @@ module.exports = {
         },
     },
 
-    plugins: [forms, typography, require("daisyui")],
+    // Só o tema claro: o resto das telas do ACT é claro fixo, e o "dark
+    // --prefersdark" padrão do daisyUI 5 escurecia só as caixas dele.
+    plugins: [forms, typography, require("daisyui")({ themes: ["light --default"] })],
 };
