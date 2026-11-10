@@ -11,6 +11,10 @@
         >
             <div
                 class="text-white landscape:text-[1.9vmin] text-center bg-red-500 inline rounded-md landscape:rounded-lg landscape:py-2 landscape:px-4 p-2 px-3 portrait:text-[2.8vmin]"
+                :style="{
+                    backgroundColor: 'var(--warning-bg-color, #ef4444)',
+                    color: 'var(--warning-text-color, #ffffff)',
+                }"
             >
                 {{ message }}
             </div>

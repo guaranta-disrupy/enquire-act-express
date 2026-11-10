@@ -184,6 +184,7 @@ const handlePreviewLoad = () => {
     isPreviewLoading.value = false;
     applyStylesToIframe();
     sendDeviceConfigToPreview(); // Ensure device state is synced on every load
+    sendOverlayToPreview();
 
     // Add click listener to iframe content to close panels
     const iframeDocument = previewFrame.value?.contentWindow?.document;
@@ -320,6 +321,7 @@ onMounted(() => {
         }
         if (event.data.type === "REQUEST_EDITOR_DEVICE") {
             sendDeviceConfigToPreview();
+            sendOverlayToPreview();
             return;
         }
         if (event.data.type === "RELOAD_PREVIEW") {
@@ -522,6 +524,26 @@ const sendDeviceConfigToPreview = () => {
         );
     }
 };
+
+// Olho do painel de estilo (modal Unselect / alerta) → preview
+const sendOverlayToPreview = () => {
+    const win = previewFrame.value?.contentWindow;
+    if (win) {
+        win.postMessage(
+            {
+                type: "EDITOR_PREVIEW_OVERLAY",
+                payload: { ...editorStore.previewOverlays },
+            },
+            "*"
+        );
+    }
+};
+
+watch(
+    () => ({ ...editorStore.previewOverlays }),
+    () => sendOverlayToPreview(),
+    { deep: true }
+);
 
 /**
  * Applies the current styles from the editor store to the iframe's root element.

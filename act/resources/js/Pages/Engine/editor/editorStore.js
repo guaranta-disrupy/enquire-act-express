@@ -40,6 +40,9 @@ export const editorStore = reactive({
     savedTheme3Styles: { landscape: {}, portrait: {}, tabletPortrait: {} },
     isDataDirty: false, // Track if the main survey data has changed
     areStylesDirty: false,
+    // Olho do painel: força o modal Unselect / o alerta no preview
+    previewOverlays: { unselect: false, warning: false },
+
     groupVisibility: {
         Header: true,
         "Background Logo": true,

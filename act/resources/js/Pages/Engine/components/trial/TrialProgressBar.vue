@@ -45,14 +45,14 @@ const deviceType = computed(() => {
     width: 100%;
     background: linear-gradient(
         to right,
-        #e94f1d 0%,
-        #e94f1d 23%,
-        #e28733 27%,
-        #e28733 48%,
-        #1e71b8 52%,
-        #1e71b8 73%,
-        #00519e 77%,
-        #00519e 100%
+        var(--progress-color-1, #e94f1d) 0%,
+        var(--progress-color-1, #e94f1d) 23%,
+        var(--progress-color-2, #e28733) 27%,
+        var(--progress-color-2, #e28733) 48%,
+        var(--progress-color-3, #1e71b8) 52%,
+        var(--progress-color-3, #1e71b8) 73%,
+        var(--progress-color-4, #00519e) 77%,
+        var(--progress-color-4, #00519e) 100%
     );
     overflow: hidden;
     position: relative;
@@ -61,7 +61,7 @@ const deviceType = computed(() => {
 
 .progress-fill {
     height: 100%;
-    background: lightgray;
+    background: var(--progress-track-color, lightgray);
     transition: width 0.3s ease;
     position: absolute;
     top: 0;

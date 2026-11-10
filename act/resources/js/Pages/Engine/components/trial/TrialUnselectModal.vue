@@ -148,6 +148,7 @@ onUpdated(updateContrastColor);
 
 <style scoped>
 #unselect-message {
+    color: var(--unselect-modal-message-color, #374151);
     font-size: var(--unselect-modal-message-font-size);
     text-align: var(--unselect-modal-message-text-align);
 }
@@ -164,6 +165,11 @@ onUpdated(updateContrastColor);
 #unselect-cancel {
     font-size: var(--unselect-modal-cancel-font-size);
 }
+#unselect-actions > button:first-child {
+    background-color: var(--unselect-modal-cancel-bg-color, #ffffff);
+    color: var(--unselect-modal-cancel-font-color, #374151);
+    border-color: var(--unselect-modal-cancel-border-color, #d1d5db);
+}
 
 #unselect-submit {
     font-size: var(--unselect-modal-submit-font-size);
@@ -175,7 +181,7 @@ onUpdated(updateContrastColor);
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--unselect-modal-backdrop-color, rgba(0, 0, 0, 0));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,7 +189,7 @@ onUpdated(updateContrastColor);
 }
 
 .modal-container {
-    background: white;
+    background: var(--unselect-modal-bg-color, white);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     width: 90%;
@@ -264,8 +270,11 @@ onUpdated(updateContrastColor);
 }
 
 .submit-unselect {
-    background-color: var(--target-selected-border-color);
-    color: var(--text-contrast-color);
+    background-color: var(
+        --unselect-modal-submit-bg-color,
+        var(--target-selected-border-color)
+    );
+    color: var(--unselect-modal-submit-font-color, var(--text-contrast-color));
 }
 
 /* Modal Transition */
